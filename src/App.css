@@ -1,0 +1,95 @@
+.root {
+  width: 100vw;
+  display: flex;
+  font-family: 'Poppins';
+}
+
+.heroSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8% 23% 5%;
+  background: white;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigHeading {
+  font-size: 55px;
+  /* color: #163300; */
+  color: black;
+  font-weight: 600;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  line-height: 1.1em;
+}
+
+.globalPara {
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 70%;
+  margin: 0;
+}
+
+.brandsBox {
+  width: 60%;
+  margin: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+  text-align: center;
+}
+
+.logo {
+  width: 140px;
+  filter: grayscale(100%);
+}
+
+.featuresSection {
+  width: 100%;
+  margin: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 20%;
+}
+
+.featuresHeading {
+  font-size: 40px;
+  color: black;
+  font-weight: 600;
+  margin-top: 3%;
+  margin-bottom: 0;
+  line-height: 1.1em;
+}
+
+.featuresPara {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 80%;
+  margin: 0;
+  margin-bottom: 5%;
+}
+
+.icon {
+  color: white;
+  padding: 20%;
+  border-radius: 50%;
+  background: #008E09;
+}
+
+.list {
+  width: 100%;
+  max-width: 360px;
+  background: white;
+}
