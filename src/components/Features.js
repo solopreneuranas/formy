@@ -29,7 +29,7 @@ export default function Features() {
         <div className='root'>
 
             <Grid container spacing={5} className='featuresSection'>
-                <Grid item xs={6}>
+                <Grid item xs={5}>
                     <h2 className='featuresHeading'>Why Formy</h2><br />
                     <p className='featuresPara'>
                         We understand the challenges you face in accepting card payments at your store, particularly if you are located in a country not supported by Stripe. Our solution is designed to address this issue by managing the entire process for you. We’ll establish a UK or US company on your behalf and set up a fully verified and approved Business Stripe account, no matter where you are in the world. All of this at a highly competitive price!
@@ -70,8 +70,8 @@ export default function Features() {
                         </Collapse>
                     </List>
                 </Grid>
-                <Grid item xs={6}>
-                    <img src='images/creative-formy-services.svg' style={{ width: '110%' }} />
+                <Grid item xs={7}>
+                    <img src='images/creative-services.svg' style={{ width: '100%', marginRight: 'auto' }} />
                 </Grid>
             </Grid>
 
