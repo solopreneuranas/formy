@@ -71,7 +71,7 @@ export default function Features() {
                     </List>
                 </Grid>
                 <Grid item xs={6}>
-                    <img src='https://privatily.com/wp-content/uploads/2023/08/image-12-min-e1691413575265.png' style={{ width: '100%' }} />
+                    <img src='images/creative-formy-services.svg' style={{ width: '110%' }} />
                 </Grid>
             </Grid>
 

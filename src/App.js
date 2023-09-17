@@ -3,7 +3,7 @@ import HeroImg from "./components/HeroImg";
 import Brands from "./components/Brands";
 import Features from "./components/Features";
 import Faq from "./components/Faq";
-import Services from "./components/Services";
+import Formation from "./components/Formation";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <HeroImg />
       <Brands />
       <Features />
-      <Services />
+      <Formation />
       <Faq />
     </div>
   );

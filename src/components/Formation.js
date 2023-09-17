@@ -4,12 +4,12 @@ import { Grid, TextField, Button, Rating, Typography, Avatar, AvatarGroup } from
 import SendIcon from '@mui/icons-material/Send';
 
 
-export default function Services() {
+export default function Formation() {
 
     return (
         <div className='root'>
 
-            <Grid container spacing={5} className='servicesSection'>
+            <Grid container spacing={5} className='formationSection'>
                 <Grid item xs={6}>
                     <img src='https://www.doola.com/wp-content/uploads/2023/09/form-your-us-company-from-anywhere-in-the-world-1-1080x706.png.webp' style={{ width: '100%' }} />
                 </Grid>
