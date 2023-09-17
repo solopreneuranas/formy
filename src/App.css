@@ -1,7 +1,12 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .root {
   width: 100vw;
   display: flex;
-  font-family: 'Poppins';
+  font-family: 'Inter' !important;
 }
 
 .heroSection {
@@ -35,6 +40,7 @@
   font-weight: 500;
   font-size: 17px;
   opacity: 70%;
+  line-height: 1.5em;
   margin: 0;
 }
 
@@ -57,11 +63,21 @@
 .featuresSection {
   width: 100%;
   margin: auto;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5% 20%;
+  padding: 5% 17%;
+  background-color: #D7FEC8;
+  border-radius: 250px 0 0 0;
+}
+
+.servicesSection {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 17%;
 }
 
 .featuresHeading {
@@ -75,8 +91,9 @@
 
 .featuresPara {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   opacity: 80%;
+  line-height: 1.5em;
   margin: 0;
   margin-bottom: 5%;
 }
@@ -91,5 +108,16 @@
 .list {
   width: 100%;
   max-width: 360px;
-  background: white;
+}
+
+.faq {
+  width: 50%;
+  margin: auto;
+  padding: 5% 0;
+  font-family: 'Inter';
+}
+
+.faqItem {
+  padding: 1%;
+  border: none !important;
 }
