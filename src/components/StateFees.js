@@ -1,5 +1,6 @@
 import * as React from 'react';
 import '../App.css';
+import Faq from './Faq';
 
 import { Grid, TextField, Button, Alert, AlertTitle, Rating, Typography, Avatar, AvatarGroup } from "@mui/material";
 import { useState } from "react";
@@ -14,68 +15,77 @@ export default function StateFees() {
             <Autocomplete
                 disablePortal
                 id="combo-box-demo"
-                options={top100Films}
+                options={states}
                 sx={{ width: 300 }}
-                renderInput={(params) => <TextField {...params} label="Movie" />}
+                renderInput={(params) => <TextField {...params} label="Search state" />}
             />
         );
     }
 
     // Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
-    const top100Films = [
-        { label: 'The Shawshank Redemption', year: 1994 },
-        { label: 'The Godfather', year: 1972 },
-        { label: 'The Godfather: Part II', year: 1974 },
-        { label: 'The Dark Knight', year: 2008 },
-        { label: '12 Angry Men', year: 1957 },
-        { label: "Schindler's List", year: 1993 },
-        { label: 'Pulp Fiction', year: 1994 },
-        { label: 'City of God', year: 2002 },
-        { label: 'Se7en', year: 1995 },
-        { label: 'The Silence of the Lambs', year: 1991 },
-        { label: "It's a Wonderful Life", year: 1946 },
-        { label: 'Life Is Beautiful', year: 1997 },
-        { label: 'The Usual Suspects', year: 1995 },
-        { label: 'Léon: The Professional', year: 1994 },
-        { label: 'Spirited Away', year: 2001 },
-        { label: 'Saving Private Ryan', year: 1998 },
-        { label: 'Once Upon a Time in the West', year: 1968 },
-        { label: 'American History X', year: 1998 },
-        { label: 'Interstellar', year: 2014 },
-        { label: 'Casablanca', year: 1942 },
-        { label: 'City Lights', year: 1931 },
-        { label: 'Psycho', year: 1960 },
-        { label: 'The Green Mile', year: 1999 },
-        { label: 'The Intouchables', year: 2011 },
-        { label: 'Modern Times', year: 1936 },
-        { label: 'Raiders of the Lost Ark', year: 1981 },
-        { label: 'Rear Window', year: 1954 },
-        { label: 'The Pianist', year: 2002 },
-        { label: 'The Departed', year: 2006 },
-        { label: 'Terminator 2: Judgment Day', year: 1991 },
-        { label: 'Back to the Future', year: 1985 },
-        { label: 'Whiplash', year: 2014 },
-        { label: 'Gladiator', year: 2000 },
-        { label: 'Memento', year: 2000 },
-        { label: 'The Prestige', year: 2006 },
-        { label: 'The Lion King', year: 1994 },
-        { label: 'Apocalypse Now', year: 1979 },
-        { label: 'Alien', year: 1979 },
-        { label: 'Sunset Boulevard', year: 1950 }
+    const states = [
+        { label: 'Alabama', fee: 4 },
+        { label: 'Alaska', fee: 0 },
+        { label: 'Arizona', fee: 5.60 },
+        { label: 'Arkansas', fee: 6.50 },
+        { label: 'California', fee: 7.25 },
+        { label: 'Colorado', fee: 2.90 },
+        { label: 'Connecticut', fee: 6.35 },
+        { label: 'Delaware', fee: 0 },
+        { label: 'District of Columbia', fee: 6 },
+        { label: 'Florida', fee: 6 },
+        { label: 'Georgia', fee: 4 },
+        { label: 'Hawaii', fee: 4 },
+        { label: 'Idaho', fee: 6 },
+        { label: 'Illinois', fee: 6.25 },
+        { label: 'Indiana', fee: 7 },
+        { label: 'Iowa', fee: 6 },
+        { label: 'Kansas', fee: 6.50 },
+        { label: 'Kentucky', fee: 6 },
+        { label: 'Louisiana', fee: 4.45 },
+        { label: 'Maine', fee: 5.50 },
+        { label: 'Maryland', fee: 6 },
+        { label: 'Massachusetts', fee: 6.25 },
+        { label: 'Michigan', fee: 6 },
+        { label: 'Minnesota', fee: 6.88 },
+        { label: 'Mississippi', fee: 7 },
+        { label: 'Missouri', fee: 4.23 },
+        { label: 'Montana', fee: 0 },
+        { label: 'Nebraska', fee: 5.50 },
+        { label: 'Nevada', fee: 6.85 },
+        { label: 'New Hampshire', fee: 0 },
+        { label: 'New Jersey', fee: 0 },
+        { label: 'New Mexico', fee: 5.13 },
+        { label: 'New York', fee: 4 },
+        { label: 'North Carolina', fee: 5.75 },
+        { label: 'North Dakota', fee: 5 },
+        { label: 'Ohio', fee: 5.75 },
+        { label: 'Oklahoma', fee: 4.50 },
+        { label: 'Oregon', fee: 0 },
+        { label: 'Pennsylvania', fee: 6 },
+        { label: 'Rhode Island', fee: 7 },
+        { label: 'South Carolina', fee: 6 },
+        { label: 'South Dakota', fee: 4.50 },
+        { label: 'Tennessee', fee: 7 },
+        { label: 'Texas', fee: 6.25 },
+        { label: 'Utah', fee: 6.50 },
+        { label: 'Vermont', fee: 6 },
+        { label: 'Virginia', fee: 5.30 },
+        { label: 'Washington', fee: 6.50 },
+        { label: 'West Virginia', fee: 6 },
+        { label: 'Wisconsin', fee: 5 },
+        { label: 'Wyoming', fee: 4.75 }
     ];
 
 
     return (
         <div >
 
-            <Grid container spacing={3} className='pricingTable'>
+            <Grid container spacing={5} className='pricingTable' style={{marginTop: '0'}}>
                 <Grid item xs={12}>
-                    <center>
                         <DropDown />
-                    </center>
                 </Grid>
             </Grid>
-
         </div>
     )
 }

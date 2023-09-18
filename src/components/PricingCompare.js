@@ -5,23 +5,32 @@ import StateFees from './StateFees';
 import { Grid, TextField, Button, Alert, AlertTitle, Rating, Typography, Avatar, AvatarGroup } from "@mui/material";
 import { useState } from "react";
 import SendIcon from '@mui/icons-material/Send';
-
+import Box from '@mui/material/Box';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
+import FormControl from '@mui/material/FormControl';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
+import Switch from '@mui/material/Switch';
 
 export default function PricingCompare() {
 
 
     function PricingDialog() {
         const [open, setOpen] = React.useState(false);
-        const theme = useTheme();
-        const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
+        const [fullWidth, setFullWidth] = React.useState(true);
+        const [maxWidth, setMaxWidth] = React.useState('sm');
+        const [fee, setFee] = useState('')
 
+        const handleFee = () =>{
+            setFee('Done')
+        }
+ 
         const handleClickOpen = () => {
             setOpen(true);
         };
@@ -30,8 +39,19 @@ export default function PricingCompare() {
             setOpen(false);
         };
 
+        const handleMaxWidthChange = (event) => {
+            setMaxWidth(
+                // @ts-expect-error autofill of arbitrary value is not handled.
+                event.target.value,
+            );
+        };
+
+        const handleFullWidthChange = (event) => {
+            setFullWidth(event.target.checked);
+        };
+
         return (
-            <div>
+            <React.Fragment>
                 <Button onClick={handleClickOpen} endIcon={<SendIcon />} variant='contained' style={{
                     // background: '#163300',
                     background: 'black',
@@ -42,30 +62,25 @@ export default function PricingCompare() {
                     marginTop: '2%',
                     borderRadius: '50px'
                 }}>GET STARTED</Button>
-                <Dialog className='dialogSection'
-                    fullScreen={fullScreen}
+                <Dialog
+                    fullWidth={fullWidth}
+                    maxWidth={maxWidth}
                     open={open}
                     onClose={handleClose}
-                    aria-labelledby="responsive-dialog-title"
                 >
-                    <DialogTitle style={{color: 'black', fontWeight: '600'}} id="responsive-dialog-title">
-                        {"State Fees Calculator"}
-                    </DialogTitle>
+                    <DialogTitle style={{ color: 'black', fontWeight: '600' }}>State Fees Calculator</DialogTitle>
                     <DialogContent>
                         <DialogContentText>
                             <StateFees />
                         </DialogContentText>
+
                     </DialogContent>
                     <DialogActions>
-                        <Button autoFocus onClick={handleClose}>
-                            Disagree
-                        </Button>
-                        <Button onClick={handleClose} autoFocus>
-                            Agree
-                        </Button>
+                        <Button onClick={handleFee}>Calculate</Button>
+                        <Button onClick={handleClose}>Close</Button>
                     </DialogActions>
                 </Dialog>
-            </div>
+            </React.Fragment>
         );
     }
 
