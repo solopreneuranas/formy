@@ -4,6 +4,7 @@ import Brands from "./components/Brands";
 import Features from "./components/Features";
 import Faq from "./components/Faq";
 import Formation from "./components/Formation";
+import PricingCompare from "./components/PricingCompare";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Brands />
       <Features />
       <Formation />
+      <PricingCompare />
       <Faq />
     </div>
   );
