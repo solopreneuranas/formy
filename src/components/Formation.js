@@ -5,7 +5,7 @@ import SendIcon from '@mui/icons-material/Send';
 
 
 export default function Formation() {
-
+    const [value, setValue] = React.useState(5);
     return (
         <div className='root'>
 
@@ -20,7 +20,8 @@ export default function Formation() {
                     </h2><br />
                     <p className='featuresPara'>
                         We understand the challenges you face in accepting card payments at your store, particularly if you are located in a country not supported by Stripe. Our solution is designed to address this issue by managing the entire process for you.
-                    </p><br />
+                    </p>
+                    <Rating name="read-only" value={value} readOnly /><br/><br/>
                     <Button endIcon={<SendIcon />} variant='contained' style={{
                         // background: '#163300',
                         background: 'black',

@@ -32,39 +32,45 @@ export default function Features() {
                 <Grid item xs={5}>
                     <h2 className='featuresHeading'>Why Formy</h2><br />
                     <p className='featuresPara'>
-                        We understand the challenges you face in accepting card payments at your store, particularly if you are located in a country not supported by Stripe. Our solution is designed to address this issue by managing the entire process for you. We’ll establish a UK or US company on your behalf and set up a fully verified and approved Business Stripe account, no matter where you are in the world. All of this at a highly competitive price!
+                        We understand the challenges you face in accepting card payments at your store, particularly if you are located in a country not supported by Stripe. Our solution is designed to address this issue by managing the entire process for you. We’ll establish a UK or US company on your behalf and set up a fully verified and approved Business Stripe account.
                     </p>
 
 
                     <List className='list'
                         component="nav"
                         aria-labelledby="nested-list-subheader">
-                        <ListItemButton style={{paddingLeft: 0}}>
+                        <ListItemButton style={{ paddingLeft: 0 }}>
                             <ListItemIcon>
-                                <SendIcon fontSize='small' className='icon'/>
+                                <SendIcon fontSize='small' className='icon' />
                             </ListItemIcon>
-                            <ListItemText primary="We accept major countries"/>
+                            <Typography style={{ fontSize: '20px' }}>We accept all major countries</Typography>
                         </ListItemButton>
-                        <ListItemButton style={{paddingLeft: 0}}>
+                        <ListItemButton style={{ paddingLeft: 0 }}>
                             <ListItemIcon>
-                                <DraftsIcon fontSize='small' className='icon'/>
+                                <DraftsIcon fontSize='small' className='icon' />
                             </ListItemIcon>
-                            <ListItemText primary="Fast formation services" />
+                            <Typography style={{ fontSize: '20px' }}>Fast formation services </Typography>
                         </ListItemButton>
-                        <ListItemButton onClick={handleClick} style={{paddingLeft: 0}}>
+                        <ListItemButton style={{ paddingLeft: 0 }}>
                             <ListItemIcon>
-                                <InboxIcon fontSize='small' className='icon'/>
+                                <DraftsIcon fontSize='small' className='icon' />
                             </ListItemIcon>
-                            <ListItemText primary="Quick documents delivery" />
+                            <Typography style={{ fontSize: '20px' }}>Fast formation services </Typography>
+                        </ListItemButton>
+                        <ListItemButton onClick={handleClick} style={{ paddingLeft: 0 }}>
+                            <ListItemIcon>
+                                <InboxIcon fontSize='small' className='icon' />
+                            </ListItemIcon>
+                            <Typography style={{ fontSize: '20px' }}>  Quick documents delivery </Typography>
                             {open ? <ExpandLess /> : <ExpandMore />}
                         </ListItemButton>
                         <Collapse in={open} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
                                 <ListItemButton sx={{ pl: 4 }}>
                                     <ListItemIcon>
-                                        <StarBorder fontSize='small' className='icon'/>
+                                        <StarBorder fontSize='small' className='icon' />
                                     </ListItemIcon>
-                                    <ListItemText primary="Starred" />
+                                    <Typography style={{ fontSize: '20px' }}>  Quick documents delivery </Typography>
                                 </ListItemButton>
                             </List>
                         </Collapse>
