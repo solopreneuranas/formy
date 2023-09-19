@@ -40,28 +40,56 @@ function a11yProps(index) {
     return {
         id: `simple-tab-${index}`,
         'aria-controls': `simple-tabpanel-${index}`,
-    };
+    }
 }
 
 export default function PricingTabs() {
-    const [value, setValue] = React.useState(0);
+    const [value, setValue] = React.useState(0)
 
     const handleChange = (event, newValue) => {
-        setValue(newValue);
-    };
+        setValue(newValue)
+
+    }
+
+    const gridStyle1 = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: '0',
+        padding: '0 2%',
+        background: '#F2F2F2'
+    }
+
+    const gridStyle2 = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: '0',
+        padding: '0 2%',
+        background: 'white'
+    }
 
     return (
         <Box sx={{ width: '100%' }} className='pricingPackage'>
             <Box sx={{ borderBottom: 1, borderColor: 'divider', }}>
                 <Tabs scrollButtons="auto" variant="scrollable" value={value} onChange={handleChange} aria-label="basic tabs example" className='pricingPackageBar'>
-                    <Tab className='tabBrand' label="Formy" {...a11yProps(0)} />
-                    <Tab className='tabBrand' label="Doola" {...a11yProps(1)} />
-                    <Tab className='tabBrand' label="Zen Business" {...a11yProps(2)} />
-                    <Tab className='tabBrand' label="Atlas" {...a11yProps(2)} />
+                    <Tab className='tabBrand' label="Formy" {...a11yProps(0)} ></Tab>
+                    <Tab className='tabBrand'
+                        icon={<img src="https://www.doola.com/wp-content/themes/doola2/resources/images/header-logo.png"
+                            width={'90px'} alt="Formy" />}
+                        {...a11yProps(1)} />
+                    <Tab className='tabBrand'
+                        icon={<img src="https://res.cloudinary.com/zenbusiness/q_auto,w_40/v1/shared-assets/logo/circle-logo-teal.svg"
+                            width={'45px'} alt="Formy" />}
+                        {...a11yProps(2)} />
+                    <Tab className='tabBrand'
+                        icon={<img src="https://uploads-ssl.webflow.com/63f4ac2742efebb29fd0cdae/63f4ac2742efeb20c0d0cf78_mJX1RF-X4f3OIznyHvjikAwR2zfEjLFr8HaPx5_H_8k.jpeg"
+                            width={'100px'} alt="Formy" />}
+                        {...a11yProps(2)} />
                 </Tabs>
             </Box>
             <CustomTabPanel value={value} index={0}>
-                <Grid container spacing={0} style={{ margin: '0', padding: '0 2%', background: '#F2F2F2' }}>
+                <Grid container spacing={0} style={gridStyle1}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Company Formation</p>
                     </Grid>
@@ -70,7 +98,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle2}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Registered Agent Service For 1 Year</p>
                     </Grid>
@@ -79,7 +107,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0 2%', background: '#F2F2F2' }}>
+                <Grid container spacing={0} style={gridStyle1}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Registered Agent Addres</p>
                     </Grid>
@@ -88,7 +116,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container style={gridStyle2}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>EIN & Operating Agreement</p>
                     </Grid>
@@ -97,7 +125,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0 2%', background: '#F2F2F2' }}>
+                <Grid container spacing={0} style={gridStyle1}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Business Bank Account</p>
                     </Grid>
@@ -106,7 +134,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle2}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent' style={{ fontWeight: '600', fontSize: '20px' }}>Your Total Cost</p>
                     </Grid>
@@ -119,7 +147,7 @@ export default function PricingTabs() {
 
 
             <CustomTabPanel value={value} index={1}>
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle1}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Company Formation</p>
                     </Grid>
@@ -128,7 +156,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle2}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Registered Agent Service For 1 Year</p>
                     </Grid>
@@ -137,7 +165,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle1}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Registered Agent Addres</p>
                     </Grid>
@@ -146,7 +174,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle2}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>EIN & Operating Agreement</p>
                     </Grid>
@@ -155,7 +183,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle1}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Business Bank Account</p>
                     </Grid>
@@ -164,7 +192,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle2}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent' style={{ fontWeight: '600', fontSize: '20px' }}>Your Total Cost</p>
                     </Grid>
@@ -177,7 +205,7 @@ export default function PricingTabs() {
 
 
             <CustomTabPanel value={value} index={2}>
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle1}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Company Formation</p>
                     </Grid>
@@ -186,7 +214,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle2}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Registered Agent Service For 1 Year</p>
                     </Grid>
@@ -195,7 +223,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle1}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Registered Agent Addres</p>
                     </Grid>
@@ -204,7 +232,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle2}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>EIN & Operating Agreement</p>
                     </Grid>
@@ -213,7 +241,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle1}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Business Bank Account</p>
                     </Grid>
@@ -222,7 +250,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle2}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent' style={{ fontWeight: '600', fontSize: '20px' }}>Your Total Cost</p>
                     </Grid>
@@ -234,7 +262,7 @@ export default function PricingTabs() {
 
 
             <CustomTabPanel value={value} index={3}>
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle1}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Company Formation</p>
                     </Grid>
@@ -243,7 +271,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle2}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Registered Agent Service For 1 Year</p>
                     </Grid>
@@ -252,7 +280,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle1}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Registered Agent Addres</p>
                     </Grid>
@@ -261,7 +289,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle2}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>EIN & Operating Agreement</p>
                     </Grid>
@@ -270,7 +298,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle1}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent'>Business Bank Account</p>
                     </Grid>
@@ -279,7 +307,7 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={0} style={{ margin: '0', padding: '0' }}>
+                <Grid container spacing={0} style={gridStyle2}>
                     <Grid item xs={8} className='tabLeftCol'>
                         <p className='pricingContent' style={{ fontWeight: '600', fontSize: '20px' }}>Your Total Cost</p>
                     </Grid>

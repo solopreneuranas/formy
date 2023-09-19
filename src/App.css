@@ -248,12 +248,12 @@ body {
   }
 
   .pricingPackageBar {
-    background-color: #008E09;
+    background-color: white;
     border-radius: 5px 5px 0 0;
   }
 
   .tabBrand {
-    color: white !important;
+    color: black !important;
   }
 
   .pricingTab {
@@ -270,5 +270,7 @@ body {
 
   .pricingContent {
     font-size: 18px;
+    margin: 0;
+    padding: 0;
   }
 }
