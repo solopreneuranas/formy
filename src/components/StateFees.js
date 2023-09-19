@@ -1,28 +1,19 @@
 import * as React from 'react';
 import '../App.css';
-import Faq from './Faq';
 
 import { Grid, TextField, Button, Alert, AlertTitle, Rating, Typography, Avatar, AvatarGroup } from "@mui/material";
 import { useState } from "react";
-import SendIcon from '@mui/icons-material/Send';
 import Autocomplete from '@mui/material/Autocomplete';
+import SendIcon from '@mui/icons-material/Send';
 
 export default function StateFees() {
-    const [value, setValue] = React.useState(5);
+    const [selectedState, setSelectedState] = useState(null);
 
-    function DropDown() {
-        return (
-            <Autocomplete
-                disablePortal
-                id="combo-box-demo"
-                options={states}
-                sx={{ width: 300 }}
-                renderInput={(params) => <TextField {...params} label="Search state" />}
-            />
-        );
-    }
+    const handleStateSelect = (event, newValue) => {
+        setSelectedState(newValue);
+    };
 
-    // Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
+
     const states = [
         { label: 'Alabama', fee: 4 },
         { label: 'Alaska', fee: 0 },
@@ -77,15 +68,44 @@ export default function StateFees() {
         { label: 'Wyoming', fee: 4.75 }
     ];
 
-
     return (
-        <div >
-
-            <Grid container spacing={5} className='pricingTable' style={{marginTop: '0'}}>
+        <div>
+            <Grid container spacing={5} className='pricingTable' style={{ marginTop: '0' }}>
                 <Grid item xs={12}>
-                        <DropDown />
+                    <Autocomplete
+                        disablePortal
+                        id="combo-box-demo"
+                        options={states}
+                        value={selectedState}
+                        onChange={handleStateSelect}
+                        getOptionLabel={(option) => option.label}
+                        sx={{ width: 300 }}
+                        renderInput={(params) => <TextField {...params} label="Search state" />}
+                    />
                 </Grid>
             </Grid>
+
+
+            {selectedState && (
+                <div style={{ marginTop: '4%' }}>
+                    <Typography variant="h6" style={{ fontWeight: '500' }}>{selectedState.label} State Fee:</Typography>
+                    <Typography variant="body1" style={{ fontSize: '40px', fontWeight: '600' }}>{`$${(selectedState.fee).toFixed(2)}`}</Typography><br />
+                    <Typography variant="h6" style={{ fontWeight: '500' }}>{selectedState.label} LLC Formation Plan:</Typography>
+                    <Typography variant="body1" style={{ fontSize: '40px', fontWeight: '600' }}>{`$${(selectedState.fee + 149).toFixed(2)}`}</Typography><br />
+
+                    <Button endIcon={<SendIcon />} variant='contained' style={{
+                        background: '#008E09',
+                        color: 'white',
+                        fontWeight: '400',
+                        fontSize: '16px',
+                        padding: '1.5% 4%',
+                        marginTop: '2%',
+                        borderRadius: '50px'
+                    }}>GET STARTED</Button>
+
+                </div>
+            )}
+
         </div>
-    )
+    );
 }

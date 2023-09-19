@@ -18,41 +18,18 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import Switch from '@mui/material/Switch';
 
+import Modal from '@mui/material/Modal';
+
 export default function PricingCompare() {
 
-
-    function PricingDialog() {
+    function BasicModal() {
         const [open, setOpen] = React.useState(false);
-        const [fullWidth, setFullWidth] = React.useState(true);
-        const [maxWidth, setMaxWidth] = React.useState('sm');
-        const [fee, setFee] = useState('')
-
-        const handleFee = () =>{
-            setFee('Done')
-        }
- 
-        const handleClickOpen = () => {
-            setOpen(true);
-        };
-
-        const handleClose = () => {
-            setOpen(false);
-        };
-
-        const handleMaxWidthChange = (event) => {
-            setMaxWidth(
-                // @ts-expect-error autofill of arbitrary value is not handled.
-                event.target.value,
-            );
-        };
-
-        const handleFullWidthChange = (event) => {
-            setFullWidth(event.target.checked);
-        };
+        const handleOpen = () => setOpen(true);
+        const handleClose = () => setOpen(false);
 
         return (
-            <React.Fragment>
-                <Button onClick={handleClickOpen} endIcon={<SendIcon />} variant='contained' style={{
+            <div>
+                <Button onClick={handleOpen} endIcon={<SendIcon />} variant='contained' style={{
                     // background: '#163300',
                     background: 'black',
                     color: 'white',
@@ -62,25 +39,20 @@ export default function PricingCompare() {
                     marginTop: '2%',
                     borderRadius: '50px'
                 }}>GET STARTED</Button>
-                <Dialog
-                    fullWidth={fullWidth}
-                    maxWidth={maxWidth}
+                <Modal
                     open={open}
                     onClose={handleClose}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
                 >
-                    <DialogTitle style={{ color: 'black', fontWeight: '600' }}>State Fees Calculator</DialogTitle>
-                    <DialogContent>
-                        <DialogContentText>
-                            <StateFees />
-                        </DialogContentText>
-
-                    </DialogContent>
-                    <DialogActions>
-                        <Button onClick={handleFee}>Calculate</Button>
-                        <Button onClick={handleClose}>Close</Button>
-                    </DialogActions>
-                </Dialog>
-            </React.Fragment>
+                    <Box className='modal'>
+                        <Typography id="modal-modal-title" variant="h5" component="h2" style={{fontWeight: '600'}}>
+                           State Fees Calculator
+                        </Typography>
+                        <StateFees />
+                    </Box>
+                </Modal>
+            </div>
         );
     }
 
@@ -94,7 +66,7 @@ export default function PricingCompare() {
                         <h2 className='featuresHeading'>Simplified pricing for all your needs </h2>
                         <p className='featuresPara' style={{ marginTop: '1%', marginBottom: '1%' }}>Get upfront, clear pricing for starting and running your business.</p>
                         <img src='images/pricing-table-formy.svg' style={{ width: '70%' }} /><br />
-                        <PricingDialog />
+                        <BasicModal />
                     </center>
                 </Grid>
             </Grid>
