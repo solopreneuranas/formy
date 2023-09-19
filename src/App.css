@@ -243,14 +243,13 @@ body {
     border-radius: 0 0 5px 5px;
   }
 
-  .css-hip9hq-MuiPaper-root-MuiAppBar-root {
-    background-color: #ffffff !important;
-    box-shadow: none !important;
-  }
-
   .pricingPackageBar {
     background-color: #008E09;
     border-radius: 5px 5px 0 0;
+  }
+
+  .tabBrand{
+    color: white !important;
   }
 
   .pricingTab {
