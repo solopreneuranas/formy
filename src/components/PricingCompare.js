@@ -1,7 +1,7 @@
 import * as React from 'react';
 import '../App.css';
 import StateFees from './StateFees';
-import PricingTabs from './PricingPackage';
+
 
 import { Grid, TextField, Button, Alert, AlertTitle, Rating, Typography, Avatar, AvatarGroup } from "@mui/material";
 import { useState } from "react";
@@ -63,7 +63,7 @@ export default function PricingCompare() {
                         <h2 className='featuresHeading'>Simplified pricing for all your needs </h2>
                         <p className='featuresPara' style={{ marginTop: '1%', marginBottom: '1%' }}>Get upfront, clear pricing for starting and running your business.</p>
                         <img className='pricingImg' src='images/pricing-table-formy.svg' style={{ width: '70%' }} /><br />
-                        <PricingTabs />
+                      
                         <BasicModal />
                     </center>
                 </Grid>
