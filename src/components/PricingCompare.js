@@ -46,7 +46,7 @@ export default function PricingCompare() {
                     aria-describedby="modal-modal-description"
                 >
                     <Box className='modal'>
-                        <Typography id="modal-modal-title" variant="h5" component="h2" style={{fontWeight: '600'}}>
+                        <Typography id="modal-modal-title" variant="h4" component="h2" style={{fontWeight: '600'}}>
                            State Fees Calculator
                         </Typography>
                         <StateFees />
