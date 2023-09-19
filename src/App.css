@@ -234,10 +234,14 @@ body {
     display: none !important;
   }
 
+  .css-19kzrtu {
+    padding: 0 !important;
+  }
+
   .pricingPackage {
     width: 100%;
     margin: auto;
-    background-color: #F2F2F2;
+    /* background-color: #F2F2F2; */
     display: block !important;
     margin-bottom: 5%;
     border-radius: 0 0 5px 5px;
@@ -248,7 +252,7 @@ body {
     border-radius: 5px 5px 0 0;
   }
 
-  .tabBrand{
+  .tabBrand {
     color: white !important;
   }
 
@@ -260,11 +264,11 @@ body {
     text-align: left;
   }
 
-  .tabRightCol{
+  .tabRightCol {
     text-align: center;
   }
 
-  .pricingContent{
+  .pricingContent {
     font-size: 18px;
   }
 }
