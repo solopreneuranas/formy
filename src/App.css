@@ -152,6 +152,9 @@ body {
   cursor: pointer;
 }
 
+.feeCalc{
+  padding-top: 5%;
+}
 
 @media (max-width: 900px) {
   .heroSection {
@@ -206,5 +209,19 @@ body {
   .pricingTable {
     width: 100%;
     padding: 10% 5%;
+  }
+
+  .modal {
+    width: 80%;
+    border-radius: 15px;
+    padding: 7% 5%;
+  }
+
+  .cancelIcon{
+    display: none !important;
+  }
+
+  .feeCalc{
+    padding-top: 2%;
   }
 }

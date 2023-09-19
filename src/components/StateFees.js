@@ -69,7 +69,7 @@ export default function StateFees() {
 
     return (
         <div>
-            <Grid container spacing={5} className='pricingTable' style={{ marginTop: '0' }}>
+            <Grid container spacing={5} className='feeCalc'>
                 <Grid item xs={12}>
                     <Autocomplete
                         disablePortal
