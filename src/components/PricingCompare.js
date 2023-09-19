@@ -19,14 +19,11 @@ export default function PricingCompare() {
 
         return (
             <div>
-                <Button onClick={handleOpen} endIcon={<SendIcon />} variant='contained' style={{
-                    background: 'black',
-                    color: 'white',
-                    fontWeight: '400',
-                    fontSize: '16px',
+                <Button onClick={handleOpen} endIcon={<SendIcon />} variant='contained' className='globalButton' 
+                style={{
                     padding: '1% 2%',
-                    marginTop: '2%',
-                    borderRadius: '50px'
+                    background: 'black',
+                    marginTop: '3%'
                 }}>GET STARTED</Button>
                 <Modal
                     open={open}

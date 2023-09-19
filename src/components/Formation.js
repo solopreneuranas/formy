@@ -21,15 +21,11 @@ export default function Formation() {
                     <p className='featuresPara'>
                         We understand the challenges you face in accepting card payments at your store, particularly if you are located in a country not supported by Stripe. Our solution is designed to address this issue by managing the entire process for you.
                     </p>
-                    <Rating name="read-only" value={value} readOnly /><br/><br/>
-                    <Button endIcon={<SendIcon />} variant='contained' style={{
-                        // background: '#163300',
-                        background: 'black',
-                        color: 'white',
-                        fontWeight: '400',
-                        fontSize: '16px',
-                        padding: '2% 4%',
-                        borderRadius: '50px'
+                    <Rating name="read-only" value={value} readOnly /><br /><br />
+                    <Button endIcon={<SendIcon />} variant='contained' className='globalButton'
+                    style={{
+                        padding: '3% 6%',
+                        background: 'black'
                     }}>GET STARTED</Button>
                 </Grid>
             </Grid>

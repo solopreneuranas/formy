@@ -33,16 +33,14 @@ export default function Hero() {
                     </Grid>
 
                     <h2 className='bigHeading'>Start your LLC in US with us and Grow your Business Stress Free</h2>
-                    <p className='globalPara'>The all-in-one platform to automate your marketing campaigns over Email, SMS, WhatsApp or chat. Join the 500,000 companies who trust Brevo.</p>
-                    <Button endIcon={<SendIcon />} variant='contained' style={{
-                        // background: '#163300',
+                    <center><p className='globalPara'>
+                        The all-in-one platform to automate your marketing campaigns over Email, SMS, WhatsApp or chat. Join the 500,000 companies who trust Brevo.
+                    </p>
+                    </center>
+                    <Button endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
                         background: '#008E09',
-                        color: 'white',
-                        fontWeight: '400',
-                        fontSize: '16px',
                         padding: '1.5% 4%',
                         marginTop: '4%',
-                        borderRadius: '50px'
                     }}>GET STARTED</Button><br />
                     <p>Start at $149 + State Fees</p>
                 </Grid>

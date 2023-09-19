@@ -92,14 +92,10 @@ export default function StateFees() {
                     <Typography variant="h6" style={{ fontWeight: '500' }}>{selectedState.label} LLC Formation Plan:</Typography>
                     <Typography variant="body1" style={{ fontSize: '40px', fontWeight: '600' }}>{`$${(selectedState.fee + 149).toFixed(2)}`}</Typography><br />
 
-                    <Button endIcon={<SendIcon />} variant='contained' style={{
+                    <Button endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
                         background: '#008E09',
-                        color: 'white',
-                        fontWeight: '400',
-                        fontSize: '16px',
-                        padding: '1.5% 4%',
+                        padding: '2% 5%',
                         marginTop: '2%',
-                        borderRadius: '50px'
                     }}>GET STARTED</Button>
 
                 </div>
