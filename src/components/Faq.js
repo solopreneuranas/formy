@@ -60,12 +60,12 @@ export default function Faq() {
                 <center><h2 className='bigHeading' style={{ fontSize: '45px', marginBottom: '7%' }}>Frequenly Asked Questions</h2></center>
                 <Accordion className='faqItem' expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                     <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                        <Typography style={{ fontSize: '30px', fontWeight: '600' }}>
+                        <Typography style={{ fontSize: '25px', fontWeight: '600' }}>
                             Do I need to be a US citizen to incorporate with Micahguru?
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography style={{ fontSize: '20px' }}>
+                        <Typography style={{ fontSize: '18px' }}>
                             Micahguru welcomes entrepreneurs internationally, irrespective of their citizenship.
                             You do not need to be a US citizen to incorporate.
                             Micahguru welcomes entrepreneurs internationally, irrespective of their citizenship.
@@ -78,12 +78,12 @@ export default function Faq() {
                 </Accordion>
                 <Accordion className='faqItem' expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                     <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-                        <Typography style={{ fontSize: '30px', fontWeight: '600' }}>
+                        <Typography style={{ fontSize: '25px', fontWeight: '600' }}>
                             Can you explain the process of incorporating with Micahguru?
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography style={{ fontSize: '20px' }}>
+                        <Typography style={{ fontSize: '18px' }}>
                             Micahguru welcomes entrepreneurs internationally, irrespective of their citizenship.
                             You do not need to be a US citizen to incorporate.
                             Micahguru welcomes entrepreneurs internationally, irrespective of their citizenship.
@@ -96,12 +96,12 @@ export default function Faq() {
                 </Accordion>
                 <Accordion className='faqItem' expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                     <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-                        <Typography style={{ fontSize: '30px', fontWeight: '600' }}>
+                        <Typography style={{ fontSize: '25px', fontWeight: '600' }}>
                             What does LLC (Limited Liability Company) mean?
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography style={{ fontSize: '20px' }}>
+                        <Typography style={{ fontSize: '18px' }}>
                             Micahguru welcomes entrepreneurs internationally, irrespective of their citizenship.
                             You do not need to be a US citizen to incorporate.
                             Micahguru welcomes entrepreneurs internationally, irrespective of their citizenship.
@@ -114,12 +114,12 @@ export default function Faq() {
                 </Accordion>
                 <Accordion className='faqItem' expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                     <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-                        <Typography style={{ fontSize: '30px', fontWeight: '600' }}>
+                        <Typography style={{ fontSize: '25px', fontWeight: '600' }}>
                             Can you explain the process of incorporating with Micahguru?
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography style={{ fontSize: '20px' }}>
+                        <Typography style={{ fontSize: '18px' }}>
                             Micahguru welcomes entrepreneurs internationally, irrespective of their citizenship.
                             You do not need to be a US citizen to incorporate.
                             Micahguru welcomes entrepreneurs internationally, irrespective of their citizenship.
@@ -132,12 +132,12 @@ export default function Faq() {
                 </Accordion>
                 <Accordion className='faqItem' expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
                     <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
-                        <Typography style={{ fontSize: '30px', fontWeight: '600' }}>
+                        <Typography style={{ fontSize: '25px', fontWeight: '600' }}>
                             What is the role of a Registered Agent?
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography style={{ fontSize: '20px' }}>
+                        <Typography style={{ fontSize: '18px' }}>
                             Micahguru welcomes entrepreneurs internationally, irrespective of their citizenship.
                             You do not need to be a US citizen to incorporate.
                             Micahguru welcomes entrepreneurs internationally, irrespective of their citizenship.

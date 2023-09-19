@@ -32,8 +32,8 @@ export default function Hero() {
                         </AvatarGroup>
                     </Grid>
 
-                    <h2 className='bigHeading'>Start your LLC in US with us and Grow your Business</h2>
-                    <p style={{ width: '60%', margin: 'auto' }} className='globalPara'>The all-in-one platform to automate your marketing campaigns over Email, SMS, WhatsApp or chat. Join the 500,000 companies who trust Brevo.</p>
+                    <h2 className='bigHeading'>Start your LLC in US with us and Grow your Business Stress Free</h2>
+                    <p className='globalPara'>The all-in-one platform to automate your marketing campaigns over Email, SMS, WhatsApp or chat. Join the 500,000 companies who trust Brevo.</p>
                     <Button endIcon={<SendIcon />} variant='contained' style={{
                         // background: '#163300',
                         background: '#008E09',

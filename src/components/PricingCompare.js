@@ -19,7 +19,6 @@ export default function PricingCompare() {
         return (
             <div>
                 <Button onClick={handleOpen} endIcon={<SendIcon />} variant='contained' style={{
-                    // background: '#163300',
                     background: 'black',
                     color: 'white',
                     fontWeight: '400',

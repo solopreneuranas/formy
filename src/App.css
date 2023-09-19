@@ -37,6 +37,8 @@ body {
 }
 
 .globalPara {
+  width: 60%;
+  margin: auto;
   font-weight: 500;
   font-size: 17px;
   opacity: 70%;
@@ -148,4 +150,61 @@ body {
 
 .cancelIcon:hover {
   cursor: pointer;
+}
+
+
+@media (max-width: 900px) {
+  .heroSection {
+    padding: 8% 3%;
+  }
+
+  .bigHeading {
+    font-size: 40px;
+  }
+
+  .globalPara {
+    width: 100%;
+    margin-top: 6%;
+    padding: 0 3%;
+  }
+
+  .brandsBox {
+    width: 100%;
+    padding: 10% 3% 20%;
+  }
+
+  .featuresSection {
+    padding: 5% 7%;
+    border-radius: 200px 0 0 0;
+  }
+
+  .featuresHeading {
+    font-size: 35px;
+  }
+
+  .featuresContent {
+    order: 2;
+  }
+
+  .featuresImg {
+    order: 1;
+  }
+
+  .formationSection {
+    padding: 10% 7%;
+  }
+
+  .faq {
+    width: 90%;
+    padding: 10% 0;
+  }
+  
+  .faqItem {
+    padding: 1%;
+  }
+
+  .pricingTable {
+    width: 100%;
+    padding: 10% 5%;
+  }
 }

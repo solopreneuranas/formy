@@ -10,10 +10,10 @@ export default function Formation() {
         <div className='root'>
 
             <Grid container spacing={5} className='formationSection'>
-                <Grid item xs={6}>
+                <Grid item md={6}>
                     <img src='https://www.doola.com/wp-content/uploads/2023/09/form-your-us-company-from-anywhere-in-the-world-1-1080x706.png.webp' style={{ width: '100%' }} />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item md={6}>
                     <h2 className='featuresHeading'>
                         Form your US company
                         from anywhere in the world
