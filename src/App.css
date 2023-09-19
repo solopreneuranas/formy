@@ -122,7 +122,7 @@ body {
   border: none !important;
 }
 
-.pricingTable{
+.pricingTable {
   width: 100%;
   margin: auto;
   display: flex;
@@ -140,4 +140,12 @@ body {
   border-radius: 20px;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
   padding: 3%;
+}
+
+.cancelIcon {
+  color: rgb(173, 173, 173);
+}
+
+.cancelIcon:hover {
+  cursor: pointer;
 }

@@ -6,18 +6,7 @@ import { Grid, TextField, Button, Alert, AlertTitle, Rating, Typography, Avatar,
 import { useState } from "react";
 import SendIcon from '@mui/icons-material/Send';
 import Box from '@mui/material/Box';
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
-import FormControl from '@mui/material/FormControl';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import Select from '@mui/material/Select';
-import Switch from '@mui/material/Switch';
-
+import CancelIcon from '@mui/icons-material/Cancel';
 import Modal from '@mui/material/Modal';
 
 export default function PricingCompare() {
@@ -46,9 +35,17 @@ export default function PricingCompare() {
                     aria-describedby="modal-modal-description"
                 >
                     <Box className='modal'>
-                        <Typography id="modal-modal-title" variant="h4" component="h2" style={{fontWeight: '600'}}>
-                           State Fees Calculator
-                        </Typography>
+                        <Grid container spacing={5}>
+                            <Grid item xs={11}>
+                                <Typography id="modal-modal-title" variant="h4" component="h2" style={{ fontWeight: '600' }}>
+                                    State Fees Calculator
+                                </Typography>
+                            </Grid>
+                            <Grid item xs={1}>
+                                <CancelIcon onClick={handleClose} fontSize='large' className='cancelIcon'/>
+                            </Grid>
+                        </Grid>
+
                         <StateFees />
                     </Box>
                 </Modal>
