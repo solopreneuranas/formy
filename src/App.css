@@ -152,9 +152,14 @@ body {
   cursor: pointer;
 }
 
-.feeCalc{
+.feeCalc {
   padding-top: 5%;
 }
+
+.pricingPackage {
+  display: none !important;
+}
+
 
 @media (max-width: 900px) {
   .heroSection {
@@ -201,7 +206,7 @@ body {
     width: 90%;
     padding: 10% 0;
   }
-  
+
   .faqItem {
     padding: 1%;
   }
@@ -217,11 +222,50 @@ body {
     padding: 7% 5%;
   }
 
-  .cancelIcon{
+  .cancelIcon {
     display: none !important;
   }
 
-  .feeCalc{
+  .feeCalc {
     padding-top: 2%;
+  }
+
+  .pricingImg {
+    display: none !important;
+  }
+
+  .pricingPackage {
+    width: 98%;
+    margin: auto;
+    background-color: #D7FEC8;
+    display: block !important;
+    margin-bottom: 5%;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .css-hip9hq-MuiPaper-root-MuiAppBar-root {
+    background-color: #ffffff !important;
+    box-shadow: none !important;
+  }
+
+  .pricingPackageBar {
+    background-color: #008E09;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .pricingTab {
+    text-align: left !important;
+  }
+
+  .tabLeftCol {
+    text-align: left;
+  }
+
+  .tabRightCol{
+    text-align: center;
+  }
+
+  .pricingContent{
+    font-size: 18px;
   }
 }
