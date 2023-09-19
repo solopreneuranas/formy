@@ -171,6 +171,11 @@ body {
   border-radius: 50px !important;
 }
 
+.mobileHeroImg {
+  display: none;
+}
+
+
 @media (max-width: 900px) {
   .heroSection {
     padding: 8% 3%;
@@ -287,4 +292,13 @@ body {
   .globalButton {
     padding: 3% 6% !important;
   }
+
+  .desktopHeroImg {
+    display: none;
+  }
+
+  .mobileHeroImg {
+    display: block;
+  }
+  
 }
