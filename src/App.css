@@ -71,8 +71,12 @@ body {
   justify-content: center;
   align-items: center;
   padding: 5% 0 5% 17%;
-  background-color: #D7FEC8;
+  background-color: #f2f2f2;
   border-radius: 250px 0 0 0;
+}
+
+.css-1ld3b9g-MuiGrid-root{
+  margin-top: 0 !important;
 }
 
 .formationSection {
@@ -299,6 +303,10 @@ body {
 
   .mobileHeroImg {
     display: block;
+  }
+
+  .mobilePrice{
+    font-size: 30px !important;
   }
   
 }

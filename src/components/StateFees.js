@@ -88,9 +88,9 @@ export default function StateFees() {
             {selectedState && (
                 <div style={{ marginTop: '4%' }}>
                     <Typography variant="h6" style={{ fontWeight: '500' }}>{selectedState.label} State Fee:</Typography>
-                    <Typography variant="body1" style={{ fontSize: '40px', fontWeight: '600' }}>{`$${(selectedState.fee).toFixed(2)}`}</Typography><br />
+                    <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '600' }}>{`$${(selectedState.fee).toFixed(2)}`}</Typography><br />
                     <Typography variant="h6" style={{ fontWeight: '500' }}>{selectedState.label} LLC Formation Plan:</Typography>
-                    <Typography variant="body1" style={{ fontSize: '40px', fontWeight: '600' }}>{`$${(selectedState.fee + 149).toFixed(2)}`}</Typography><br />
+                    <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '600' }}>{`$${(selectedState.fee + 149).toFixed(2)}`}</Typography><br />
 
                     <Button endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
                         background: '#008E09',
