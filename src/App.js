@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import Faq from "./components/Faq";
 import Formation from "./components/Formation";
 import PricingCompare from "./components/PricingCompare";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Formation />
       <PricingCompare />
       <Faq />
+      <Footer />
     </div>
   );
 }

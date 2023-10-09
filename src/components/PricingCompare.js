@@ -28,8 +28,6 @@ export default function PricingCompare() {
                 <Modal
                     open={open}
                     onClose={handleClose}
-                    aria-labelledby="modal-modal-title"
-                    aria-describedby="modal-modal-description"
                 >
                     <Box className='modal'>
                         <Grid container spacing={5}>
@@ -57,7 +55,7 @@ export default function PricingCompare() {
             <Grid container spacing={3} className='pricingTable'>
                 <Grid item xs={12}>
                     <center>
-                        <h2 className='featuresHeading'>Simplified pricing for all your needs </h2>
+                        <h2 className='featuresHeading'>Simplified pricing for all your needs</h2>
                         <p className='featuresPara' style={{ marginTop: '1%', marginBottom: '1%' }}>Get upfront, clear pricing for starting and running your business.</p>
                         <img className='pricingImg' src='images/pricing-table-formy.svg' style={{ width: '70%' }} /><br />
                         <PricingTabs />

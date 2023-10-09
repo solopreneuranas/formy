@@ -75,7 +75,7 @@ body {
   border-radius: 250px 0 0 0;
 }
 
-.css-1ld3b9g-MuiGrid-root{
+.css-1ld3b9g-MuiGrid-root {
   margin-top: 0 !important;
 }
 
@@ -177,6 +177,13 @@ body {
 
 .mobileHeroImg {
   display: none;
+}
+
+.footerSec {
+  border-top: 8px solid #0069FF;
+  background: #1F1F1F;
+  color: white;
+  padding: 3% 15%;
 }
 
 
@@ -305,8 +312,12 @@ body {
     display: block;
   }
 
-  .mobilePrice{
+  .mobilePrice {
     font-size: 30px !important;
   }
-  
+
+  .footerSec {
+    padding: 10% 5%;
+  }
+
 }
