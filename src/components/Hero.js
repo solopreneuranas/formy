@@ -69,7 +69,7 @@ export default function Hero() {
             <Grid container spacing={3} className='heroSection'>
                 <Grid item md={6}>
                     
-                    <h2 className='bigHeading'><span style={{ fontWeight: '500', fontSize: '35px' }}>Get Your</span> US <span style={{color: '#F0562D'}}>PayPal</span> Account with Your US Company</h2>
+                    <h2 className='bigHeading'><span style={{ fontWeight: '500', fontSize: '35px' }}> You're </span>Just a step away from having your very own <span style={{color: '#F0562D'}}>PayPal</span> account!</h2>
                     <p className='globalPara'>
                         The all-in-one platform to automate your marketing campaigns over Email, SMS, WhatsApp or chat. Join the 500,000 companies who trust Brevo.
                     </p>
