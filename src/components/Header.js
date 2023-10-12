@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { Grid, TextField, Button, Alert, AlertTitle, Rating, Typography, Avatar, AvatarGroup } from "@mui/material";
-
+import SendIcon from '@mui/icons-material/Send';
 
 export default function Header() {
 
@@ -10,7 +10,7 @@ export default function Header() {
             <div class="main-wrapper">
                 <nav class="navbar">
                     <div class="brand-and-icon">
-                        <a href="https://tryboosty.com/" class="navbar-brand"><img src="https://tryboosty.com/images/boosty-logo.svg"/></a>
+                        <a href="https://tryboosty.com/" class="navbar-brand"><img src="https://tryboosty.com/images/boosty-logo.svg" /></a>
                         <button type="button" class="navbar-toggler">
                             <i class="fas fa-bars"></i>
                         </button>
@@ -63,8 +63,6 @@ export default function Header() {
 
                                     <div class="sub-menu-item">
                                         <h2>Design, Develop & Dominate Online</h2>
-                                        <a href="https://calendly.com/tryboosty/30min" target="_blank"><button type="button" class="btn">Get Started</button>
-                                        </a>
                                     </div>
 
                                 </div>

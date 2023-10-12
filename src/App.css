@@ -4,6 +4,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Montserrat' !important;
 }
 
 body {
@@ -151,19 +152,19 @@ body {
 }
 
 .sub-menu-item:nth-child(4) .btn {
-  border: 1px solid #601feb;
+  border: 1px solid #0069ff;
   text-transform: uppercase;
   font-size: 0.9rem;
   padding: 0.6rem 1rem;
   cursor: pointer;
-  background: #601feb;
+  background: #0069ff;
   color: #fff;
   transition: all 0.5s ease;
 }
 
 .sub-menu-item:nth-child(4) .btn:hover {
   background: transparent;
-  color: #601feb;
+  color: #0069ff;
 }
 
 .sub-menu-item:nth-child(4) {
@@ -278,7 +279,7 @@ body {
   }
 
   .navbar-nav>li:hover {
-      border-bottom-color: #601feb;
+      border-bottom-color: #0069ff;
   }
 
   .sub-menu-item {

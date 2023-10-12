@@ -4,7 +4,6 @@ import '../App.css';
 import { Grid, TextField, Button, Alert, AlertTitle, Rating, Typography, Avatar, AvatarGroup } from "@mui/material";
 import { useState } from "react";
 import SendIcon from '@mui/icons-material/Send';
-import zIndex from '@mui/material/styles/zIndex';
 
 
 export default function Hero() {
