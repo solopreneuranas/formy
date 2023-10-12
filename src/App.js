@@ -8,10 +8,12 @@ import PricingCompare from "./components/PricingCompare";
 import Footer from "./components/Footer";
 import Services from "./components/Services";
 import Bonuses from "./components/Bonuses";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div>
+      <Header />
       <Hero />
       <HeroImg />
       <Brands />
