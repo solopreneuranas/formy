@@ -202,7 +202,8 @@ body {
   justify-content: left;
   align-items: center;
   padding: 5% 15%;
-  background-color: #F4F4D0;
+  /* background-color: #F4F4D0; */
+  background-color: rgb(225, 247, 255);
   /* background-color: #ffffdf; */
   /* background: linear-gradient(to right, white 20%, #ffffdf 20%, #ffffdf 80%, #ffffdf 80%); */
   /* background: linear-gradient(to right, white 20%, #F4F4D0 20%, #F4F4D0 80%, #F4F4D0 80%); */
@@ -216,7 +217,7 @@ body {
   padding: 3% !important;
   margin-top: 3% !important;
   margin-right: 3% !important;
-  box-shadow: 0 0 40px rgb(214, 214, 214);
+  box-shadow: 0 0 40px #baedff;
 }
 
 

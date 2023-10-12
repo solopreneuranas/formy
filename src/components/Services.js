@@ -44,7 +44,7 @@ export default function Services() {
 
             <Grid container spacing={5} className='servicesSection'>
                 <Grid item md={12} style={{ padding: 0 }}>
-                    <h2 style={{ fontSize: '35px' }}>The Best Business Solution For <Typography style={{ fontWeight: '500', fontSize: '35px' }}>Your Business</Typography></h2>
+                    <h2 style={{ fontSize: '45px', fontWeight: 600 }}>The Best Business Solution For <Typography style={{ fontWeight: '500', fontSize: '45px' }}>Your Business</Typography></h2>
                     <Button endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
                         background: '#F0562D',
                         padding: '1% 2%',
