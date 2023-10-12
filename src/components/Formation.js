@@ -25,7 +25,7 @@ export default function Formation() {
                     <Button endIcon={<SendIcon />} variant='contained' className='globalButton'
                     style={{
                         padding: '3% 6%',
-                        background: 'black'
+                        background: '#F0562D'
                     }}>GET STARTED</Button>
                 </Grid>
             </Grid>

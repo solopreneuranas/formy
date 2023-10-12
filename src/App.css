@@ -2,10 +2,12 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden !important;
-  font-family: 'Inter' !important;
+  font-family: 'Montserrat' !important;
 }
 
 .root {
+  padding: 0 !important;
+  margin: 0 !important;
   width: 100vw;
   margin: auto;
   overflow-x: hidden !important;
@@ -15,22 +17,29 @@ body {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  padding: 8% 23% 5%;
+  padding: 0 13%;
   background: white;
-  text-align: center;
+  text-align: left;
 }
 
 .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.right {
+  display: flex !important;
+  justify-content: right !important;
+  align-items: center !important;
 }
 
 .bigHeading {
-  font-size: 55px;
-  /* color: #163300; */
+  width: 90%;
+  margin: left;
+  font-size: 50px;
   color: black;
   font-weight: 600;
   margin-top: 3%;
@@ -39,7 +48,7 @@ body {
 }
 
 .globalPara {
-  width: 60%;
+  width: 90%;
   margin: auto;
   font-weight: 500;
   font-size: 17px;
@@ -167,7 +176,7 @@ body {
 }
 
 .globalButton {
-  background: black;
+  background: #F0562D;
   color: white !important;
   font-weight: 400 !important;
   font-size: 16px !important;
@@ -184,6 +193,30 @@ body {
   background: #1F1F1F;
   color: white;
   padding: 3% 15%;
+}
+
+.servicesSection {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 5% 15%;
+  background-color: #F4F4D0;
+  /* background-color: #ffffdf; */
+  /* background: linear-gradient(to right, white 20%, #ffffdf 20%, #ffffdf 80%, #ffffdf 80%); */
+  /* background: linear-gradient(to right, white 20%, #F4F4D0 20%, #F4F4D0 80%, #F4F4D0 80%); */
+  border-radius: 350px 0 350px 0;
+}
+
+
+.servicesDiv {
+  background-color: white;
+  border-radius: 17px;
+  padding: 3% !important;
+  margin-top: 3% !important;
+  margin-right: 3% !important;
+  box-shadow: 0 0 40px rgb(214, 214, 214);
 }
 
 

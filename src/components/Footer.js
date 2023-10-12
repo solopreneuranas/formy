@@ -7,6 +7,9 @@ import ListItem from '@mui/material/ListItem';
 import MailIcon from '@mui/icons-material/Mail';
 import PhoneIcon from '@mui/icons-material/Phone';
 import ListItemText from '@mui/material/ListItemText';
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 export default function Footer() {
@@ -80,11 +83,11 @@ export default function Footer() {
                         <Typography style={{ fontWeight: 600 }}>
                             Follow us
                         </Typography>
-                        <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText>Home</ListItemText>
-                            </ListItem>
-                        </List>
+                        <div style={{marginTop: '5%'}}>
+                            <FacebookRoundedIcon style={{ opacity: '70%', marginRight: '3%' }} />
+                            <TwitterIcon style={{ opacity: '70%', marginRight: '3%' }} />
+                            <LinkedInIcon style={{ opacity: '70%', marginRight: '3%' }} />
+                        </div>
                     </Grid>
                 </Grid>
 
@@ -126,19 +129,19 @@ whatsapp-icon.png?v=1615793565" width="25px" style={{ verticalAlign: 'middle' }}
                         <p style={{ opacity: '70%', fontSize: '14px', margin: 0, marginBottom: '8%' }}>Exceptional LLC FOmration Solutions</p>
 
                         <div style={{
-                            opacity: '70%', 
+                            opacity: '70%',
                             fontSize: '14px',
                             display: 'flex',
                             alignItems: 'center'
-                        }}><MailIcon fontSize='small' style={{marginRight: '4%'}}/>info@tryboosty.com</div>
+                        }}><MailIcon fontSize='small' style={{ marginRight: '4%' }} />info@tryboosty.com</div>
 
                         <div style={{
-                            opacity: '70%', 
+                            opacity: '70%',
                             fontSize: '14px',
                             display: 'flex',
                             alignItems: 'center',
                             marginTop: '3%'
-                        }}><PhoneIcon fontSize='small' style={{marginRight: '4%'}}/>+1 (302) 209-8440</div>
+                        }}><PhoneIcon fontSize='small' style={{ marginRight: '4%' }} />+1 (302) 209-8440</div>
 
                     </Grid>
                     <Grid item md={9}>

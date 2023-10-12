@@ -6,14 +6,14 @@ import Faq from "./components/Faq";
 import Formation from "./components/Formation";
 import PricingCompare from "./components/PricingCompare";
 import Footer from "./components/Footer";
+import Services from "./components/Services";
 
 function App() {
   return (
     <div>
       <Hero />
-      <HeroImg />
       <Brands />
-      <Features />
+      <Services />
       <Formation />
       <PricingCompare />
       <Faq />
