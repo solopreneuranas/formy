@@ -17,11 +17,11 @@ body {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  padding: 0 13%;
+  padding: 8% 26%;
   background: white;
-  text-align: left;
+  text-align: center;
 }
 
 .center {
@@ -37,14 +37,12 @@ body {
 }
 
 .bigHeading {
-  width: 90%;
-  margin: left;
-  font-size: 50px;
+  font-size: 60px;
   color: black;
   font-weight: 600;
   margin-top: 3%;
   margin-bottom: 2%;
-  line-height: 1.1em;
+  line-height: 1em;
 }
 
 .globalPara {
@@ -53,7 +51,7 @@ body {
   font-weight: 500;
   font-size: 17px;
   opacity: 70%;
-  line-height: 1.5em;
+  line-height: 1.6em;
   margin: 0;
 }
 
@@ -79,8 +77,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5% 0 5% 17%;
-  background-color: #f2f2f2;
+  padding: 5% 17% 0;
+  background-color: white;
   border-radius: 250px 0 0 0;
 }
 
@@ -94,11 +92,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5% 17%;
+  padding: 2% 17% 0;
 }
 
 .featuresHeading {
-  font-size: 40px;
+  font-size: 45px;
   color: black;
   font-weight: 600;
   margin-top: 3%;
@@ -107,8 +105,9 @@ body {
 }
 
 .featuresPara {
-  font-weight: 400;
-  font-size: 17px;
+  width: 90%;
+  font-weight: 500;
+  font-size: 16px;
   opacity: 80%;
   line-height: 1.5em;
   margin: 0;
@@ -119,10 +118,11 @@ body {
   color: white;
   padding: 20%;
   border-radius: 50%;
-  background: #008E09;
+  background: #0069ff;
 }
 
 .list {
+  font-family: 'Montserrat';
   width: 100%;
   max-width: 360px;
 }
@@ -143,6 +143,7 @@ body {
   width: 100%;
   margin: auto;
   display: flex;
+  padding-top: 3%;
   justify-content: center;
   align-items: center;
 }
@@ -167,16 +168,12 @@ body {
   cursor: pointer;
 }
 
-.feeCalc {
-  padding-top: 5%;
-}
-
 .pricingPackage {
   display: none !important;
 }
 
 .globalButton {
-  background: #F0562D;
+  background: #0069ff;
   color: white !important;
   font-weight: 400 !important;
   font-size: 16px !important;
@@ -189,10 +186,11 @@ body {
 }
 
 .footerSec {
-  border-top: 8px solid #0069FF;
-  background: #1F1F1F;
-  color: white;
-  padding: 3% 15%;
+  background: #EEEEEE;
+  color: black;
+  border-radius: 20px;
+  margin: 3%;
+  padding: 6% 10%;
 }
 
 .servicesSection {
@@ -201,13 +199,8 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding: 5% 15%;
-  /* background-color: #F4F4D0; */
-  background-color: rgb(225, 247, 255);
-  /* background-color: #ffffdf; */
-  /* background: linear-gradient(to right, white 20%, #ffffdf 20%, #ffffdf 80%, #ffffdf 80%); */
-  /* background: linear-gradient(to right, white 20%, #F4F4D0 20%, #F4F4D0 80%, #F4F4D0 80%); */
-  border-radius: 350px 0 350px 0;
+  padding: 5% 10%;
+  background-color: rgb(238, 238, 238);
 }
 
 
@@ -215,9 +208,15 @@ body {
   background-color: white;
   border-radius: 17px;
   padding: 3% !important;
+  padding-right: 1% !important;
   margin-top: 3% !important;
-  margin-right: 3% !important;
-  box-shadow: 0 0 40px #baedff;
+  margin-right: 2% !important;
+  box-shadow: 0 0 40px rgb(207, 207, 207);
+}
+
+.listItem {
+  font-family: 'Montserrat' !important;
+  font-weight: 500;
 }
 
 

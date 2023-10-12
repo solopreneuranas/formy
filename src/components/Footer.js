@@ -19,74 +19,95 @@ export default function Footer() {
         <div className='root'>
             <div className='footerSec'>
                 <Grid container spacing={2}>
-                    <Grid item xs={3}>
-                        <Typography style={{ fontWeight: 600 }}>
-                            Company
-                        </Typography>
-                        <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText>Home</ListItemText>
-                            </ListItem>
+                    <Grid item xs={4}>
+                        <img src='https://tryboosty.com/images/boosty-logo.svg' style={{ width: '30%', marginBottom: '5%', marginLeft: '-3%' }} />
+                        <p className='globalPara'>
+                            Boosty is a technology company providing cutting-edge digital solutions to businesses.
+                        </p><br />
+                        <div style={{
+                            opacity: '70%',
+                            fontSize: '14px',
+                            display: 'flex',
+                            alignItems: 'center'
+                        }}><MailIcon fontSize='small' style={{ marginRight: '4%' }} />info@tryboosty.com</div>
 
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText>Contact</ListItemText>
-                            </ListItem>
-
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText>Blog</ListItemText>
-                            </ListItem>
-                        </List>
+                        <div style={{
+                            opacity: '70%',
+                            fontSize: '14px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            marginTop: '3%'
+                        }}><PhoneIcon fontSize='small' style={{ marginRight: '4%' }} />+1 (302) 209-8440</div>
                     </Grid>
 
-                    <Grid item xs={3}>
-                        <Typography style={{ fontWeight: 600 }}>
+                    <Grid item xs={2}>
+                        <Typography style={{ fontWeight: 700, fontFamily: 'Montserrat' }}>
                             Quick Links
                         </Typography>
                         <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
                             <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText>LLC Formation</ListItemText>
+                                <ListItemText><span className='listItem'>LLC Formation</span></ListItemText>
                             </ListItem>
 
                             <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText>Resale Certificate</ListItemText>
+                                <ListItemText><span className='listItem'>Resale Certificate</span></ListItemText>
                             </ListItem>
 
                             <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText>Website Developement</ListItemText>
+                                <ListItemText><span className='listItem'>Website Developement</span></ListItemText>
                             </ListItem>
                             <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText>Website Developement</ListItemText>
+                                <ListItemText><span className='listItem'>Website Developement</span></ListItemText>
                             </ListItem>
                         </List>
                     </Grid>
 
-                    <Grid item xs={3}>
-                        <Typography style={{ fontWeight: 600 }}>
+                    <Grid item xs={2}>
+                        <Typography style={{ fontWeight: 700, fontFamily: 'Montserrat' }}>
                             Legal
                         </Typography>
                         <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
                             <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText>Privacy Policy</ListItemText>
+                                <ListItemText><span className='listItem'>Privacy Policy</span></ListItemText>
                             </ListItem>
 
                             <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText>Terms</ListItemText>
+                                <ListItemText><span className='listItem'>Terms</span></ListItemText>
                             </ListItem>
 
                             <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText>FAQs</ListItemText>
+                                <ListItemText><span className='listItem'>FAQs</span></ListItemText>
                             </ListItem>
                         </List>
                     </Grid>
 
-                    <Grid item xs={3}>
-                        <Typography style={{ fontWeight: 600 }}>
+                    <Grid item xs={2}>
+                        <Typography style={{ fontWeight: 700, fontFamily: 'Montserrat' }}>
+                            Quick Links
+                        </Typography>
+                        <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
+                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
+                                <ListItemText><span className='listItem'>LLC Formation</span></ListItemText>
+                            </ListItem>
+
+                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
+                                <ListItemText><span className='listItem'>Resale Certificate</span></ListItemText>
+                            </ListItem>
+
+                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
+                                <ListItemText><span className='listItem'>Website Developement</span></ListItemText>
+                            </ListItem>
+                        </List>
+                    </Grid>
+
+                    <Grid item xs={2}>
+                        <Typography style={{ fontWeight: 700, fontFamily: 'Montserrat' }}>
                             Follow us
                         </Typography>
-                        <div style={{marginTop: '5%'}}>
-                            <FacebookRoundedIcon style={{ opacity: '70%', marginRight: '3%' }} />
-                            <TwitterIcon style={{ opacity: '70%', marginRight: '3%' }} />
-                            <LinkedInIcon style={{ opacity: '70%', marginRight: '3%' }} />
+                        <div style={{ marginTop: '5%' }}>
+                            <FacebookRoundedIcon style={{ opacity: '100%', marginRight: '3%', color: '#0069ff' }} />
+                            <TwitterIcon style={{ opacity: '100%', marginRight: '3%', color: '#0069ff' }} />
+                            <LinkedInIcon style={{ opacity: '100%', marginRight: '3%', color: '#0069ff' }} />
                         </div>
                     </Grid>
                 </Grid>
@@ -95,7 +116,7 @@ export default function Footer() {
 
                 <Grid container spacing={2}>
                     <Grid item md={8}>
-                        <Typography style={{ fontWeight: 600, fontSize: '23px' }}>
+                        <Typography style={{ fontWeight: 600, fontSize: '23px', fontFamily: 'Montserrat' }}>
                             Instant Support via WhatsApp
                         </Typography>
                         <p style={{ opacity: '70%', fontSize: '15px', margin: 0 }}>Reach out to us directly on WhatsApp for quick support. We're here to help!</p>
@@ -118,40 +139,6 @@ whatsapp-icon.png?v=1615793565" width="25px" style={{ verticalAlign: 'middle' }}
                                 Connect On <span style={{ fontWeight: 'bold' }}>WhatsApp</span>
                             </div>
                         </a>
-                    </Grid>
-                </Grid>
-
-                <hr style={{ opacity: '40%', margin: '3% 0' }} />
-
-                <Grid container spacing={2}>
-                    <Grid item md={3}>
-                        <img src='https://tryboosty.com/images/boosty-footer-logo.svg' style={{ width: '40%', marginBottom: '5%' }} />
-                        <p style={{ opacity: '70%', fontSize: '14px', margin: 0, marginBottom: '8%' }}>Exceptional LLC FOmration Solutions</p>
-
-                        <div style={{
-                            opacity: '70%',
-                            fontSize: '14px',
-                            display: 'flex',
-                            alignItems: 'center'
-                        }}><MailIcon fontSize='small' style={{ marginRight: '4%' }} />info@tryboosty.com</div>
-
-                        <div style={{
-                            opacity: '70%',
-                            fontSize: '14px',
-                            display: 'flex',
-                            alignItems: 'center',
-                            marginTop: '3%'
-                        }}><PhoneIcon fontSize='small' style={{ marginRight: '4%' }} />+1 (302) 209-8440</div>
-
-                    </Grid>
-                    <Grid item md={9}>
-                        <p style={{ opacity: '70%', fontSize: '15px', margin: 0 }}>
-                            ©2023 Digital Nexus LLC. All rights reserved.<br /><br />
-                            Boosty is a technology company providing cutting-edge digital solutions to businesses.<br /><br />
-                            We take pride in our services designed to elevate your online presence and drive business growth. From website development to logo design, branding, SEO, social media management, and PPC marketing, Boosty offers a comprehensive suite of services tailored to meet your unique needs.<br /><br />
-                            Please note that Boosty is not a law firm, and any information provided on our website or through communication channels should not be considered official legal advice. Our content is intended for general and educational purposes only. By utilizing our services and accessing our website, you explicitly agree to adhere to our Terms of Service, Privacy Policy, and Data Processing Addendum.<br /><br />
-                            At Boosty, we are dedicated to helping your brand thrive in the digital landscape. Your success is our priority, and we look forward to partnering with you on your journey to success.
-                        </p>
                     </Grid>
                 </Grid>
 

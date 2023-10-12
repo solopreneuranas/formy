@@ -24,36 +24,30 @@ export default function Services() {
         },
         {
             icon: 'https://d33wubrfki0l68.cloudfront.net/957e0eddcebbe86f49da8e9d227cb5c2d3f16397/1e1fa/img/tax.svg',
-            name: 'U.S. Tax Filings',
+            name: 'U.S. Tax Return & Filings',
             para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
         },
         {
             icon: 'https://d33wubrfki0l68.cloudfront.net/6e021e3210ea81c7a4a5be95d4c0d788801a18b6/d1cf5/img/payment.svg',
             name: 'Registered Agent',
             para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
-        },
-        // {
-        //     icon: 'https://d33wubrfki0l68.cloudfront.net/957e0eddcebbe86f49da8e9d227cb5c2d3f16397/1e1fa/img/tax.svg',
-        //     name: 'Real Mailing Address',
-        //     para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
-        // }
+        }
     ]
 
     return (
-        <div className='root'>
-
+        <div className='root' style={{padding: 0}}> 
             <Grid container spacing={5} className='servicesSection'>
                 <Grid item md={12} style={{ padding: 0 }}>
-                    <h2 style={{ fontSize: '45px', fontWeight: 600 }}>The Best Business Solution For <Typography style={{ fontWeight: '500', fontSize: '45px' }}>Your Business</Typography></h2>
+                    <h2 style={{ fontSize: '45px', fontWeight: 600 }}>The Best <spna style={{color: '#0069ff'}}>Business Solution</spna> For <Typography style={{ fontWeight: '500', fontSize: '45px' }}>Your Business</Typography></h2>
                     <Button endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
-                        background: '#F0562D',
-                        padding: '1% 2%',
+                        background: '#0069ff',
+                        padding: '0.8% 2%',
                         marginTop: 0,
                     }}>GET STARTED</Button>
                 </Grid>
                 {services.map((item) => {
                     return (
-                        <Grid item md={3} className='servicesDiv'>
+                        <Grid item md={2} className='servicesDiv'>
                             <Grid container spacing={2} >
                                 <Grid item md={12} style={{ padding: 0 }}>
                                     <img src={item.icon} />

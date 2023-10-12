@@ -69,7 +69,7 @@ export default function StateFees() {
 
     return (
         <div>
-            <Grid container spacing={5} className='feeCalc'>
+            <Grid container spacing={5}>
                 <Grid item xs={12}>
                     <Autocomplete
                         disablePortal
@@ -78,7 +78,7 @@ export default function StateFees() {
                         value={selectedState}
                         onChange={handleStateSelect}
                         getOptionLabel={(option) => option.label}
-                        sx={{ width: 300 }}
+                        sx={{ width: 300}}
                         renderInput={(params) => <TextField {...params} label="Search state" />}
                     />
                 </Grid>
@@ -87,14 +87,14 @@ export default function StateFees() {
 
             {selectedState && (
                 <div style={{ marginTop: '4%' }}>
-                    <Typography variant="h6" style={{ fontWeight: '500' }}>{selectedState.label} State Fee:</Typography>
-                    <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '600' }}>{`$${(selectedState.fee).toFixed(2)}`}</Typography><br />
-                    <Typography variant="h6" style={{ fontWeight: '500' }}>{selectedState.label} LLC Formation Plan:</Typography>
-                    <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '600' }}>{`$${(selectedState.fee + 149).toFixed(2)}`}</Typography><br />
+                    <Typography variant="h6" style={{ fontWeight: '500', fontFamily: 'Montserrat' }}>{selectedState.label} State Fee:</Typography>
+                    <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '700', fontFamily: 'Montserrat' }}>{`$${(selectedState.fee).toFixed(2)}`}</Typography><br />
+                    <Typography variant="h6" style={{ fontWeight: '500', fontFamily: 'Montserrat' }}>{selectedState.label} LLC Formation Plan:</Typography>
+                    <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '700', fontFamily: 'Montserrat' }}>{`$${(selectedState.fee + 149).toFixed(2)}`}</Typography><br />
 
                     <Button endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
-                        background: '#F0562D',
-                        padding: '2% 5%',
+                        background: '#0069ff',
+                        padding: '1.7% 4%',
                         marginTop: '2%',
                     }}>GET STARTED</Button>
 

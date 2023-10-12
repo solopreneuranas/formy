@@ -3,19 +3,23 @@ import HeroImg from "./components/HeroImg";
 import Brands from "./components/Brands";
 import Features from "./components/Features";
 import Faq from "./components/Faq";
-import Formation from "./components/Formation";
+import Mission from "./components/Mission";
 import PricingCompare from "./components/PricingCompare";
 import Footer from "./components/Footer";
 import Services from "./components/Services";
+import Bonuses from "./components/Bonuses";
 
 function App() {
   return (
     <div>
       <Hero />
+      <HeroImg />
       <Brands />
       <Services />
-      <Formation />
+      <Features />
       <PricingCompare />
+      <Bonuses />
+      <Mission />
       <Faq />
       <Footer />
     </div>
