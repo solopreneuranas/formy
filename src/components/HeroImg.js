@@ -10,7 +10,7 @@ export default function HeroImg() {
 
             <Grid container spacing={2}>
                 <Grid item xs={12}>
-                    <img src='images/formy-banner-img.svg' style={{width: '100%'}} alt='Formy Banner' className='desktopHeroImg'/> 
+                    <img src='images/hero-image.svg' style={{width: '100%'}} alt='Formy Banner' className='desktopHeroImg'/> 
                     <img src='images/formy-banner-img-mobile.svg' style={{width: '100%'}} alt='Formy Banner' className='mobileHeroImg'/>                    
                 </Grid>
             </Grid>
