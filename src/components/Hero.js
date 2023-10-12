@@ -25,7 +25,7 @@ export default function Hero() {
                         background: '#0069ff',
                         padding: '1.5% 4%',
                         marginTop: '4%',
-                    }}>GET STARTED</Button><br />
+                    }}>GET STARTED</Button><br /><br />
                     <p>Start at $149 + State Fees</p>
                 </Grid>
             </Grid>

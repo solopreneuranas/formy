@@ -35,25 +35,25 @@ export default function Features() {
                         aria-labelledby="nested-list-subheader">
                         <ListItemButton style={{ paddingLeft: 0 }}>
                             <ListItemIcon>
-                                <SendIcon fontSize='small' className='icon' />
+                                <SendIcon fontSize='large' style={{color:'#0069ff'}} />
                             </ListItemIcon>
                             <Typography style={{ fontSize: '18px', fontFamily: 'Montserrat', fontWeight: 500 }}>We accept all major countries</Typography>
                         </ListItemButton>
                         <ListItemButton style={{ paddingLeft: 0 }}>
                             <ListItemIcon>
-                                <DraftsIcon fontSize='small' className='icon' />
+                                <DraftsIcon fontSize='large' style={{color:'#0069ff'}} />
                             </ListItemIcon>
                             <Typography style={{ fontSize: '18px', fontFamily: 'Montserrat', fontWeight: 500 }}>Fast formation services </Typography>
                         </ListItemButton>
                         <ListItemButton style={{ paddingLeft: 0 }}>
                             <ListItemIcon>
-                                <DraftsIcon fontSize='small' className='icon' />
+                                <DraftsIcon fontSize='large' style={{color:'#0069ff'}} />
                             </ListItemIcon>
                             <Typography style={{ fontSize: '18px', fontFamily: 'Montserrat', fontWeight: 500 }}>Fast formation services </Typography>
                         </ListItemButton>
                         <ListItemButton onClick={handleClick} style={{ paddingLeft: 0 }}>
                             <ListItemIcon>
-                                <InboxIcon fontSize='small' className='icon' />
+                                <InboxIcon fontSize='large' style={{color:'#0069ff'}} />
                             </ListItemIcon>
                             <Typography style={{ fontSize: '18px', fontFamily: 'Montserrat', fontWeight: 500 }}>  Quick documents delivery </Typography>
                         </ListItemButton>

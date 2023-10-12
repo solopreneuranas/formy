@@ -425,10 +425,10 @@ body {
 }
 
 .icon {
-  color: white;
-  padding: 20%;
-  border-radius: 50%;
-  background: #0069ff;
+  color: white !important;
+  padding: 20% !important;
+  border-radius: 50% !important;
+  background: #0069ff !important;
 }
 
 .list {

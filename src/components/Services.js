@@ -42,7 +42,7 @@ export default function Services() {
                     <Button endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
                         background: '#0069ff',
                         padding: '0.8% 2%',
-                        marginTop: 0,
+                        marginTop: '2%',
                     }}>GET STARTED</Button>
                 </Grid>
                 {services.map((item) => {
