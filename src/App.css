@@ -580,7 +580,7 @@ body {
   }
 
   .heroSection {
-    padding: 25% 3% 15%;
+    padding: 35% 3% 15%;
   }
 
   .bigHeading {
@@ -599,7 +599,7 @@ body {
   }
 
   .servicesSection {
-    padding: 10%;
+    padding: 10% 5%;
   }
 
   .processSection {
@@ -631,7 +631,7 @@ body {
   }
 
   .faq {
-    width: 90%;
+    width: 100%;
     padding: 10% 0;
   }
 
