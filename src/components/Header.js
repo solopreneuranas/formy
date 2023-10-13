@@ -82,6 +82,11 @@ export default function Header() {
                             </li>
                         </ul>
                     </div>
+                    <Button id='headerBtn' endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
+                        background: '#0069ff',
+                        padding: '0.7% 1.5%',
+                        marginTop: 0,
+                    }}>GET STARTED</Button>
                 </nav>
             </div>
         </div>
