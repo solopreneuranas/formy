@@ -10,7 +10,7 @@ export default function Header() {
             <div class="main-wrapper">
                 <nav class="navbar">
                     <div class="brand-and-icon">
-                        <a href="https://tryboosty.com/" class="navbar-brand"><img src="https://tryboosty.com/images/boosty-logo.svg" /></a>
+                        <a href="https://tryboosty.com/" class="navbar-brand"><img src="/images/boosty-logo.svg" /></a>
                         <button type="button" class="navbar-toggler">
                             <img src='/images/menu-icon.svg' style={{width: 30}}/>
                         </button>
@@ -83,7 +83,7 @@ export default function Header() {
                         </ul>
                     </div>
                     <Button id='headerBtn' endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
-                        background: '#0069ff',
+                        background: '#FF6326',
                         padding: '0.7% 1.5%',
                         marginTop: 0,
                     }}>GET STARTED</Button>

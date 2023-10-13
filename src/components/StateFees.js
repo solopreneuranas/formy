@@ -93,7 +93,7 @@ export default function StateFees() {
                     <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '700', fontFamily: 'Inter' }}>{`$${(selectedState.fee + 149).toFixed(2)}`}</Typography><br />
 
                     <Button endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
-                        background: '#0069ff',
+                        background: '#FF6326',
                         padding: '1.7% 4%',
                         marginTop: '2%',
                     }}>GET STARTED</Button>

@@ -3,12 +3,12 @@ import HeroImg from "./components/HeroImg";
 import Brands from "./components/Brands";
 import Features from "./components/Features";
 import Faq from "./components/Faq";
-import Mission from "./components/Mission";
 import PricingCompare from "./components/PricingCompare";
 import Footer from "./components/Footer";
 import Services from "./components/Services";
 import Bonuses from "./components/Bonuses";
 import Header from "./components/Header";
+import Process from "./components/Process";
 
 function App() {
   return (
@@ -18,10 +18,10 @@ function App() {
       <HeroImg />
       <Brands />
       <Services />
+      <Process />
       <Features />
       <PricingCompare />
       <Bonuses />
-      <Mission />
       <Faq />
       <Footer />
     </div>

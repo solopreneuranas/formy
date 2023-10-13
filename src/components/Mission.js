@@ -12,7 +12,7 @@ export default function Mission() {
             <Grid container spacing={5} className='formationSection'>
                 <Grid item md={6}>
                     <h2 className='featuresHeading'>
-                        Our Mission at <span style={{ color: '#0069ff' }}>Boosty</span>
+                        Our Mission at <span style={{ color: '#FF6326' }}>Boosty</span>
                     </h2><br />
                     <p className='featuresPara'>
                         We understand the challenges you face in accepting card payments at your store, particularly if you are located in a country not supported by Stripe. Our solution is designed to address this issue by managing the entire process for you.
@@ -21,7 +21,7 @@ export default function Mission() {
                     <Button endIcon={<SendIcon />} variant='contained' className='globalButton'
                         style={{
                             padding: '2% 5%',
-                            background: '#0069ff'
+                            background: '#FF6326'
                         }}>GET STARTED</Button>
                 </Grid>
                 <Grid item md={6}>

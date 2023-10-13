@@ -105,9 +105,9 @@ export default function Footer() {
                             Follow us
                         </Typography>
                         <div style={{ marginTop: '5%' }}>
-                            <FacebookRoundedIcon style={{ opacity: '100%', marginRight: '3%', color: '#0069ff' }} />
-                            <TwitterIcon style={{ opacity: '100%', marginRight: '3%', color: '#0069ff' }} />
-                            <LinkedInIcon style={{ opacity: '100%', marginRight: '3%', color: '#0069ff' }} />
+                            <FacebookRoundedIcon style={{ opacity: '100%', marginRight: '3%', color: '#FF6326' }} />
+                            <TwitterIcon style={{ opacity: '100%', marginRight: '3%', color: '#FF6326' }} />
+                            <LinkedInIcon style={{ opacity: '100%', marginRight: '3%', color: '#FF6326' }} />
                         </div>
                     </Grid>
                 </Grid>

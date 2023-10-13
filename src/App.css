@@ -152,19 +152,19 @@ body {
 }
 
 .sub-menu-item:nth-child(4) .btn {
-  border: 1px solid #0069ff;
+  border: 1px solid #FF6326;
   text-transform: uppercase;
   font-size: 0.9rem;
   padding: 0.6rem 1rem;
   cursor: pointer;
-  background: #0069ff;
+  background: #FF6326;
   color: #fff;
   transition: all 0.5s ease;
 }
 
 .sub-menu-item:nth-child(4) .btn:hover {
   background: transparent;
-  color: #0069ff;
+  color: #FF6326;
 }
 
 .sub-menu-item:nth-child(4) {
@@ -279,7 +279,7 @@ body {
   }
 
   .navbar-nav>li:hover {
-    border-bottom-color: #0069ff;
+    border-bottom-color: #FF6326;
   }
 
   .sub-menu-item {
@@ -388,7 +388,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5% 17% 0;
+  padding: 5% 12% 0;
   background-color: white;
   border-radius: 250px 0 0 0;
 }
@@ -429,7 +429,7 @@ body {
   color: white !important;
   padding: 20% !important;
   border-radius: 50% !important;
-  background: #0069ff !important;
+  background: #FF6326 !important;
 }
 
 .list {
@@ -447,7 +447,6 @@ body {
 .faqInnerSection {
   padding: 3% 10%;
   border-radius: 10px;
-  background-color: #EFEFEF;
 }
 
 .faq {
@@ -458,7 +457,6 @@ body {
 
 .faqItem {
   padding: 2%;
-  margin-bottom: 4% !important;
   border-radius: 10px;
   border: none !important;
 }
@@ -497,7 +495,7 @@ body {
 }
 
 .globalButton {
-  background: #0069ff;
+  background: #FF6326;
   color: white !important;
   font-weight: 400 !important;
   font-size: 16px !important;
@@ -510,7 +508,7 @@ body {
 }
 
 .footerSec {
-  border-top: 4px solid #0069ff;
+  border-top: 4px solid #FF6326;
   color: black;
   padding: 6% 13%;
 }
@@ -519,21 +517,9 @@ body {
   width: 100%;
   margin: auto;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  padding: 5% 13%;
-  background-color: rgb(238, 238, 238);
-}
-
-
-.servicesDiv {
-  background-color: white;
-  border-radius: 17px;
-  padding: 3% !important;
-  padding-right: 1% !important;
-  margin-top: 3% !important;
-  margin-right: 2% !important;
-  box-shadow: 0 0 40px rgb(207, 207, 207);
+  padding: 5% 12%;
 }
 
 .listItem {
@@ -543,9 +529,40 @@ body {
 
 .css-v84d5j-MuiSvgIcon-root {
   font-size: 25px !important;
-  color: #0069ff !important;
+  color: #FF6326 !important;
 }
 
+
+.processSection {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 5% 13%;
+  background-color: #FF6326;
+}
+
+
+.processDiv {
+  color: white;
+  border-radius: 17px;
+  padding: 3% !important;
+  padding-right: 1% !important;
+  margin-top: 3% !important;
+  margin-right: 2% !important;
+}
+
+.processCount{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff4800;
+  padding: 3%;
+}
 
 @media (max-width: 768px) {
   #headerBtn {

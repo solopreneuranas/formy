@@ -30,7 +30,7 @@ export default function Bonuses() {
                     <center><img src='https://privatily.com/wp-content/uploads/2023/08/img-Bonuses-3-3-min.png' style={{ width: '90%', marginRight: 'auto' }} /></center>
                 </Grid>
                 <Grid item md={6} className='featuresContent'>
-                    <h2 className='featuresHeading'><span style={{ color: '#0069ff' }}>Bonuses</span> for Premium <br />clients only</h2><br />
+                    <h2 className='featuresHeading'><span style={{ color: '#FF6326' }}>Bonuses</span> for Premium <br />clients only</h2><br />
                     <p className='featuresPara'>
                         As a Premium client, we'll assist you in setting up all the financial services available to you. You'll have a dedicated account manager and our exceptional support team, ready to assist you via chat, email, and phone.
                     </p>

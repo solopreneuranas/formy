@@ -22,7 +22,7 @@ export default function PricingCompare() {
                 <Button onClick={handleOpen} endIcon={<SendIcon />} variant='contained' className='globalButton' 
                 style={{
                     padding: '0.8% 1.7%',
-                    background: '#0069ff',
+                    background: '#FF6326',
                     marginTop: '3%'
                 }}>GET STARTED</Button>
                 <Modal
@@ -54,7 +54,7 @@ export default function PricingCompare() {
             <Grid container spacing={3} className='pricingTable'>
                 <Grid item xs={12}>
                     <center>
-                        <h2 className='featuresHeading'>Simplified<span style={{ color: '#0069ff' }}> Pricing </span>for all your needs</h2>
+                        <h2 className='featuresHeading'>Simplified<span style={{ color: '#FF6326' }}> Pricing </span>for all your needs</h2>
                         <p className='featuresPara' style={{ marginTop: '1%', marginBottom: '1%' }}>Get upfront, clear pricing for starting and running your business.</p>
                         <img className='pricingImg' src='images/pricing-table-formy.svg' style={{ width: '70%' }} /><br />
                         <PricingTabs />

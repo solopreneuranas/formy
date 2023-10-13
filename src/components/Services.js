@@ -1,74 +1,79 @@
 import * as React from 'react';
 
 import { Grid, TextField, Button, Alert, AlertTitle, Rating, Typography, Avatar, AvatarGroup } from "@mui/material";
+
+import List from '@mui/material/List';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import Collapse from '@mui/material/Collapse';
+
+import InboxIcon from '@mui/icons-material/MoveToInbox';
+import DraftsIcon from '@mui/icons-material/Drafts';
 import SendIcon from '@mui/icons-material/Send';
 
-export default function Services() {
+
+export default function Features() {
     const [open, setOpen] = React.useState(false);
 
-    const services = [
+    const handleClick = () => {
+        setOpen(!open)
+    }
+
+    const features = [
         {
-            icon: 'https://d33wubrfki0l68.cloudfront.net/1c7609134b5d1e1060fa3b4fd383cb66d0d47486/3ca21/img/llc.svg',
-            name: 'US LLC Formation',
-            para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
+            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce462edfa14ceb_Tax%20Returns.svg',
+            title: 'File U.S Tax Returns'
         },
         {
-            icon: 'https://d33wubrfki0l68.cloudfront.net/d3550384d9e503abbd3155ccab18267c77acbdfe/fd0d2/img/bank.svg',
-            name: 'Obtaining EIN, ITIN',
-            para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
+            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce463d66a14ce7_EIN%20or%20ITIN.svg',
+            title: 'Obtain EIN or ITIN'
         },
         {
-            icon: 'https://d33wubrfki0l68.cloudfront.net/6e021e3210ea81c7a4a5be95d4c0d788801a18b6/d1cf5/img/payment.svg',
-            name: 'Bank Account Setup',
-            para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
+            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce463e56a14cea_US%20Company.svg',
+            title: 'Form U.S. company'
         },
         {
-            icon: 'https://d33wubrfki0l68.cloudfront.net/957e0eddcebbe86f49da8e9d227cb5c2d3f16397/1e1fa/img/tax.svg',
-            name: 'U.S. Tax Return & Filings',
-            para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
+            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce462db7a14ce8_Payments%201.svg',
+            title: 'Open Stripe/PayPal'
         },
         {
-            icon: 'https://d33wubrfki0l68.cloudfront.net/6e021e3210ea81c7a4a5be95d4c0d788801a18b6/d1cf5/img/payment.svg',
-            name: 'Registered Agent',
-            para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
+            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce463e56a14cea_US%20Company.svg',
+            title: 'Open Business Bank'
         },
         {
-            icon: 'https://d33wubrfki0l68.cloudfront.net/6e021e3210ea81c7a4a5be95d4c0d788801a18b6/d1cf5/img/payment.svg',
-            name: 'Registered Agent',
-            para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
-        }
+            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce46a051a14ce6_Amazon%20Acct..svg',
+            title: 'Create Amazon Account'
+        },
     ]
 
     return (
-        <div className='root' style={{ padding: 0 }}>
-            <Grid container spacing={5} className='servicesSection'>
-                <Grid item md={12} style={{ padding: 0 }}>
-                    <h2 style={{ fontSize: '45px', fontWeight: 600 }}>The Best <spna style={{ color: '#0069ff' }}>Business Solution</spna> For <Typography style={{ fontWeight: '500', fontSize: '45px' }}>Your Business</Typography></h2>
-                    <Button endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
-                        background: '#0069ff',
-                        padding: '0.8% 2%',
-                        marginTop: '2%',
-                    }}>GET STARTED</Button>
+        <div className='root'>
+
+            <Grid container spacing={2} className='servicesSection'>
+                <Grid item md={6} className='featuresImg'>
+                    <center><img src='/images/section-image-blue.svg' style={{ width: '100%', marginRight: 'auto' }} /></center>
                 </Grid>
-                {services.map((item) => {
-                    return (
-                        <Grid item md={3} className='servicesDiv'>
-                            <Grid container spacing={2} >
-                                <Grid item md={12} style={{ padding: 0 }}>
-                                    <img src={item.icon} />
+                <Grid item md={6} className='featuresContent'>
+                    <h2 className='featuresHeading'>We power your core <span style={{ color: '#FF6326' }}>Business</span> needs</h2><br />
+                    <p className='featuresPara'>
+                        We understand the challenges you face in accepting card payments at your store, particularly if you are located in a country not supported by Stripe. Our solution is designed to for you.
+                    </p>
+
+                    <Grid container spacing={3}>
+                        {features.map((item) => {
+                            return (
+                                <Grid item md={6}>
+                                    <img src={item.icon} style={{width: 65}}/>
+                                    <h3 style={{ marginBottom: '2%', fontWeight: '600' }}>{item.title}</h3>
                                 </Grid>
-                                <Grid item md={12} style={{ padding: 0 }}>
-                                    <h2>{item.name}</h2>
-                                </Grid>
-                                <Grid item md={12} style={{ padding: 0 }}>
-                                    <p className='featuresPara'>{item.para}</p>
-                                </Grid>
-                            </Grid>
-                        </Grid>
-                    )
-                })}
+                            )
+                        })}
+                    </Grid>
+
+                </Grid>
             </Grid>
 
         </div>
     )
 }
+
