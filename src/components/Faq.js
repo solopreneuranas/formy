@@ -85,7 +85,7 @@ export default function Faq() {
 
                     {faqData.map((item, index) => (
                         <Accordion className='faqItem' onChange={handleChange(`panel${index + 1}`)} key={`accordion-${index}`}>
-                            <AccordionSummary aria-controls={`panel${index + 1}d-content`} id={`panel${index + 1}d-header`}>
+                            <AccordionSummary style={{background: 'white'}} aria-controls={`panel${index + 1}d-content`} id={`panel${index + 1}d-header`}>
                                 <Typography style={{ fontSize: '23px', fontWeight: '600' }}>
                                     {item.ques}
                                 </Typography>
