@@ -87,10 +87,10 @@ export default function StateFees() {
 
             {selectedState && (
                 <div style={{ marginTop: '4%' }}>
-                    <Typography variant="h6" style={{ fontWeight: '500', fontFamily: 'Montserrat' }}>{selectedState.label} State Fee:</Typography>
-                    <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '700', fontFamily: 'Montserrat' }}>{`$${(selectedState.fee).toFixed(2)}`}</Typography><br />
-                    <Typography variant="h6" style={{ fontWeight: '500', fontFamily: 'Montserrat' }}>{selectedState.label} LLC Formation Plan:</Typography>
-                    <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '700', fontFamily: 'Montserrat' }}>{`$${(selectedState.fee + 149).toFixed(2)}`}</Typography><br />
+                    <Typography variant="h6" style={{ fontWeight: '500', fontFamily: 'Inter' }}>{selectedState.label} State Fee:</Typography>
+                    <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '700', fontFamily: 'Inter' }}>{`$${(selectedState.fee).toFixed(2)}`}</Typography><br />
+                    <Typography variant="h6" style={{ fontWeight: '500', fontFamily: 'Inter' }}>{selectedState.label} LLC Formation Plan:</Typography>
+                    <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '700', fontFamily: 'Inter' }}>{`$${(selectedState.fee + 149).toFixed(2)}`}</Typography><br />
 
                     <Button endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
                         background: '#0069ff',

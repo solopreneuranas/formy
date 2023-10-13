@@ -37,25 +37,25 @@ export default function Features() {
                             <ListItemIcon>
                                 <SendIcon fontSize='large' style={{color:'#0069ff'}} />
                             </ListItemIcon>
-                            <Typography style={{ fontSize: '18px', fontFamily: 'Montserrat', fontWeight: 500 }}>We accept all major countries</Typography>
+                            <Typography style={{ fontSize: '18px', fontFamily: 'Inter', fontWeight: 500 }}>We accept all major countries</Typography>
                         </ListItemButton>
                         <ListItemButton style={{ paddingLeft: 0 }}>
                             <ListItemIcon>
                                 <DraftsIcon fontSize='large' style={{color:'#0069ff'}} />
                             </ListItemIcon>
-                            <Typography style={{ fontSize: '18px', fontFamily: 'Montserrat', fontWeight: 500 }}>Fast formation services </Typography>
+                            <Typography style={{ fontSize: '18px', fontFamily: 'Inter', fontWeight: 500 }}>Fast formation services </Typography>
                         </ListItemButton>
                         <ListItemButton style={{ paddingLeft: 0 }}>
                             <ListItemIcon>
                                 <DraftsIcon fontSize='large' style={{color:'#0069ff'}} />
                             </ListItemIcon>
-                            <Typography style={{ fontSize: '18px', fontFamily: 'Montserrat', fontWeight: 500 }}>Fast formation services </Typography>
+                            <Typography style={{ fontSize: '18px', fontFamily: 'Inter', fontWeight: 500 }}>Fast formation services </Typography>
                         </ListItemButton>
                         <ListItemButton onClick={handleClick} style={{ paddingLeft: 0 }}>
                             <ListItemIcon>
                                 <InboxIcon fontSize='large' style={{color:'#0069ff'}} />
                             </ListItemIcon>
-                            <Typography style={{ fontSize: '18px', fontFamily: 'Montserrat', fontWeight: 500 }}>  Quick documents delivery </Typography>
+                            <Typography style={{ fontSize: '18px', fontFamily: 'Inter', fontWeight: 500 }}>  Quick documents delivery </Typography>
                         </ListItemButton>
                     </List>
                 </Grid>

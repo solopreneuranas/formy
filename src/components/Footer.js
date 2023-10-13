@@ -41,7 +41,7 @@ export default function Footer() {
                     </Grid>
 
                     <Grid item xs={2}>
-                        <Typography style={{ fontWeight: 700, fontFamily: 'Montserrat' }}>
+                        <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
                             Quick Links
                         </Typography>
                         <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
@@ -63,7 +63,7 @@ export default function Footer() {
                     </Grid>
 
                     <Grid item xs={2}>
-                        <Typography style={{ fontWeight: 700, fontFamily: 'Montserrat' }}>
+                        <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
                             Legal
                         </Typography>
                         <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
@@ -82,7 +82,7 @@ export default function Footer() {
                     </Grid>
 
                     <Grid item xs={2}>
-                        <Typography style={{ fontWeight: 700, fontFamily: 'Montserrat' }}>
+                        <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
                             Quick Links
                         </Typography>
                         <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
@@ -101,7 +101,7 @@ export default function Footer() {
                     </Grid>
 
                     <Grid item xs={2}>
-                        <Typography style={{ fontWeight: 700, fontFamily: 'Montserrat' }}>
+                        <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
                             Follow us
                         </Typography>
                         <div style={{ marginTop: '5%' }}>
@@ -116,7 +116,7 @@ export default function Footer() {
 
                 <Grid container spacing={2}>
                     <Grid item md={8}>
-                        <Typography style={{ fontWeight: 600, fontSize: '23px', fontFamily: 'Montserrat' }}>
+                        <Typography style={{ fontWeight: 600, fontSize: '23px', fontFamily: 'Inter' }}>
                             Instant Support via WhatsApp
                         </Typography>
                         <p style={{ opacity: '70%', fontSize: '15px', margin: 0 }}>Reach out to us directly on WhatsApp for quick support. We're here to help!</p>

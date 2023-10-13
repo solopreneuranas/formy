@@ -32,7 +32,7 @@ export default function PricingCompare() {
                     <Box className='modal'>
                         <Grid container spacing={5}>
                             <Grid item xs={11}>
-                                <Typography id="modal-modal-title" variant="h4" component="h2" style={{ fontWeight: '600', fontFamily: 'Montserrat' }}>
+                                <Typography id="modal-modal-title" variant="h4" component="h2" style={{ fontWeight: '600', fontFamily: 'Inter' }}>
                                     State Fees Calculator
                                 </Typography>
                             </Grid>

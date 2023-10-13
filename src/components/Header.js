@@ -12,7 +12,7 @@ export default function Header() {
                     <div class="brand-and-icon">
                         <a href="https://tryboosty.com/" class="navbar-brand"><img src="https://tryboosty.com/images/boosty-logo.svg" /></a>
                         <button type="button" class="navbar-toggler">
-                            <i class="fas fa-bars"></i>
+                            <img src='/images/menu-icon.svg' style={{width: 30}}/>
                         </button>
                     </div>
 
@@ -25,9 +25,6 @@ export default function Header() {
                             <li>
                                 <a href="#services" class="menu-link">
                                     Services
-                                    <span class="drop-icon">
-                                        <i class="fas fa-chevron-down"></i>
-                                    </span>
                                 </a>
                                 <div class="sub-menu">
 
