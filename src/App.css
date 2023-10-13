@@ -444,11 +444,6 @@ body {
   padding: 5% 20%;
 }
 
-.faqInnerSection {
-  padding: 3% 10%;
-  border-radius: 10px;
-}
-
 .faq {
   width: 100%;
   padding: 0;
@@ -539,7 +534,7 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding: 5% 13%;
+  padding: 5% 10%;
   background-color: #FF6326;
 }
 
@@ -553,7 +548,7 @@ body {
   margin-right: 2% !important;
 }
 
-.processCount{
+.processCount {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -562,6 +557,14 @@ body {
   border-radius: 50%;
   background-color: #ff4800;
   padding: 3%;
+}
+
+.customProcessDiv {
+  background: white;
+  color: black;
+  padding: 6% 4%;
+  border-radius: 17px;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {
@@ -577,7 +580,7 @@ body {
   }
 
   .heroSection {
-    padding: 8% 3%;
+    padding: 25% 3% 15%;
   }
 
   .bigHeading {
@@ -595,9 +598,20 @@ body {
     padding: 10% 3% 20%;
   }
 
+  .servicesSection {
+    padding: 10%;
+  }
+
+  .processSection {
+    padding: 10% 13%!important;
+  }
+
+  .customProcessDiv {
+    padding: 4%;
+  }
+
   .featuresSection {
-    padding: 5% 7%;
-    border-radius: 200px 0 0 0;
+    padding: 5%;
   }
 
   .featuresHeading {
@@ -619,6 +633,10 @@ body {
   .faq {
     width: 90%;
     padding: 10% 0;
+  }
+
+  .faqSection {
+    padding: 5% 3%;
   }
 
   .faqItem {
@@ -685,7 +703,7 @@ body {
   .pricingContent {
     font-size: 18px;
     margin: 0;
-    padding: 0;
+    padding: 10% 0;
   }
 
   .globalButton {

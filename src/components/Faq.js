@@ -79,26 +79,23 @@ export default function Faq() {
 
     return (
         <div className='faqSection'>
-            <div className='faqInnerSection'>
-                <div className='faq'>
-                    <center><h2 className='bigHeading' style={{ fontSize: '45px', marginBottom: '7%' }}>Frequenly Asked <span style={{ color: '#FF6326' }}>Questions</span></h2></center>
+            <div className='faq'>
+                <center><h2 className='bigHeading' style={{ fontSize: '45px', marginBottom: '7%' }}>Frequenly Asked <span style={{ color: '#FF6326' }}>Questions</span></h2></center>
 
-                    {faqData.map((item, index) => (
-                        <Accordion className='faqItem' onChange={handleChange(`panel${index + 1}`)} key={`accordion-${index}`}>
-                            <AccordionSummary style={{background: 'white'}} aria-controls={`panel${index + 1}d-content`} id={`panel${index + 1}d-header`}>
-                                <Typography style={{ fontSize: '23px', fontWeight: '600' }}>
-                                    {item.ques}
-                                </Typography>
-                            </AccordionSummary>
-                            <AccordionDetails>
-                                <Typography style={{ fontSize: '18px' }}>
-                                    {item.ans}
-                                </Typography>
-                            </AccordionDetails>
-                        </Accordion>
-                    ))}
-
-                </div>
+                {faqData.map((item, index) => (
+                    <Accordion className='faqItem' onChange={handleChange(`panel${index + 1}`)} key={`accordion-${index}`}>
+                        <AccordionSummary style={{ background: 'white' }} aria-controls={`panel${index + 1}d-content`} id={`panel${index + 1}d-header`}>
+                            <Typography style={{ fontSize: '23px', fontWeight: '600' }}>
+                                {item.ques}
+                            </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography style={{ fontSize: '18px' }}>
+                                {item.ans}
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                ))}
             </div>
         </div>
     );

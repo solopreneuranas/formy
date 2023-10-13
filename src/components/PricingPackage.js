@@ -73,7 +73,10 @@ export default function PricingTabs() {
         <Box sx={{ width: '100%' }} className='pricingPackage'>
             <Box sx={{ borderBottom: 1, borderColor: 'divider', }}>
                 <Tabs scrollButtons="auto" variant="scrollable" value={value} onChange={handleChange} aria-label="basic tabs example" className='pricingPackageBar'>
-                    <Tab className='tabBrand' label="Formy" {...a11yProps(0)} ></Tab>
+                <Tab className='tabBrand'
+                        icon={<img src="/images/boosty-logo.svg"
+                            width={'100px'} alt="Formy" />}
+                        {...a11yProps(0)} />
                     <Tab className='tabBrand'
                         icon={<img src="https://www.doola.com/wp-content/themes/doola2/resources/images/header-logo.png"
                             width={'90px'} alt="Formy" />}

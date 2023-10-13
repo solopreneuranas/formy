@@ -35,11 +35,9 @@ export default function Process() {
 
     return (
         <div className="root" style={{ padding: 0, position: 'relative', margin: 0 }}>
-            <Grid style={{ position: 'absolute' }}><img src='/images/pattern-img.svg' style={{ opacity: '15%' }} /></Grid>
-
             <Grid container spacing={5} className='processSection'>
                 <Grid item md={12} style={{ padding: 0 }}>
-                    <h2 style={{ fontSize: '45px', fontWeight: 600, color: 'white' }}>The Best Business Solution <br />For Your Business</h2>
+                    <h2 style={{ color: 'white' }} className='featuresHeading'>The Best Business Solution <br />For Your Business</h2>
                 </Grid>
                 {services.map((item, i) => {
                     return (
@@ -49,16 +47,16 @@ export default function Process() {
                                     <div className='processCount'>{i + 1}</div>
                                 </Grid>
                                 <Grid item md={12} style={{ padding: 0, marginBottom: '5%' }}>
-                                    <h2>{item.name}</h2>
+                                    <h2 style={{ fontWeight: 600 }}>{item.name}</h2>
                                 </Grid>
                                 <Grid item md={12} style={{ padding: 0 }}>
-                                    <p className='featuresPara'>{item.para}</p>
+                                    <p className='featuresPara' style={{ fontWeight: 400 }}>{item.para}</p>
                                 </Grid>
                             </Grid>
                         </Grid>
                     )
                 })}
-                <Grid item md={3} style={{ background: 'white', color: 'black', padding: '6% 4%', borderRadius: '17px', zIndex: '2' }}>
+                <Grid item md={3} className='customProcessDiv'>
                     <Grid container spacing={2} >
                         <Grid item md={12} style={{ padding: 0, marginBottom: '5%' }}>
                             <img src='https://d33wubrfki0l68.cloudfront.net/957e0eddcebbe86f49da8e9d227cb5c2d3f16397/1e1fa/img/tax.svg' />
@@ -69,7 +67,7 @@ export default function Process() {
                         <Grid item md={12} style={{ padding: 0 }}>
                             <Button endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
                                 background: '#FF6326',
-                                padding: '3% 6%',
+                                padding: '4% 7%',
                                 marginTop: '4%',
                             }}>GET STARTED</Button>
                         </Grid>
