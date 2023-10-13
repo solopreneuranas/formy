@@ -66,7 +66,7 @@ export default function Features() {
 
                 </Grid>
                 <Grid item md={6} className='featuresImg'>
-                    <center><img src='/images/section-image-blue.svg' style={{ width: '100%', marginRight: 'auto' }} /></center>
+                    <center><img src='/images/section-image-blue-2.svg' style={{ width: '100%', marginRight: 'auto', borderRadius: '0 200px 0 0' }} /></center>
                 </Grid>
             </Grid>
 
