@@ -91,11 +91,11 @@ export default function PricingTabs() {
                     <p className='featuresPara' style={{ marginTop: '1%', marginBottom: '1%' }}>Get upfront, clear pricing for starting and running your business.</p><br />
                 </center>
             </Grid>
-            <Grid item md={6}>
-                <Grid container spacing={0} style={business}>
+            <Grid item md={6} style={{width: '100%'}}>
+                <Grid container spacing={0} className='business'>
                     <Grid item xs={12} className='tabLeftCol'>
                         <h3 style={{ fontWeight: 600, fontSize: '20px', marginBottom: '2%' }}>Business</h3>
-                        <h3 style={{ fontWeight: 600, fontSize: '40px' }}>$199 <sub style={{ fontWeight: 400, fontSize: '20px' }}>+ State Fees</sub></h3>
+                        <h3 style={{ fontWeight: 600, fontSize: '40px' }}>$199 <span style={{ fontWeight: 400, fontSize: '20px' }}>+ State Fees</span></h3>
                         <p className='pricingContent' style={{ marginTop: '2%' }}>If you're operating with a low budget.</p>
                         <Button fullWidth variant='contained' className='globalButton' style={{
                             background: '#FF6326',
@@ -122,11 +122,11 @@ export default function PricingTabs() {
                 </Grid>
             </Grid>
 
-            <Grid item md={6}>
-                <Grid container spacing={0} style={premium}>
+            <Grid item md={6} style={{width: '100%'}}>
+                <Grid container spacing={0} className='premium'>
                     <Grid item xs={12} className='tabLeftCol'>
                         <h3 style={{ fontWeight: 600, fontSize: '20px', marginBottom: '2%' }}>Premium</h3>
-                        <h3 style={{ fontWeight: 600, fontSize: '40px' }}>$299 <sub style={{ fontWeight: 400, fontSize: '20px' }}>+ State Fees</sub></h3>
+                        <h3 style={{ fontWeight: 600, fontSize: '40px' }}>$299 <span style={{ fontWeight: 400, fontSize: '20px' }}>+ State Fees</span></h3>
                         <p className='pricingContent' style={{ marginTop: '2%' }}>Enhanced, fast, and exclusive service.</p>
                         <Button fullWidth variant='contained' className='globalButton' style={{
                             background: 'white',

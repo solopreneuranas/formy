@@ -572,6 +572,26 @@ body {
   align-items: center;
 }
 
+
+.business {
+  height: 650px;
+  margin: 0;
+  padding: 6%;
+  border: 1px solid gainsboro;
+  border-radius: 10px
+}
+
+.premium {
+  height: 650px;
+  margin: 0;
+  padding: 6%;
+  border-radius: 10px;
+  background: #FF6326;
+  color: white;
+  border-radius: 10px;
+}
+
+
 @media (max-width: 768px) {
   #headerBtn {
     display: none !important;
@@ -676,17 +696,17 @@ body {
   }
 
   .pricingPackage {
-    width: 100%;
-    margin: auto;
-    /* background-color: #F2F2F2; */
-    display: block !important;
-    margin-bottom: 5%;
-    border-radius: 0 0 5px 5px;
+    padding: 3%;
   }
 
-  .pricingPackageBar {
-    background-color: white;
-    border-radius: 5px 5px 0 0;
+  .business {
+    height: 750px;
+    padding: 5%;
+  }
+
+  .premium {
+    height: 700px;
+    padding: 5%;
   }
 
   .tabBrand {
