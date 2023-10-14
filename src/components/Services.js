@@ -48,7 +48,6 @@ export default function Features() {
 
     return (
         <div className='root'>
-
             <Grid container spacing={2} className='servicesSection'>
                 <Grid item md={6} className='featuresImg'>
                     <center><img src='/images/section-image-blue.svg' style={{ width: '100%', marginRight: 'auto' }} /></center>
@@ -63,7 +62,7 @@ export default function Features() {
                         {features.map((item) => {
                             return (
                                 <Grid item md={6}>
-                                    <img src={item.icon} style={{width: 65}}/>
+                                    <img src={item.icon} style={{ width: 65 }} />
                                     <h3 style={{ marginBottom: '2%', fontWeight: '600' }}>{item.title}</h3>
                                 </Grid>
                             )

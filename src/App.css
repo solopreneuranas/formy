@@ -491,11 +491,11 @@ body {
 
 .globalButton {
   background: #FF6326;
-  color: white !important;
+  color: white;
   font-weight: 400 !important;
   font-size: 16px !important;
   margin-top: 2%;
-  border-radius: 50px !important;
+  border-radius: 17px !important;
 }
 
 .mobileHeroImg {
@@ -503,7 +503,6 @@ body {
 }
 
 .footerSec {
-  border-top: 4px solid #FF6326;
   color: black;
   padding: 6% 13%;
 }
@@ -567,6 +566,17 @@ body {
   z-index: 2;
 }
 
+.ctaSection {
+  width: 100%;
+  margin: auto;
+  padding: 5% 15%;
+  background-color: #FF6326;
+  color: white !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   #headerBtn {
     display: none !important;
@@ -603,7 +613,7 @@ body {
   }
 
   .processSection {
-    padding: 10% 13%!important;
+    padding: 10% 13% !important;
   }
 
   .customProcessDiv {

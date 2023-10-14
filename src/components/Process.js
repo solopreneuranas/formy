@@ -35,13 +35,15 @@ export default function Process() {
 
     return (
         <div className="root" style={{ padding: 0, position: 'relative', margin: 0 }}>
+            <img src='/images/pattern-3.svg' style={{ position: 'absolute', opacity: '50%', width: '100%', height: '100%', objectFit: 'cover' }} />
+
             <Grid container spacing={5} className='processSection'>
-                <Grid item md={12} style={{ padding: 0 }}>
+                <Grid item md={12} style={{ padding: 0, zIndex: 2 }}>
                     <h2 style={{ color: 'white' }} className='featuresHeading'>The Best Business Solution <br />For Your Business</h2>
                 </Grid>
                 {services.map((item, i) => {
                     return (
-                        <Grid item md={3} className='processDiv'>
+                        <Grid item md={3} className='processDiv' style={{ zIndex: 2 }}>
                             <Grid container spacing={2} >
                                 <Grid item md={12} style={{ padding: 0, marginBottom: '5%' }}>
                                     <div className='processCount'>{i + 1}</div>
@@ -50,7 +52,7 @@ export default function Process() {
                                     <h2 style={{ fontWeight: 600 }}>{item.name}</h2>
                                 </Grid>
                                 <Grid item md={12} style={{ padding: 0 }}>
-                                    <p className='featuresPara' style={{ fontWeight: 400 }}>{item.para}</p>
+                                    <p className='featuresPara' style={{ fontWeight: 400, opacity: '100%' }}>{item.para}</p>
                                 </Grid>
                             </Grid>
                         </Grid>

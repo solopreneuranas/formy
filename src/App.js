@@ -9,6 +9,7 @@ import Services from "./components/Services";
 import Bonuses from "./components/Bonuses";
 import Header from "./components/Header";
 import Process from "./components/Process";
+import CTA from "./components/CTA";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <PricingCompare />
       <Bonuses />
       <Faq />
+      <CTA />
       <Footer />
     </div>
   );
