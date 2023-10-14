@@ -330,7 +330,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8% 26%;
+  padding: 10% 26% 8%;
   background: white;
   text-align: center;
 }
@@ -545,6 +545,7 @@ body {
   padding-right: 1% !important;
   margin-top: 3% !important;
   margin-right: 2% !important;
+  box-shadow: 0 0 40px #ff4800;
 }
 
 .processCount {
@@ -554,6 +555,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  font-size: 22px;
   color: white;
   background-color: #FF6326;
   padding: 3%;
