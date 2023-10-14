@@ -100,7 +100,7 @@ export default function PricingTabs() {
                         <Button fullWidth variant='contained' className='globalButton' style={{
                             background: '#FF6326',
                             padding: '1.5% 4%',
-                            margin: '10% 0 5%'
+                            margin: '7% 0 5%'
                         }}>Go Business</Button>
 
                         {
@@ -108,11 +108,9 @@ export default function PricingTabs() {
                                 return (
 
                                     <Grid container spacing={1} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '0' }}>
-                                        <Grid item xs={1}>
-                                            <DoneIcon fontSize='large' />
-                                        </Grid>
-                                        <Grid item xs={11}>
-                                            <p className='pricingContent' style={{ fontSize: '18px', padding: 0, margin: 0 }}>{item.title}</p>
+                                        <Grid item xs={12} style={{ display: 'flex', justifyContent: 'left', alignItems: 'center' }}>
+                                            <span style={{marginRight: '2%'}}><DoneIcon fontSize='large' /></span>
+                                            <span className='pricingContent' style={{ fontSize: '18px', padding: 0, margin: 0 }}>{item.title}</span>
                                         </Grid>
                                     </Grid>
                                 )
@@ -132,7 +130,7 @@ export default function PricingTabs() {
                             background: 'white',
                             color: 'black',
                             padding: '1.5% 4%',
-                            margin: '10% 0 5%'
+                            margin: '7% 0 5%'
                         }}>Go Premium</Button>
 
                         {
@@ -140,11 +138,9 @@ export default function PricingTabs() {
                                 return (
 
                                     <Grid container spacing={1} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '0' }}>
-                                        <Grid item xs={1}>
-                                            <DoneIcon fontSize='large' />
-                                        </Grid>
-                                        <Grid item xs={11}>
-                                            <p className='pricingContent' style={{ fontSize: '18px', padding: 0, margin: 0 }}>{item.title}</p>
+                                        <Grid item xs={12} style={{ display: 'flex', justifyContent: 'left', alignItems: 'center' }}>
+                                            <span style={{marginRight: '2%'}}><DoneIcon fontSize='large' /></span>
+                                            <span className='pricingContent' style={{ fontSize: '18px', padding: 0, margin: 0 }}>{item.title}</span>
                                         </Grid>
                                     </Grid>
                                 )
