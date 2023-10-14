@@ -20,7 +20,7 @@ export default function Hero() {
                         The all-in-one platform to automate your marketing campaigns over Email, SMS, WhatsApp or chat. Join the 500,000 companies who trust Brevo.
                     </p>
                     </center>
-                    <Button endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
+                    <Button variant='contained' className='globalButton' style={{
                         background: '#FF6326',
                         padding: '1.5% 4%',
                         marginTop: '4%',

@@ -82,7 +82,7 @@ export default function Header() {
                             </li>
                         </ul>
                     </div>
-                    <Button id='headerBtn' endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
+                    <Button id='headerBtn' variant='contained' className='globalButton' style={{
                         background: '#FF6326',
                         padding: '0.7% 1.5%',
                         marginTop: 0,

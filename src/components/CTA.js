@@ -23,7 +23,7 @@ export default function CTA() {
                 </Grid>
                 <Grid item xs={12} style={{ zIndex: 2 }}>
                     <center>
-                        <Button endIcon={<SendIcon />} variant='contained' className='globalButton' style={{
+                        <Button variant='contained' className='globalButton' style={{
                             background: 'white',
                             color: 'black',
                             padding: '1% 3%',

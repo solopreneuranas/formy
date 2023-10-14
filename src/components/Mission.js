@@ -18,7 +18,7 @@ export default function Mission() {
                         We understand the challenges you face in accepting card payments at your store, particularly if you are located in a country not supported by Stripe. Our solution is designed to address this issue by managing the entire process for you.
                     </p>
                     <Rating name="read-only" value={value} readOnly /><br /><br />
-                    <Button endIcon={<SendIcon />} variant='contained' className='globalButton'
+                    <Button variant='contained' className='globalButton'
                         style={{
                             padding: '2% 5%',
                             background: '#FF6326'

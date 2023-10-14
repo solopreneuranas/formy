@@ -19,7 +19,7 @@ export default function PricingCompare() {
 
         return (
             <div>
-                <Button onClick={handleOpen} endIcon={<SendIcon />} variant='contained' className='globalButton' 
+                <Button onClick={handleOpen} variant='contained' className='globalButton' 
                 style={{
                     padding: '0.8% 1.7%',
                     background: '#FF6326',
