@@ -14,7 +14,7 @@ export default function Hero() {
             <Grid container spacing={3} className='heroSection'>
                 <Grid item xs={12}>
                     <h2 className='bigHeading'>
-                       You're Just a step away from having your very own <span style={{color: '#FF6326'}}>PayPal</span> account!
+                       You're Just a step away from having your very own <span style={{color: '#FF6326', fontFamily: 'Be Vietnam Pro'}}>PayPal</span> account!
                     </h2>
                     <center><p className='globalPara'>
                         The all-in-one platform to automate your marketing campaigns over Email, SMS, WhatsApp or chat. Join the 500,000 companies who trust Brevo.

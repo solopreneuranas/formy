@@ -4,7 +4,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Inter' !important;
+  font-family: 'Inter';
 }
 
 body {
@@ -700,12 +700,12 @@ body {
   }
 
   .business {
-    height: 750px;
+    height: 630px;
     padding: 5%;
   }
 
   .premium {
-    height: 700px;
+    height: 610px;
     padding: 5%;
   }
 
