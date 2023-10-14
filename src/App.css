@@ -432,12 +432,6 @@ body {
   background: #FF6326 !important;
 }
 
-.list {
-  font-family: 'Inter';
-  width: 100%;
-  max-width: 360px;
-}
-
 .faqSection {
   width: 100%;
   margin: auto;
@@ -486,8 +480,11 @@ body {
 }
 
 .pricingPackage {
-  display: none !important;
+  width: 100%;
+  margin: auto;
+  padding: 3% 20% 0;
 }
+
 
 .globalButton {
   background: #FF6326;
@@ -495,7 +492,7 @@ body {
   font-weight: 400 !important;
   font-size: 16px !important;
   margin-top: 2%;
-  border-radius: 17px !important;
+  border-radius: 15px !important;
 }
 
 .mobileHeroImg {
@@ -514,11 +511,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 5% 12%;
-}
-
-.listItem {
-  font-family: 'Inter' !important;
-  font-weight: 500;
 }
 
 .css-v84d5j-MuiSvgIcon-root {

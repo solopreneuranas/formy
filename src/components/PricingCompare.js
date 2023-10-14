@@ -1,7 +1,7 @@
 import * as React from 'react';
 import '../App.css';
 import StateFees from './StateFees';
-import PricingTabs from './PricingPackage';
+import PricingTabs from './PricingTabs';
 
 import { Grid, TextField, Button, Alert, AlertTitle, Rating, Typography, Avatar, AvatarGroup } from "@mui/material";
 import { useState } from "react";
