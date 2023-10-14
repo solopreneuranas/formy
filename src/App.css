@@ -539,7 +539,7 @@ body {
 
 
 .processDiv {
-  color: white;
+  background-color: white;
   border-radius: 17px;
   padding: 3% !important;
   padding-right: 1% !important;
@@ -554,7 +554,8 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #ff4800;
+  color: white;
+  background-color: #FF6326;
   padding: 3%;
 }
 

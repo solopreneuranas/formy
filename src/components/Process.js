@@ -30,7 +30,12 @@ export default function Process() {
             icon: 'https://d33wubrfki0l68.cloudfront.net/6e021e3210ea81c7a4a5be95d4c0d788801a18b6/d1cf5/img/payment.svg',
             name: 'Registered Agent',
             para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
-        }
+        },
+        {
+            icon: 'https://d33wubrfki0l68.cloudfront.net/d3550384d9e503abbd3155ccab18267c77acbdfe/fd0d2/img/bank.svg',
+            name: 'Obtaining EIN, ITIN',
+            para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
+        },
     ]
 
     return (
@@ -58,7 +63,7 @@ export default function Process() {
                         </Grid>
                     )
                 })}
-                <Grid item md={3} className='customProcessDiv'>
+                {/* <Grid item md={3} className='customProcessDiv'>
                     <Grid container spacing={2} >
                         <Grid item md={12} style={{ padding: 0, marginBottom: '5%' }}>
                             <img src='https://d33wubrfki0l68.cloudfront.net/957e0eddcebbe86f49da8e9d227cb5c2d3f16397/1e1fa/img/tax.svg' />
@@ -74,7 +79,7 @@ export default function Process() {
                             }}>GET STARTED</Button>
                         </Grid>
                     </Grid>
-                </Grid>
+                </Grid> */}
             </Grid>
 
         </div>
