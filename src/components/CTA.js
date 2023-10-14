@@ -16,7 +16,7 @@ export default function CTA() {
                     </h2>
                 </Grid>
                 <Grid item xs={12} style={{ zIndex: 2 }}>
-                    <center><p className='globalPara' style={{ margin: 'auto', width: '50%', padding: 0, fontWeight: 400 }}>
+                    <center><p className='ctaPara'>
                         The all-in-one platform to automate your marketing campaigns over Email, SMS, WhatsApp or chat. Join the 500,000 companies who trust Brevo.
                     </p>
                     </center>

@@ -591,6 +591,14 @@ body {
   border-radius: 10px;
 }
 
+.ctaPara {
+  width: 50%;
+  margin: auto;
+  font-weight: 400;
+  font-size: 17px;
+  opacity: 80%;
+}
+
 
 @media (max-width: 768px) {
   #headerBtn {
@@ -745,6 +753,16 @@ body {
   .mobilePrice {
     font-size: 30px !important;
   }
+
+  .ctaSection {
+    padding: 10% 3%;
+  }
+
+  .ctaPara {
+    width: 90%;
+    font-size: 17px;
+  }
+
 
   .footerSec {
     padding: 10% 5%;
