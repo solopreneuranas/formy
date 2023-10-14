@@ -599,6 +599,11 @@ body {
   opacity: 80%;
 }
 
+.animateText{
+  color: #FF6326 !important;
+  text-decoration: none !important;
+}
+
 
 @media (max-width: 768px) {
   #headerBtn {
