@@ -1,3 +1,10 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden !important;
+  font-family: 'Inter' !important;
+}
+
 /* Styles for Header Starts */
 
 * {
@@ -309,11 +316,54 @@ body {
 /* Styles for Header Ends*/
 
 
-body {
+
+.animated-text {
+  color: #FF6326;
+  height: 60px;
+  font-family: 600;
+  overflow: hidden;
+  display: inline-block;
   padding: 0;
-  margin: 0;
-  overflow-x: hidden !important;
-  font-family: 'Inter' !important;
+}
+
+.line {
+  text-align: center;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.line:first-child {
+  animation: anim 8s infinite;
+}
+
+@keyframes anim {
+  0% {
+    margin-top: 0;
+  }
+
+  16% {
+    margin-top: -60px;
+  }
+
+  33% {
+    margin-top: -120px;
+  }
+
+  50% {
+    margin-top: -180px;
+  }
+
+  66% {
+    margin-top: -120px;
+  }
+
+  82% {
+    margin-top: -60px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
 }
 
 .root {
@@ -537,7 +587,6 @@ body {
   padding-right: 1% !important;
   margin-top: 3% !important;
   margin-right: 2% !important;
-  box-shadow: 0 0 40px #ff4800;
 }
 
 .processCount {
@@ -599,9 +648,10 @@ body {
   opacity: 80%;
 }
 
-.animateText{
+.animateText {
   color: #FF6326 !important;
   text-decoration: none !important;
+  font-family: 'Space Grotesk' !important
 }
 
 
@@ -624,6 +674,11 @@ body {
   .bigHeading {
     font-size: 40px;
   }
+
+  .line {
+    font-size: 40px;
+  }
+
 
   .globalPara {
     width: 100%;
@@ -767,7 +822,6 @@ body {
     width: 90%;
     font-size: 17px;
   }
-
 
   .footerSec {
     padding: 10% 5%;
