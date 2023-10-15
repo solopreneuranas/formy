@@ -20,7 +20,7 @@ export default function Footer() {
             <div className='footerSec'>
                 <Grid container spacing={2}>
                     <Grid item xs={4}>
-                        <img src='https://tryboosty.com/images/boosty-logo.svg' style={{ width: '30%', marginBottom: '5%', marginLeft: '-3%' }} />
+                        <img src='/images/boosty-logo.svg' style={{ width: '30%', marginBottom: '5%', marginLeft: '-3%' }} />
                         <p className='globalPara'>
                             Boosty is a technology company providing cutting-edge digital solutions to businesses.
                         </p><br />

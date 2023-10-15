@@ -75,10 +75,6 @@ export default function PricingTabs() {
         {
             icon: <DoneIcon />,
             title: ' Logo Design with Brand Guidelines'
-        },
-        {
-            icon: <DoneIcon />,
-            title: 'Business Bank Account (Payoneer)'
         }
     ]
 
@@ -99,7 +95,7 @@ export default function PricingTabs() {
                         <p className='pricingContent' style={{ marginTop: '2%' }}>If you're operating with a low budget.</p>
                         <Button fullWidth variant='contained' className='globalButton' style={{
                             background: '#FF6326',
-                            padding: '1.5% 4%',
+                            padding: '3% 4%',
                             margin: '7% 0 5%'
                         }}>Go Business</Button>
 
@@ -129,7 +125,7 @@ export default function PricingTabs() {
                         <Button fullWidth variant='contained' className='globalButton' style={{
                             background: 'white',
                             color: 'black',
-                            padding: '1.5% 4%',
+                            padding: '3% 4%',
                             margin: '7% 0 5%'
                         }}>Go Premium</Button>
 

@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { Grid } from "@mui/material";
 
-export default function Features() {
+export default function Services() {
     const [open, setOpen] = React.useState(false);
 
     const handleClick = () => {
