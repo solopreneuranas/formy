@@ -19,9 +19,9 @@ export default function Footer() {
         <div className='root'>
             <div className='footerSec'>
                 <Grid container spacing={2}>
-                    <Grid item xs={4}>
+                    <Grid item md={4}>
                         <img src='/images/boosty-logo.svg' style={{ width: '30%', marginBottom: '5%', marginLeft: '-3%' }} />
-                        <p className='globalPara'>
+                        <p style={{opacity: '70%', fontSize: '17px'}}>
                             Boosty is a technology company providing cutting-edge digital solutions to businesses.
                         </p><br />
                         <div style={{
@@ -40,7 +40,7 @@ export default function Footer() {
                         }}><PhoneIcon fontSize='small' style={{ marginRight: '4%' }} />+1 (302) 209-8440</div>
                     </Grid>
 
-                    <Grid item xs={2}>
+                    <Grid item md={2}>
                         <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
                             Quick Links
                         </Typography>
@@ -62,7 +62,7 @@ export default function Footer() {
                         </List>
                     </Grid>
 
-                    <Grid item xs={2}>
+                    <Grid item md={2}>
                         <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
                             Legal
                         </Typography>
@@ -81,7 +81,7 @@ export default function Footer() {
                         </List>
                     </Grid>
 
-                    <Grid item xs={2}>
+                    <Grid item md={2}>
                         <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
                             Quick Links
                         </Typography>
@@ -100,7 +100,7 @@ export default function Footer() {
                         </List>
                     </Grid>
 
-                    <Grid item xs={2}>
+                    <Grid item md={2}>
                         <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
                             Follow us
                         </Typography>
