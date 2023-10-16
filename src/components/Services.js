@@ -3,16 +3,11 @@ import * as React from 'react';
 import { Grid } from "@mui/material";
 
 export default function Services() {
-    const [open, setOpen] = React.useState(false);
-
-    const handleClick = () => {
-        setOpen(!open)
-    }
-
+    
     const features = [
         {
             icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce462edfa14ceb_Tax%20Returns.svg',
-            title: 'File U.S Tax Returns'
+            title: 'Form U.S. company'
         },
         {
             icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce463d66a14ce7_EIN%20or%20ITIN.svg',
@@ -20,19 +15,19 @@ export default function Services() {
         },
         {
             icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce463e56a14cea_US%20Company.svg',
-            title: 'Form U.S. company'
-        },
-        {
-            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce462db7a14ce8_Payments%201.svg',
             title: 'Open Stripe/PayPal'
         },
         {
-            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce463e56a14cea_US%20Company.svg',
+            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce462db7a14ce8_Payments%201.svg',
             title: 'Open Business Bank'
         },
         {
-            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce46a051a14ce6_Amazon%20Acct..svg',
+            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce463e56a14cea_US%20Company.svg',
             title: 'Create Amazon Account'
+        },
+        {
+            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce46a051a14ce6_Amazon%20Acct..svg',
+            title: 'Website Development'
         },
     ]
 
@@ -43,9 +38,9 @@ export default function Services() {
                     <center><img src='/images/section-image-blue.svg' style={{ width: '100%', marginRight: 'auto' }} /></center>
                 </Grid>
                 <Grid item md={6} className='featuresContent'>
-                    <h2 className='featuresHeading'>We power your core <span style={{ color: '#FF6326' }}>Business</span> needs</h2><br />
+                    <h2 className='featuresHeading'>Boosty: <span style={{ color: '#FF6326' }}> Expand Globally, </span> Effortlessly</h2><br />
                     <p className='featuresPara'>
-                        We understand the challenges you face in accepting card payments at your store, particularly if you are located in a country not supported by Stripe. Our solution is designed to for you.
+                        Ready to elevate your global business? Boosty is your passport to unlock popular online services, even in regions where they're unavailable. Seamlessly access them today!
                     </p>
 
                     <Grid container spacing={3}>

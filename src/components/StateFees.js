@@ -1,10 +1,9 @@
 import * as React from 'react';
 import '../App.css';
 
-import { Grid, TextField, Button, Alert, AlertTitle, Rating, Typography, Avatar, AvatarGroup } from "@mui/material";
+import { Grid, TextField, Button, Typography } from "@mui/material";
 import { useState } from "react";
 import Autocomplete from '@mui/material/Autocomplete';
-import SendIcon from '@mui/icons-material/Send';
 
 export default function StateFees() {
     const [selectedState, setSelectedState] = useState(null);
@@ -70,7 +69,7 @@ export default function StateFees() {
     return (
         <div>
             <Grid container spacing={5}>
-                <Grid item xs={12}>
+                <Grid item xs={12} style={{marginTop: '3%'}}>
                     <Autocomplete
                         disablePortal
                         id="combo-box-demo"
@@ -96,6 +95,7 @@ export default function StateFees() {
                         background: '#FF6326',
                         padding: '1.7% 4%',
                         marginTop: '2%',
+                        fontFamily: 'Inter'
                     }}>GET STARTED</Button>
 
                 </div>

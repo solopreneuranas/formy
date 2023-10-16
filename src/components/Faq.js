@@ -54,25 +54,30 @@ export default function Faq() {
     };
 
     const faqData = [
+
         {
-            ques: "Do I need to be a US citizen to incorporate with Micahguru?",
-            ans: "Micahguru welcomes entrepreneurs internationally, irrespective of their citizenship. You do not need to be a US citizen to incorporate."
+            ques: "What is Boosty's main service?",
+            ans: "Boosty specializes in helping individuals and businesses register their U.S. companies, unlocking access to a range of online services."
         },
         {
-            ques: "Can you explain the process of incorporating with Micahguru?",
-            ans: "Explanation of the process to incorporate with Micahguru."
+            ques: "How can I benefit from Boosty's services?",
+            ans: "You can access platforms like Stripe, PayPal, Amazon, and more, even in regions where they don't typically operate."
         },
         {
-            ques: "What does LLC (Limited Liability Company) mean?",
-            ans: "Explanation of what LLC means."
+            ques: "What are the advantages of having a U.S. company?",
+            ans: "A U.S. company opens the door to global business opportunities, including seamless payment processing and access to major e-commerce platforms."
         },
         {
-            ques: "Can you explain the process of incorporating with Micahguru?",
-            ans: "Explanation of the process to incorporate with Micahguru."
+            ques: "What Documentation is Required?",
+            ans: "You will be asked to provide a copy of your ID card or passport and a recent bank statement displaying your name, address, and a date within the last 3 months (with a visible creation date)."
         },
         {
-            ques: "What is the role of a Registered Agent?",
-            ans: "Explanation of the role of a Registered Agent."
+            ques: "How long does it take to get started with Boosty?",
+            ans: "The timeline can vary, but we aim for a quick and efficient process so you can enjoy the benefits as soon as possible."
+        },
+        {
+            ques: "How can I get started with Boosty?",
+            ans: "To get started, simply reach out to our team, and we'll guide you through the process. Unlock global business potential with Boosty today!"
         }
     ];
 
@@ -85,12 +90,12 @@ export default function Faq() {
                 {faqData.map((item, index) => (
                     <Accordion className='faqItem' onChange={handleChange(`panel${index + 1}`)} key={`accordion-${index}`}>
                         <AccordionSummary style={{ background: 'white' }} aria-controls={`panel${index + 1}d-content`} id={`panel${index + 1}d-header`}>
-                            <Typography style={{ fontSize: '23px', fontWeight: '600' }}>
+                            <Typography style={{ fontSize: '23px', fontWeight: '600', fontFamily: 'Inter' }}>
                                 {item.ques}
                             </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography style={{ fontSize: '18px' }}>
+                            <Typography style={{ fontSize: '18px', fontFamily: 'Inter' }}>
                                 {item.ans}
                             </Typography>
                         </AccordionDetails>

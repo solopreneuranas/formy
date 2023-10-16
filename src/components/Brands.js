@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Grid, TextField, Button, Alert, AlertTitle, Rating, Typography, Avatar, AvatarGroup } from "@mui/material";
+import { Grid} from "@mui/material";
 
 export default function Brands() {
     return (
@@ -8,19 +8,19 @@ export default function Brands() {
 
             <Grid container spacing={5} className='brandsBox'>
                 <Grid item>
-                    <img src='https://www.doola.com/wp-content/themes/doola2/resources/images/backed-by/y-combinator.png' className='logo'/>
+                    <img src='/images/stripe-logo.png' className='logo'/>
                 </Grid>
                 <Grid item>
-                    <img src='https://www.doola.com/wp-content/themes/doola2/resources/images/backed-by/harvard-management-company.png' className='logo'/>
+                    <img src='/images/mercury-logo.svg' className='logo'/>
                 </Grid>
                 <Grid item>
-                    <img src='https://www.doola.com/wp-content/themes/doola2/resources/images/backed-by/nexus.png' className='logo'/>
+                    <img src='/images/wise-logo.svg' className='logo'/>
                 </Grid>
                 <Grid item>
-                    <img src='https://www.doola.com/wp-content/themes/doola2/resources/images/backed-by/y-combinator.png' className='logo'/>
+                    <img src='/images/payoneer-logo.svg' className='logo'/>
                 </Grid>
                 <Grid item>
-                    <img src='https://www.doola.com/wp-content/themes/doola2/resources/images/backed-by/hustle-fund.png' className='logo'/>
+                    <img src='/images/relay-logo.svg' className='logo'/>
                 </Grid>
             </Grid>
 

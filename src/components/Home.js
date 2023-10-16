@@ -6,10 +6,9 @@ import Hero from './Hero';
 import HeroImg from './HeroImg';
 import Brands from './Brands';
 import Services from './Services';
-import Process from './Process';
 import Features from './Features';
 import PricingTabs from './PricingTabs';
-import Bonuses from './Bonuses';
+import Support from './Support';
 import Faq from './Faq';
 import CTA from './CTA';
 import Footer from './Footer';
@@ -23,10 +22,9 @@ export default function Home() {
             <HeroImg />
             <Brands />
             <Services />
-            <Process />
-            <Features />
             <PricingTabs />
-            <Bonuses />
+            <Features />
+            <Support />
             <Faq />
             <CTA />
             <Footer />

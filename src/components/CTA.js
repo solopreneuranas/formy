@@ -2,7 +2,6 @@ import * as React from 'react';
 import '../App.css';
 
 import { Grid, Button } from "@mui/material";
-import SendIcon from '@mui/icons-material/Send';
 
 
 export default function CTA() {
@@ -12,12 +11,12 @@ export default function CTA() {
             <Grid container spacing={3} className='ctaSection'>
                 <Grid item xs={12} style={{ zIndex: 2 }}>
                     <h2 className='bigHeading' style={{ color: 'white', textAlign: 'center', margin: 0, fontSize: '40px' }}>
-                        Ready to start your dream business?
+                        Ready to Boost Your Business Worldwide?
                     </h2>
                 </Grid>
                 <Grid item xs={12} style={{ zIndex: 2 }}>
                     <center><p className='ctaPara'>
-                        The all-in-one platform to automate your marketing campaigns over Email, SMS, WhatsApp or chat. Join the 500,000 companies who trust Brevo.
+                        Simplify global expansion. Register a U.S.company, access major online services with Boosty, and elevate your business to new heights.
                     </p>
                     </center>
                 </Grid>
@@ -26,8 +25,9 @@ export default function CTA() {
                         <Button variant='contained' className='globalButton' style={{
                             background: 'white',
                             color: 'black',
-                            padding: '1% 3%',
+                            padding: '0.8% 3%',
                             marginTop: '1%',
+                            fontFamily: 'Inter'
                         }}>GET STARTED</Button>
                     </center>
                 </Grid>

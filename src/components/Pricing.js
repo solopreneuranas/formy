@@ -1,10 +1,14 @@
 import * as React from 'react';
 import '../App.css';
 
-import { Grid, Button } from "@mui/material";
+import { Grid, Button, Typography } from "@mui/material";
 import DoneIcon from '@mui/icons-material/Done';
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
+import StateFees from './StateFees';
+import CancelIcon from '@mui/icons-material/Cancel';
 
-export default function PricingTabs() {
+export default function Pricing() {
 
     const businessItems = [
         {
@@ -69,8 +73,39 @@ export default function PricingTabs() {
     ]
 
 
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
+    const pricingModal = () => {
+
+        return (
+            <div>
+                <Modal
+                    open={open}
+                    onClose={handleClose}
+                >
+                    <Box className='modal'>
+                        <Grid container spacing={5}>
+                            <Grid item xs={11}>
+                                <Typography id="modal-modal-title" variant="h4" component="h2" style={{ fontWeight: '600', fontFamily: 'Inter' }}>
+                                    State Fees Calculator
+                                </Typography>
+                            </Grid>
+                            <Grid item xs={1}>
+                                <CancelIcon onClick={handleClose} fontSize='large' className='cancelIcon' />
+                            </Grid>
+                        </Grid>
+                        <StateFees />
+                    </Box>
+                </Modal>
+            </div>
+        );
+    }
+
+
     return (
-        <Grid container spacing={5} className='pricingPackage'>
+        <Grid container spacing={5} className='pricingPackage' style={{ marginBottom: '5%' }}>
             <Grid item xs={12}>
                 <center>
                     <h2 className='featuresHeading'>Simplified<span style={{ color: '#FF6326' }}> Pricing </span>for all your needs</h2>
@@ -83,7 +118,7 @@ export default function PricingTabs() {
                         <h3 style={{ fontWeight: 600, fontSize: '20px', marginBottom: '2%' }}>Business</h3>
                         <h3 style={{ fontWeight: 600, fontSize: '40px' }}>$199 <span style={{ fontWeight: 400, fontSize: '20px' }}>+ State Fees</span></h3>
                         <p className='pricingContent' style={{ marginTop: '2%' }}>If you're operating with a low budget.</p>
-                        <Button fullWidth variant='contained' className='globalButton' style={{
+                        <Button onClick={handleOpen} fullWidth variant='contained' className='globalButton' style={{
                             background: '#FF6326',
                             padding: '3% 4%',
                             margin: '7% 0 5%',
@@ -113,7 +148,7 @@ export default function PricingTabs() {
                         <h3 style={{ fontWeight: 600, fontSize: '20px', marginBottom: '2%' }}>Premium</h3>
                         <h3 style={{ fontWeight: 600, fontSize: '40px' }}>$299 <span style={{ fontWeight: 400, fontSize: '20px' }}>+ State Fees</span></h3>
                         <p className='pricingContent' style={{ marginTop: '2%' }}>Enhanced, fast, and exclusive service.</p>
-                        <Button fullWidth variant='contained' className='globalButton' style={{
+                        <Button onClick={handleOpen} fullWidth variant='contained' className='globalButton' style={{
                             background: 'white',
                             color: 'black',
                             padding: '3% 4%',
@@ -137,7 +172,8 @@ export default function PricingTabs() {
                     </Grid>
                 </Grid>
             </Grid>
-
+            
+            {pricingModal()}
         </Grid>
     );
 }

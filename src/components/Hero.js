@@ -91,15 +91,16 @@ export default function Hero() {
                     </h2>
                     <center>
                         <p className='globalPara'>
-                            The all-in-one platform to automate your marketing campaigns over Email, SMS, WhatsApp or chat. Join the 500,000 companies who trust Brevo.
+                        Ready to access global online services from anywhere? Boosty makes it possible, even in regions they don't operate!
                         </p>
                     </center>
                     <Button variant='contained' className='globalButton' style={{
                         background: '#FF6326',
-                        padding: '1.5% 4%',
+                        padding: '1.1% 4%',
                         marginTop: '4%',
+                        fontFamily: 'Inter'
                     }}>GET STARTED</Button><br /><br />
-                    <p>Start at $149 + State Fees</p>
+                    <p>Start at $199 + State Fees</p>
                 </Grid>
             </Grid>
         </div>
