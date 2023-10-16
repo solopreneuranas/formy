@@ -354,6 +354,13 @@ body {
   line-height: 1em;
 }
 
+.faqHeading {
+  font-size: 45px;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 7%;
+}
+
 .globalPara {
   width: 90%;
   margin: auto;
@@ -640,7 +647,14 @@ body {
 
   .brandsBox {
     width: 100%;
-    padding: 10% 3% 20%;
+    padding: 10% 3% 10%;
+  }
+
+  .logo {
+    margin: 0;
+    padding: 0;
+    width: 140px;
+    filter: grayscale(100%);
   }
 
   .servicesSection {
@@ -725,7 +739,7 @@ body {
   }
 
   .premium {
-    height: 610px;
+    height: 630px;
     padding: 5%;
   }
 
@@ -777,6 +791,12 @@ body {
 
   .footerSec {
     padding: 10% 5%;
+  }
+
+  .faqHeading {
+    font-size: 35px;
+    text-align: left;
+    margin-bottom: 7%;
   }
 
 }

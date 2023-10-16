@@ -85,7 +85,7 @@ export default function Faq() {
     return (
         <div className='faqSection'>
             <div className='faq'>
-                <center><h2 className='bigHeading' style={{ fontSize: '45px', marginBottom: '7%' }}>Frequenly Asked <span style={{ color: '#FF6326' }}>Questions</span></h2></center>
+                <center><h2 className='faqHeading'>Frequenly Asked <span style={{ color: '#FF6326' }}>Questions</span></h2></center>
 
                 {faqData.map((item, index) => (
                     <Accordion className='faqItem' onChange={handleChange(`panel${index + 1}`)} key={`accordion-${index}`}>
