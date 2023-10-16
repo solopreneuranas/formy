@@ -4,6 +4,7 @@ import '../App.css';
 import Header from './Header';
 import Footer from './Footer';
 import CTA from './CTA';
+import Addons from "./Addons"
 import { Grid, Button, Typography } from "@mui/material";
 import DoneIcon from '@mui/icons-material/Done';
 import Modal from '@mui/material/Modal';
@@ -112,7 +113,7 @@ export default function Pricing() {
             <Header />
 
             <Grid container spacing={5} className='pricingPackage' style={{ marginBottom: '5%' }}>
-                <Grid item xs={12}>
+                <Grid item xs={12}className='pricingHeadingGrid'>
                     <center>
                         <h2 className='featuresHeading'>Simplified<span style={{ color: '#FF6326' }}> Pricing </span>for all your needs</h2>
                         <p className='featuresPara' style={{ marginTop: '1%', marginBottom: '1%' }}>Get upfront, clear pricing for starting and running your business.</p><br />
@@ -182,6 +183,8 @@ export default function Pricing() {
                 {pricingModal()}
             </Grid>
 
+
+            <Addons />
             <CTA />
             <Footer />
 

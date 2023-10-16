@@ -613,6 +613,38 @@ body {
   font-family: 'Space Grotesk' !important
 }
 
+.addonsSection {
+  width: 100%;
+  margin: auto;
+  padding: 0 13% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.addonsDiv {
+  border: 1px solid black;
+  box-shadow: 3px 3px 0 black;
+  border-radius: 25px;
+  margin-right: 3% !important;
+  margin-bottom: 3% !important;
+  padding: 5% 1% 5% 3%;
+  height: 410px;
+  margin-right: 0;
+}
+
+.addonsDiv:hover {
+  background-color: #FF6326;
+  cursor: pointer;
+  color: white !important;
+}
+
+.addonsPara {
+  opacity: 80%;
+  padding: 0;
+  margin: 0;
+}
 
 @media (max-width: 768px) {
   #headerBtn {
@@ -792,6 +824,33 @@ body {
     font-size: 35px;
     text-align: left;
     margin-bottom: 7%;
+  }
+
+  .addonsSection {
+    padding: 0 3% !important;
+  }
+
+  .pricingHeadingGrid {
+    margin-top: 15% !important;
+  }
+
+  .addonsDiv {
+    margin-bottom: 3% !important;
+    padding: 5% 3%;
+    height: 410px;
+    margin-right: 0;
+  }
+
+  .addonsDiv:hover {
+    background-color: #FF6326;
+    cursor: pointer;
+    color: white !important;
+  }
+
+  .addonsPara {
+    opacity: 80%;
+    padding: 0;
+    margin: 0;
   }
 
 }
