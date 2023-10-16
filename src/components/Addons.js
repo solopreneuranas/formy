@@ -111,7 +111,7 @@ export default function Addons() {
                                     {hoveredIndex === index && (
                                         <div className='addonsDetails'>
                                             <h2 style={{ marginBottom: '2%', fontWeight: '500', width: '50%', margin: 'auto' }}>{item.title}</h2>
-                                            <p className='addonsPara' style={{ margin: '10% 0' }}>{item.details}</p>
+                                            <p className='addonsPara' style={{ margin: '10% 0', opacity: '100%' }}>{item.details}</p>
                                             <p className='addonsPara' style={{ fontSize: '18px' }}>{item.priceTime}</p>
                                             <p className='addonsPara' style={{ fontSize: '25px', opacity: '100%' }}>{item.price}</p>
                                         </div>
