@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import '../App.css';
 import { Grid } from "@mui/material";
 import { useState } from 'react';
 
@@ -95,8 +95,8 @@ export default function Addons() {
             <Grid container spacing={5} className='addonsSection'>
                 <Grid item md={12} className='featuresContent'>
                     <h2 className='featuresHeading'><span style={{ color: '#FF6326' }}>Addons</span> Services</h2><br />
-                    <p className='featuresPara' style={{ width: '60%', margin: 'auto', marginBottom: '5%' }}>
-                        Boosty breaks geographic boundaries, empowering business expansion. We facilitate access to vital services by assisting in U.S. company registration, unlocking previously elusive opportunities.
+                    <p className='addonsPara' style={{ marginBottom: '5%' }}>
+                    Start your business on the right foot with worry-free services and support to accurately register with the State - guaranteed.
                     </p>
 
                     <Grid container spacing={3} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 0 }}>
