@@ -79,7 +79,7 @@ export default function Hero() {
 
             <Grid container spacing={3} className='heroSection'>
                 <Grid item xs={12}>
-                    <h2 className='bigHeading'>
+                    <h2 className='heroHeading'>
                         You can have your own <br />
                         <span style={{ color: '#FF6326', fontFamily: 'Space Grotesk' }}>
                             <font className="animateText">
