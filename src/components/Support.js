@@ -9,7 +9,7 @@ export default function Support() {
 
             <Grid container spacing={5} className='featuresSection'>
                 <Grid item md={6} className='featuresImg'>
-                    <center><img src='https://privatily.com/wp-content/uploads/2023/08/img-Bonuses-3-3-min.png' style={{ width: '90%', marginRight: 'auto' }} /></center>
+                    <center><img src='/images/section-image-4.svg' style={{ width: '90%', marginRight: 'auto' }} /></center>
                 </Grid>
                 <Grid item md={6} className='featuresContent'>
                     <h2 className='featuresHeading'>Dedicated <span style={{ color: '#FF6326' }}>Support,</span> Beyond Compare</h2><br />

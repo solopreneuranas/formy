@@ -113,7 +113,7 @@ export default function Pricing() {
             <Header />
 
             <Grid container spacing={5} className='pricingPackage' style={{ marginBottom: '5%' }}>
-                <Grid item xs={12}className='pricingHeadingGrid'>
+                <Grid item xs={12} className='pricingHeadingGrid'>
                     <center>
                         <h2 className='featuresHeading'>Simplified<span style={{ color: '#FF6326' }}> Pricing </span>for all your needs</h2>
                         <p className='featuresPara' style={{ marginTop: '1%', marginBottom: '1%' }}>Get upfront, clear pricing for starting and running your business.</p><br />
@@ -181,6 +181,19 @@ export default function Pricing() {
                 </Grid>
 
                 {pricingModal()}
+            </Grid>
+
+            <Grid container spacing={1} className='pricingBottomSection'>
+                <Grid item md={8} className='pricingBottomDiv-1'>
+                    <h2 className='pricingBottomHeading'>Need the filing fees and times for your state?</h2>
+                </Grid>
+                <Grid item md={4} className='pricingBottomDiv-2'>
+                    <Button variant='contained' className='globalButton' style={{
+                        background: '#FF6326',
+                        padding: '3% 6%',
+                        fontFamily: 'Inter'
+                    }}>GET STARTED</Button>
+                </Grid>
             </Grid>
 
 
