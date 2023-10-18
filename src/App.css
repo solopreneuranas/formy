@@ -801,6 +801,7 @@ body {
   }
 
   .pricingPackage {
+    margin-top: 10% !important;
     padding: 3%;
   }
 
