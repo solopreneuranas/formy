@@ -10,75 +10,66 @@ export default function Addons() {
     const services = [
         {
             icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg',
-            title: 'Formation Services',
-            price: "$0 + State Fees",
-            priceTime: 'Starting at',
-            details: '1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-            para: 'Our team of experts is here to guide you through the entire process, making sure you have the support you need.'
+            title: 'Business Stripe Account',
+            price: "$49",
+            priceTime: 'One Time Fee',
+            details: 'Secure your online payments effortlessly with our affordable Business Stripe Account setup. Reliable transactions, low fees, and seamless integration guaranteed.',
         },
         {
             icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b609b87df333d7fdfd_Support%201.svg',
-            title: 'Expert Guidance',
-            price: "$99/year",
-            priceTime: 'Annual fee',
-            details: '2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-            para: 'Our team of experts is here to guide you through the entire process, making sure you have the support you need.'
+            title: 'WordPress Website Setup',
+            price: "$149",
+            priceTime: 'One Time Fee',
+            details: 'Get a Professional WordPress Website that is 100% accepted by Stripe. Responsive design, plugins, and expert guidance for seamless online transactions. Launch confidently.',
         },
         {
             icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b609b87d678fd7fdfc_Everywhere%201.svg',
-            title: 'Affordable Solutions',
-            price: "$99",
+            title: 'ITIN Application',
+            price: "$349",
             priceTime: 'One Time Fee',
-            details: '3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-            para: 'Our team of experts is here to guide you through the entire process, making sure you have the support you need.'
+            details: 'Expert assistance for hassle-free ITIN application process. Ensure smooth documentation and IRS approval with our dedicated service team.',
         },
         {
             icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e540947af636b321_Problem%20Free%201.svg',
-            title: 'Secure and Confidential',
-            price: "$99/year",
-            priceTime: 'Starting at',
-            details: '4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-            para: 'Our team of experts is here to guide you through the entire process, making sure you have the support you need.'
+            title: 'Business PayPal Account',
+            price: "$199",
+            priceTime: 'One Time Fee',
+            details: 'Establish a trustworthy online payment gateway. Our Business PayPal Account setup ensures secure transactions, fraud protection, and customer trust for your business.',
         },
         {
             icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b609b87df333d7fdfd_Support%201.svg',
-            title: ' Expert Guidance',
-            price: "$99/year",
-            priceTime: 'Starting at',
-            details: '5 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-            para: 'Our team of experts is here to guide you through the entire process, making sure you have the support you need.'
+            title: 'Shopify Store Setup',
+            price: "$299",
+            priceTime: 'One Time Fee',
+            details: 'Unlock e-commerce potential. Customized storefront, payment integration, and product listing for a seamless shopping experience. Launch your online store successfully.',
         },
         {
             icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b609b87d678fd7fdfc_Everywhere%201.svg',
-            title: 'Affordable Solutions',
-            price: "$99",
-            priceTime: 'Annual Fee',
-            details: '6 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-            para: 'Our team of experts is here to guide you through the entire process, making sure you have the support you need.'
+            title: 'UK Company Formation',
+            price: "$199",
+            priceTime: 'One Time Fee',
+            details: 'Obtain comprehensive UK Company Formation with UK Business, Director, Registered Address, and Business Payoneer account. Start your UK venture with confidence.',
         },
         {
             icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b609b87df333d7fdfd_Support%201.svg',
-            title: ' Expert Guidance',
-            price: "$99/year",
+            title: 'Resale Certificate / Seller Permit',
+            price: "$149",
             priceTime: 'One Time Fee',
-            details: '7 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-            para: 'Our team of experts is here to guide you through the entire process, making sure you have the support you need.'
+            details: 'Navigate legal requirements. Obtain Resale Certificate /Seller Permit with our assistance. Ensure compliance, legal operations, and business peace of mind.',
         },
         {
             icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b609b87d678fd7fdfc_Everywhere%201.svg',
-            title: 'Affordable Solutions',
-            price: "$99",
+            title: 'Logo Design with Brand Guidelines',
+            price: "$49",
             priceTime: 'One Time Fee',
-            details: '8 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-            para: 'Our team of experts is here to guide you through the entire process, making sure you have the support you need.'
+            details: 'Craft a memorable brand identity. Our Logo Design with Brand Guidelines service offers unique logos and comprehensive guidelines for consistent brand representation.',
         },
         {
             icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b609b87d678fd7fdfc_Everywhere%201.svg',
-            title: 'Affordable Solutions',
-            price: "$99",
+            title: 'Digital Business Bundle',
+            price: "$39",
             priceTime: 'One Time Fee',
-            details: '9 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-            para: 'Our team of experts is here to guide you through the entire process, making sure you have the support you need.'
+            details: "Secure your online presence with a custom domain, professional business email, and premium web hosting. Elevate your brand's digital footprint with reliability and performance.",
         }
     ]
 
@@ -103,14 +94,14 @@ export default function Addons() {
                         {services.map((item, index) => {
                             return (
                                 <Grid item md={3} className='addonsDiv' onMouseEnter={() => handleAddonHover(index)} onMouseLeave={() => handleAddonHoverLeave(index)}>
-                                    <h2 style={{ marginBottom: '2%', fontWeight: '500', width: '50%', margin: 'auto', display: hoveredIndex === index ? 'none' : 'block' }}>{item.title}</h2>
+                                    <h2 style={{ marginBottom: '2%', fontWeight: '500', width: '70%', margin: 'auto', display: hoveredIndex === index ? 'none' : 'block' }}>{item.title}</h2>
                                     <center><img src={item.icon} style={{ width: 180, display: hoveredIndex === index ? 'none' : 'block' }} /></center>
                                     <p className='addonsPara' style={{ fontSize: '18px', display: hoveredIndex === index ? 'none' : 'block' }}>{item.priceTime}</p>
                                     <p className='addonsPara' style={{ fontSize: '25px', opacity: '100%', display: hoveredIndex === index ? 'none' : 'block' }}>{item.price}</p>
 
                                     {hoveredIndex === index && (
                                         <div className='addonsDetails'>
-                                            <h2 style={{ marginBottom: '2%', fontWeight: '500', width: '50%', margin: 'auto' }}>{item.title}</h2>
+                                            <h2 style={{ marginBottom: '2%', fontWeight: '500', width: '70%', margin: 'auto' }}>{item.title}</h2>
                                             <p className='addonsPara' style={{ margin: '10% 0', opacity: '100%' }}>{item.details}</p>
                                             <p className='addonsPara' style={{ fontSize: '18px' }}>{item.priceTime}</p>
                                             <p className='addonsPara' style={{ fontSize: '25px', opacity: '100%' }}>{item.price}</p>

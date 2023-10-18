@@ -183,7 +183,7 @@ export default function Pricing() {
                 {pricingModal()}
             </Grid>
 
-            <Grid container spacing={1} className='pricingBottomSection'>
+            {/* <Grid container spacing={1} className='pricingBottomSection'>
                 <Grid item md={8} className='pricingBottomDiv-1'>
                     <h2 className='pricingBottomHeading'>Need the filing fees and times for your state?</h2>
                 </Grid>
@@ -195,7 +195,7 @@ export default function Pricing() {
                         marginTop: '3%'
                     }}>GET STARTED</Button>
                 </Grid>
-            </Grid>
+            </Grid> */}
 
 
             <Addons />
