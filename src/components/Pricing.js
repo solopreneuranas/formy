@@ -125,7 +125,7 @@ export default function Pricing() {
                             <h3 style={{ fontWeight: 600, fontSize: '20px', marginBottom: '2%' }}>Business</h3>
                             <h3 style={{ fontWeight: 600, fontSize: '40px' }}>$199 <span style={{ fontWeight: 400, fontSize: '20px' }}>+ State Fees</span></h3>
                             <p className='pricingContent' style={{ marginTop: '2%' }}>If you're operating with a low budget.</p>
-                            <Button onClick={handleOpen} fullWidth variant='contained' className='globalButton' style={{
+                            <Button fullWidth variant='contained' className='globalButton' style={{
                                 background: '#FF6326',
                                 padding: '3% 4%',
                                 margin: '7% 0 5%',
@@ -155,7 +155,7 @@ export default function Pricing() {
                             <h3 style={{ fontWeight: 600, fontSize: '20px', marginBottom: '2%' }}>Premium</h3>
                             <h3 style={{ fontWeight: 600, fontSize: '40px' }}>$299 <span style={{ fontWeight: 400, fontSize: '20px' }}>+ State Fees</span></h3>
                             <p className='pricingContent' style={{ marginTop: '2%' }}>Enhanced, fast, and exclusive service.</p>
-                            <Button onClick={handleOpen} fullWidth variant='contained' className='globalButton' style={{
+                            <Button fullWidth variant='contained' className='globalButton' style={{
                                 background: 'white',
                                 color: 'black',
                                 padding: '3% 4%',
@@ -183,19 +183,19 @@ export default function Pricing() {
                 {pricingModal()}
             </Grid>
 
-            {/* <Grid container spacing={1} className='pricingBottomSection'>
+            <Grid container spacing={1} className='pricingBottomSection'>
                 <Grid item md={8} className='pricingBottomDiv-1'>
                     <h2 className='pricingBottomHeading'>Need the filing fees and times for your state?</h2>
                 </Grid>
                 <Grid item md={4} className='pricingBottomDiv-2' >
-                    <Button variant='contained' className='globalButton' style={{
+                    <Button onClick={handleOpen} variant='contained' className='globalButton' style={{
                         background: '#FF6326',
-                        padding: '2% 4.5%',
+                        padding: '2.5% 5%',
                         fontFamily: 'Inter',
                         marginTop: '3%'
                     }}>GET STARTED</Button>
                 </Grid>
-            </Grid> */}
+            </Grid>
 
 
             <Addons />

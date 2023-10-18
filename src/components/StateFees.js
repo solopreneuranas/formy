@@ -71,14 +71,12 @@ export default function StateFees() {
             <Grid container spacing={1}>
                 <Grid item md={5} className='leftGridModal' >
                     <Autocomplete
-                        fullWidth
                         disablePortal
                         id="combo-box-demo"
                         options={states}
                         value={selectedState}
                         onChange={handleStateSelect}
                         getOptionLabel={(option) => option.label}
-                        sx={{ width: 300 }}
                         renderInput={(params) => <TextField {...params} label="Search state" />}
                     />
                     <p className='modalPara'>
@@ -95,20 +93,31 @@ export default function StateFees() {
                     <Typography variant="h6" style={{ fontWeight: '500', fontFamily: 'Inter' }}>
                         State Fee:
                     </Typography>
-                    <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '700', fontFamily: 'Inter' }}>
+                    <Typography className='mobilePrice' variant="body1" style={{ fontSize: '35px', fontWeight: '700', fontFamily: 'Inter' }}>
                         {selectedState ? <span>{`$${(selectedState.fee).toFixed(2)}`}</span> : <></>}
                     </Typography><br />
                     <Typography variant="h6" style={{ fontWeight: '500', fontFamily: 'Inter' }}>
-                        {selectedState ? <span>{selectedState.label} </span> : <></>}  Business LLC Formation Plan:</Typography>
-                    <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '700', fontFamily: 'Inter' }}>
-                        {selectedState ? <span>{`$${(selectedState.fee + 149).toFixed(2)}`}</span> : <></>}
-                    </Typography><br />
+                        {selectedState ? <span>{selectedState.label} </span> : <></>}  LLC Formation Plan:</Typography><br />
+                    <Grid container spacing={1}>
+                        <Grid item md={6}>
+                            <h3 style={{fontWeight: 600}}>Business</h3>
+                            <Typography className='mobilePrice' variant="body1" style={{ fontSize: '35px', fontWeight: '700', fontFamily: 'Inter' }}>
+                                {selectedState ? <span>{`$${(selectedState.fee + 199).toFixed(2)}`}</span> : <></>}
+                            </Typography>
+                        </Grid>
+                        <Grid item md={6}>
+                            <h3 style={{fontWeight: 600}}>Premium</h3>
+                            <Typography className='mobilePrice' variant="body1" style={{ fontSize: '35px', fontWeight: '700', fontFamily: 'Inter' }}>
+                                {selectedState ? <span>{`$${(selectedState.fee + 299).toFixed(2)}`}</span> : <></>}
+                            </Typography>
+                        </Grid>
+                    </Grid>
 
 
                     <Button fullWidth variant='contained' className='globalButton' style={{
                         background: '#FF6326',
                         padding: '2.5% 4%',
-                        marginTop: '2%',
+                        marginTop: '5%',
                         fontFamily: 'Inter',
                         marginBottom: '3%'
                     }}>GET STARTED</Button>

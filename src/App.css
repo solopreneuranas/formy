@@ -493,6 +493,7 @@ body {
 
 .leftGridModal {
   padding-right: 5%;
+  width: 100% !important;
 }
 
 .cancelIcon {
@@ -640,6 +641,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 3% !important;
 }
 
 .addonsDiv {
@@ -670,10 +672,14 @@ body {
 }
 
 .pricingBottomSection {
-  background-color: #EFEFEF;
+  width: 70% !important;
+  margin: auto !important;
+  border: 1px solid black;
+  box-shadow: 3px 3px 0 black;
   display: flex;
   align-items: center;
-  padding: 1% 8%;
+  padding: 1% 2%;
+  border-radius: 15px;
 }
 
 .pricingBottomHeading {
