@@ -99,13 +99,13 @@ export default function StateFees() {
                     <Typography variant="h6" style={{ fontWeight: '500', fontFamily: 'Inter' }}>
                         {selectedState ? <span>{selectedState.label} </span> : <></>}  LLC Formation Plans:</Typography><br />
                     <Grid container spacing={1}>
-                        <Grid item md={6}>
+                        <Grid item xs={6}>
                             <h3 style={{fontWeight: 600}}>Business</h3>
                             <Typography className='mobilePrice' variant="body1" style={{ fontSize: '35px', fontWeight: '700', fontFamily: 'Inter' }}>
                                 {selectedState ? <span>{`$${(selectedState.fee + 199)}`}</span> : <></>}
                             </Typography>
                         </Grid>
-                        <Grid item md={6}>
+                        <Grid item xs={6}>
                             <h3 style={{fontWeight: 600}}>Premium</h3>
                             <Typography className='mobilePrice' variant="body1" style={{ fontSize: '35px', fontWeight: '700', fontFamily: 'Inter' }}>
                                 {selectedState ? <span>{`$${(selectedState.fee + 299)}`}</span> : <></>}
