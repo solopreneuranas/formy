@@ -90,13 +90,13 @@ export default function Pricing() {
                     onClose={handleClose}
                 >
                     <Box className='modal'>
-                        <Grid container spacing={5}>
-                            <Grid item xs={11}>
-                                <Typography id="modal-modal-title" variant="h4" component="h2" style={{ fontWeight: '600', fontFamily: 'Inter' }}>
+                        <Grid container spacing={1} style={{marginBottom: '5%'}}>
+                            <Grid item xs={11}  style={{ paddingTop: 0, marginBottom: '3%' }}>
+                                <Typography id="modal-modal-title" variant="h4" component="h2" style={{ fontWeight: '600', fontFamily: 'Inter'}}>
                                     State Fees Calculator
                                 </Typography>
                             </Grid>
-                            <Grid item xs={1}>
+                            <Grid item xs={1} style={{ margin: 0, padding: 0 }}>
                                 <CancelIcon onClick={handleClose} fontSize='large' className='cancelIcon' />
                             </Grid>
                         </Grid>

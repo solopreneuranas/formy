@@ -478,11 +478,21 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 700px;
+  width: 55%;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
   padding: 3%;
+}
+
+.modalPara {
+  opacity: 70%;
+  font-size: 16px;
+  margin-top: 5%;
+}
+
+.leftGridModal {
+  padding-right: 5%;
 }
 
 .cancelIcon {
@@ -655,35 +665,42 @@ body {
   margin: 0;
 }
 
-.pricingHeadingGrid{
+.pricingHeadingGrid {
   margin-top: 5% !important;
 }
 
-.pricingBottomSection{
+.pricingBottomSection {
   background-color: #EFEFEF;
   display: flex;
   align-items: center;
   padding: 1% 8%;
 }
 
-.pricingBottomHeading{
+.pricingBottomHeading {
   font-size: 35px;
   color: black;
 }
 
-.pricingBottomDiv-1{
+.pricingBottomDiv-1 {
   padding: 0 !important;
   display: flex;
   align-items: center;
   justify-content: right;
 }
 
-.pricingBottomDiv-2{
+.pricingBottomDiv-2 {
   width: 100%;
   padding-top: 0 !important;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.rightGridModal {
+  border-radius: 15px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 0 black;
+  padding: 4% !important;
 }
 
 @media (max-width: 768px) {
@@ -781,7 +798,7 @@ body {
   .modal {
     width: 80%;
     border-radius: 15px;
-    padding: 7% 5%;
+    padding: 9% 5%;
   }
 
   .cancelIcon {
@@ -900,17 +917,26 @@ body {
     margin: 0;
   }
 
-  .pricingBottomSection{
+  .pricingBottomSection {
     padding: 5% 5%;
   }
-  
-  .pricingBottomHeading{
+
+  .pricingBottomHeading {
     font-size: 30px;
   }
-  
-  .pricingBottomDiv-2{
+
+  .pricingBottomDiv-2 {
     padding: 0 !important;
     justify-content: left;
+  }
+
+  .modalPara {
+    display: none;
+  }
+
+  .rightGridModal {
+    margin-top: 10% !important;
+    padding: 6% !important;
   }
 
 }

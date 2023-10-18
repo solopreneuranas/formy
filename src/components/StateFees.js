@@ -68,23 +68,59 @@ export default function StateFees() {
 
     return (
         <div>
-            <Grid container spacing={5}>
-                <Grid item xs={12} style={{marginTop: '3%'}}>
+            <Grid container spacing={1}>
+                <Grid item md={5} className='leftGridModal' >
                     <Autocomplete
+                        fullWidth
                         disablePortal
                         id="combo-box-demo"
                         options={states}
                         value={selectedState}
                         onChange={handleStateSelect}
                         getOptionLabel={(option) => option.label}
-                        sx={{ width: 300}}
+                        sx={{ width: 300 }}
                         renderInput={(params) => <TextField {...params} label="Search state" />}
                     />
+                    <p className='modalPara'>
+                        Boosty collects the required fees for the formation and creation of an LLC during the sign-up process and subsequently
+                        transfers them to the respective state or federal district. To find out about the specific local filing fees applicable to your chosen state,
+                        please select the state from the drop-down menu above.
+                    </p>
                 </Grid>
+
+                <Grid item md={7} className='rightGridModal'>
+                    <Typography variant="h6" style={{ fontWeight: '600', fontFamily: 'Inter', fontSize: '23px' }}>
+                        LLC Filing Fee:
+                    </Typography><br />
+                    <Typography variant="h6" style={{ fontWeight: '500', fontFamily: 'Inter' }}>
+                        State Fee:
+                    </Typography>
+                    <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '700', fontFamily: 'Inter' }}>
+                        {selectedState ? <span>{`$${(selectedState.fee).toFixed(2)}`}</span> : <></>}
+                    </Typography><br />
+                    <Typography variant="h6" style={{ fontWeight: '500', fontFamily: 'Inter' }}>
+                        {selectedState ? <span>{selectedState.label} </span> : <></>}  Business LLC Formation Plan:</Typography>
+                    <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '700', fontFamily: 'Inter' }}>
+                        {selectedState ? <span>{`$${(selectedState.fee + 149).toFixed(2)}`}</span> : <></>}
+                    </Typography><br />
+
+
+                    <Button fullWidth variant='contained' className='globalButton' style={{
+                        background: '#FF6326',
+                        padding: '2.5% 4%',
+                        marginTop: '2%',
+                        fontFamily: 'Inter',
+                        marginBottom: '3%'
+                    }}>GET STARTED</Button>
+                    <p style={{ textAlign: 'center', opacity: '70%' }}>Start at $199 + State Fee</p>
+                </Grid>
+
             </Grid>
 
 
-            {selectedState && (
+
+
+            {/* {selectedState && (
                 <div style={{ marginTop: '4%' }}>
                     <Typography variant="h6" style={{ fontWeight: '500', fontFamily: 'Inter' }}>{selectedState.label} State Fee:</Typography>
                     <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '700', fontFamily: 'Inter' }}>{`$${(selectedState.fee).toFixed(2)}`}</Typography><br />
@@ -99,7 +135,7 @@ export default function StateFees() {
                     }}>GET STARTED</Button>
 
                 </div>
-            )}
+            )} */}
 
         </div>
     );
