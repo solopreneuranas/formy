@@ -187,11 +187,12 @@ export default function Pricing() {
                 <Grid item md={8} className='pricingBottomDiv-1'>
                     <h2 className='pricingBottomHeading'>Need the filing fees and times for your state?</h2>
                 </Grid>
-                <Grid item md={4} className='pricingBottomDiv-2'>
+                <Grid item md={4} className='pricingBottomDiv-2' >
                     <Button variant='contained' className='globalButton' style={{
                         background: '#FF6326',
-                        padding: '3% 6%',
-                        fontFamily: 'Inter'
+                        padding: '2% 4.5%',
+                        fontFamily: 'Inter',
+                        marginTop: '3%'
                     }}>GET STARTED</Button>
                 </Grid>
             </Grid>

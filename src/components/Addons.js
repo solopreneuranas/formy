@@ -92,8 +92,8 @@ export default function Addons() {
 
     return (
         <div className='root'>
-            <Grid container spacing={5} className='addonsSection'>
-                <Grid item md={12} className='featuresContent'>
+            <Grid container spacing={1} className='addonsSection'>
+                <Grid item md={12}>
                     <h2 className='featuresHeading'><span style={{ color: '#FF6326' }}>Addons</span> Services</h2><br />
                     <p className='addonsPara' style={{ marginBottom: '5%' }}>
                     Start your business on the right foot with worry-free services and support to accurately register with the State - guaranteed.

@@ -663,7 +663,6 @@ body {
   background-color: #EFEFEF;
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 1% 8%;
 }
 
@@ -680,7 +679,8 @@ body {
 }
 
 .pricingBottomDiv-2{
-  padding: 0 !important;
+  width: 100%;
+  padding-top: 0 !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -703,7 +703,7 @@ body {
   }
 
   .heroHeading {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .bigHeading {
@@ -876,13 +876,14 @@ body {
 
   .addonsSection {
     width: 100% !important;
-    padding: 10% 3% !important;
+    padding: 10% 6% 10% 3% !important;
   }
 
   .addonsDiv {
     width: 100%;
+    margin: auto;
     margin-bottom: 6% !important;
-    padding: 5% 2%;
+    padding: 8% 2% !important;
     height: 410px;
   }
 

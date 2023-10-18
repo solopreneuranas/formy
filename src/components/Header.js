@@ -18,11 +18,11 @@ export default function Header() {
                     <div class="navbar-collapse">
                         <ul class="navbar-nav">
                             <li>
-                                <a href="#home">Home</a>
+                                <a href="/">Home</a>
                             </li>
 
                             <li>
-                                <a href="#features">Pricing</a>
+                                <a href="/pricing">Pricing</a>
                             </li>
 
                             <li>
