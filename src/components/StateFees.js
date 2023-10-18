@@ -94,21 +94,21 @@ export default function StateFees() {
                         State Fee:
                     </Typography>
                     <Typography className='mobilePrice' variant="body1" style={{ fontSize: '35px', fontWeight: '700', fontFamily: 'Inter' }}>
-                        {selectedState ? <span>{`$${(selectedState.fee).toFixed(2)}`}</span> : <></>}
+                        {selectedState ? <span>{`$${(selectedState.fee)}`}</span> : <></>}
                     </Typography><br />
                     <Typography variant="h6" style={{ fontWeight: '500', fontFamily: 'Inter' }}>
-                        {selectedState ? <span>{selectedState.label} </span> : <></>}  LLC Formation Plan:</Typography><br />
+                        {selectedState ? <span>{selectedState.label} </span> : <></>}  LLC Formation Plans:</Typography><br />
                     <Grid container spacing={1}>
                         <Grid item md={6}>
                             <h3 style={{fontWeight: 600}}>Business</h3>
                             <Typography className='mobilePrice' variant="body1" style={{ fontSize: '35px', fontWeight: '700', fontFamily: 'Inter' }}>
-                                {selectedState ? <span>{`$${(selectedState.fee + 199).toFixed(2)}`}</span> : <></>}
+                                {selectedState ? <span>{`$${(selectedState.fee + 199)}`}</span> : <></>}
                             </Typography>
                         </Grid>
                         <Grid item md={6}>
                             <h3 style={{fontWeight: 600}}>Premium</h3>
                             <Typography className='mobilePrice' variant="body1" style={{ fontSize: '35px', fontWeight: '700', fontFamily: 'Inter' }}>
-                                {selectedState ? <span>{`$${(selectedState.fee + 299).toFixed(2)}`}</span> : <></>}
+                                {selectedState ? <span>{`$${(selectedState.fee + 299)}`}</span> : <></>}
                             </Typography>
                         </Grid>
                     </Grid>

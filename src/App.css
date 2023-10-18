@@ -429,6 +429,11 @@ body {
   line-height: 1.1em;
 }
 
+.modalHeading{
+  font-size: 32px;
+  line-height: 1.1em;
+}
+
 .featuresPara {
   width: 90%;
   font-weight: 500;
@@ -802,9 +807,9 @@ body {
   }
 
   .modal {
-    width: 80%;
+    width: 95%;
     border-radius: 15px;
-    padding: 9% 5%;
+    padding: 8% 5% !important;
   }
 
   .cancelIcon {
@@ -924,7 +929,8 @@ body {
   }
 
   .pricingBottomSection {
-    padding: 5% 5%;
+    width: 90% !important;
+    padding: 8% 5%;
   }
 
   .pricingBottomHeading {
@@ -941,8 +947,13 @@ body {
   }
 
   .rightGridModal {
+    width: 100% !important;
     margin-top: 10% !important;
     padding: 6% !important;
+  }
+
+  .modalHeading{
+    font-size: 25px;
   }
 
 }
