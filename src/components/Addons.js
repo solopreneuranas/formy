@@ -9,69 +9,70 @@ export default function Addons() {
 
     const services = [
         {
-            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg',
-            title: 'Business Stripe Account',
-            price: "$49",
-            priceTime: 'One Time Fee',
-            details: 'Secure your online payments effortlessly with our affordable Business Stripe Account setup. Reliable transactions, low fees, and seamless integration guaranteed.',
+            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
+            "title": "Business Stripe Account",
+            "price": "$49",
+            "priceTime": "One Time Fee",
+            "details": "Effortless online payments. Reliable transactions, low fees, seamless integration."
         },
         {
-            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b609b87df333d7fdfd_Support%201.svg',
-            title: 'WordPress Website Setup',
-            price: "$149",
-            priceTime: 'One Time Fee',
-            details: 'Get a Professional WordPress Website that is 100% accepted by Stripe. Responsive design, plugins, and expert guidance for seamless online transactions. Launch confidently.',
+            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
+            "title": "Premium Business Address",
+            "price": "$150",
+            "priceTime": "One Time Fee",
+            "details": "Enhance business reputation. Amazon Verification Card, 30 monthly mails, boost credibility."
         },
         {
-            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b609b87d678fd7fdfc_Everywhere%201.svg',
-            title: 'ITIN Application',
-            price: "$349",
-            priceTime: 'One Time Fee',
-            details: 'Expert assistance for hassle-free ITIN application process. Ensure smooth documentation and IRS approval with our dedicated service team.',
+            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
+            "title": "WordPress Website Setup",
+            "price": "$149",
+            "priceTime": "One Time Fee",
+            "details": "Professional WordPress site accepted by Stripe. Responsive design, expert guidance, seamless transactions."
         },
         {
-            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e540947af636b321_Problem%20Free%201.svg',
-            title: 'Business PayPal Account',
-            price: "$199",
-            priceTime: 'One Time Fee',
-            details: 'Establish a trustworthy online payment gateway. Our Business PayPal Account setup ensures secure transactions, fraud protection, and customer trust for your business.',
+            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
+            "title": "Business PayPal Account",
+            "price": "$199",
+            "priceTime": "One Time Fee",
+            "details": "Trustworthy payment gateway. Secure transactions, fraud protection, customer trust assured."
         },
         {
-            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b609b87df333d7fdfd_Support%201.svg',
-            title: 'Shopify Store Setup',
-            price: "$299",
-            priceTime: 'One Time Fee',
-            details: 'Unlock e-commerce potential. Customized storefront, payment integration, and product listing for a seamless shopping experience. Launch your online store successfully.',
+            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
+            "title": "Shopify Store Setup",
+            "price": "$299",
+            "priceTime": "One Time Fee",
+            "details": "Unlock e-commerce potential. Customized storefront, seamless payment, successful online store launch."
         },
         {
-            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b609b87d678fd7fdfc_Everywhere%201.svg',
-            title: 'UK Company Formation',
-            price: "$199",
-            priceTime: 'One Time Fee',
-            details: 'Obtain comprehensive UK Company Formation with UK Business, Director, Registered Address, and Business Payoneer account. Start your UK venture with confidence.',
+            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
+            "title": "UK Company Formation",
+            "price": "$199",
+            "priceTime": "One Time Fee",
+            "details": "Comprehensive UK Company Formation. Business, Director, Registered Address, Payoneer account included."
         },
         {
-            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b609b87df333d7fdfd_Support%201.svg',
-            title: 'Resale Certificate / Seller Permit',
-            price: "$149",
-            priceTime: 'One Time Fee',
-            details: 'Navigate legal requirements. Obtain Resale Certificate /Seller Permit with our assistance. Ensure compliance, legal operations, and business peace of mind.',
+            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
+            "title": "Resale Certificate / Seller Permit",
+            "price": "$149",
+            "priceTime": "One Time Fee",
+            "details": "Legal compliance made easy. Obtain Resale Certificate/Seller Permit with our expert assistance."
         },
         {
-            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b609b87d678fd7fdfc_Everywhere%201.svg',
-            title: 'Logo Design with Brand Guidelines',
-            price: "$49",
-            priceTime: 'One Time Fee',
-            details: 'Craft a memorable brand identity. Our Logo Design with Brand Guidelines service offers unique logos and comprehensive guidelines for consistent brand representation.',
+            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
+            "title": "ITIN Application",
+            "price": "$349",
+            "priceTime": "One Time Fee",
+            "details": "Hassle-free ITIN application. Smooth documentation, IRS approval, dedicated service team support."
         },
         {
-            icon: 'https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b609b87d678fd7fdfc_Everywhere%201.svg',
-            title: 'Digital Business Bundle',
-            price: "$39",
-            priceTime: 'One Time Fee',
-            details: "Secure your online presence with a custom domain, professional business email, and premium web hosting. Elevate your brand's digital footprint with reliability and performance.",
+            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
+            "title": "Digital Business Bundle",
+            "price": "$39",
+            "priceTime": "One Time Fee",
+            "details": "Secure online presence. Custom domain, professional email, premium web hosting. Reliable brand elevation."
         }
     ]
+
 
     const handleAddonHover = (index) => {
         setHoveredIndex(index);
@@ -87,7 +88,7 @@ export default function Addons() {
                 <Grid item md={12}>
                     <h2 className='featuresHeading'><span style={{ color: '#FF6326' }}>Addons</span> Services</h2><br />
                     <p className='addonsPara' style={{ marginBottom: '5%' }}>
-                    Start your business on the right foot with worry-free services and support to accurately register with the State - guaranteed.
+                        Explore tailored solutions for secure transactions, professional addresses, and legal compliance.
                     </p>
 
                     <Grid container spacing={3} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 0 }}>

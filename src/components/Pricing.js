@@ -193,7 +193,7 @@ export default function Pricing() {
                         padding: '2.5% 5%',
                         fontFamily: 'Inter',
                         marginTop: '3%'
-                    }}>GET STARTED</Button>
+                    }}>Check Now</Button>
                 </Grid>
             </Grid>
 
