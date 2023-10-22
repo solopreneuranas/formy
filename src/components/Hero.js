@@ -13,16 +13,20 @@ export default function Hero() {
                     <h2 className='heroHeading'>
                         You can have your own <br />
                         <span style={{ color: '#FF6326', fontFamily: 'Space Grotesk' }}>
-                            <font className="animateText">
+                            {/* <font className="animateText">
                                 <span className="typewrite" data-period="2000" data-type='["Stripe", "PayPal", "Amazon", "TikTok Shop", "Ebay", "Wise"]'>
                                     <span className="wrap"></span>
                                 </span>
+                            </font> */}
+                            <font class="typewrite" data-period="2000"
+                                data-type='["Stripe", "PayPal", "Amazon", "TikTok Shop", "Ebay", "Wise"]'><span
+                                    class="wrap"></span>
                             </font>
                         </span> account now!
                     </h2>
                     <center>
                         <p className='globalPara'>
-                        Ready to access global online services from anywhere? Boosty makes it possible, even in regions they don't operate!
+                            Ready to access global online services from anywhere? Boosty makes it possible, even in regions they don't operate!
                         </p>
                     </center>
                     <Button variant='contained' className='globalButton' style={{
