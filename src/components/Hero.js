@@ -12,17 +12,18 @@ export default function Hero() {
                 <Grid item xs={12}>
                     <h2 className='heroHeading'>
                         You can have your own <br />
-                        <span style={{ color: '#FF6326', fontFamily: 'Space Grotesk' }}>
-                            {/* <font className="animateText">
-                                <span className="typewrite" data-period="2000" data-type='["Stripe", "PayPal", "Amazon", "TikTok Shop", "Ebay", "Wise"]'>
-                                    <span className="wrap"></span>
-                                </span>
-                            </font> */}
-                            <font class="typewrite" data-period="2000"
-                                data-type='["Stripe", "PayPal", "Amazon", "TikTok Shop", "Ebay", "Wise"]'><span
-                                    class="wrap"></span>
-                            </font>
-                        </span> account now!
+                        <span className="mobileText">
+                            <font style={{ color: '#FF6326' }}>Stripe</font> account now
+                        </span>
+
+                        <span className="DesktopText">
+                            <span style={{ color: '#FF6326' }}>
+                                <font class="typewrite" data-period="2000"
+                                    data-type='["Stripe", "PayPal", "Amazon", "TikTok Shop", "Ebay", "Wise"]'><span
+                                        class="wrap"></span>
+                                </font>
+                            </span> account now!
+                        </span>
                     </h2>
                     <center>
                         <p className='globalPara'>

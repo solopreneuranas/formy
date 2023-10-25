@@ -21,7 +21,7 @@ export default function Footer() {
                 <Grid container spacing={2}>
                     <Grid item md={4}>
                         <img src='/images/boosty-logo.svg' style={{ width: '30%', marginBottom: '5%', marginLeft: '-3%' }} />
-                        <p style={{opacity: '70%', fontSize: '17px'}}>
+                        <p style={{ opacity: '70%', fontSize: '17px' }}>
                             Boosty is a technology company providing cutting-edge digital solutions to businesses.
                         </p><br />
                         <div style={{
@@ -42,11 +42,19 @@ export default function Footer() {
 
                     <Grid item md={2}>
                         <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
-                            Quick Links
+                            Addons Services
                         </Typography>
                         <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
                             <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>LLC Formation</span></ListItemText>
+                                <ListItemText><span className='listItem'>UK Company Formation</span></ListItemText>
+                            </ListItem>
+
+                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
+                                <ListItemText><span className='listItem'>Stripe & PayPal Account</span></ListItemText>
+                            </ListItem>
+
+                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
+                                <ListItemText><span className='listItem'>ITIN Application</span></ListItemText>
                             </ListItem>
 
                             <ListItem style={{ paddingLeft: 0, padding: '0' }}>
@@ -54,21 +62,35 @@ export default function Footer() {
                             </ListItem>
 
                             <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>Website Developement</span></ListItemText>
-                            </ListItem>
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>Website Developement</span></ListItemText>
+                                <ListItemText><span className='listItem'>Website Setup</span></ListItemText>
                             </ListItem>
                         </List>
                     </Grid>
 
                     <Grid item md={2}>
                         <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
-                            Legal
+                            Quick Links
                         </Typography>
                         <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
                             <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>Privacy Policy</span></ListItemText>
+                                <ListItemText><span className='listItem'>Pricing</span></ListItemText>
+                            </ListItem>
+
+                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
+                                <ListItemText><span className='listItem'>Contact us</span></ListItemText>
+                            </ListItem>
+                        </List>
+                    </Grid>
+
+
+                    <Grid item md={2}>
+                        <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
+                            Legal
+                        </Typography>
+                        <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
+
+                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
+                                <ListItemText><span className='listItem'>FAQs</span></ListItemText>
                             </ListItem>
 
                             <ListItem style={{ paddingLeft: 0, padding: '0' }}>
@@ -76,27 +98,9 @@ export default function Footer() {
                             </ListItem>
 
                             <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>FAQs</span></ListItemText>
-                            </ListItem>
-                        </List>
-                    </Grid>
-
-                    <Grid item md={2}>
-                        <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
-                            Quick Links
-                        </Typography>
-                        <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>LLC Formation</span></ListItemText>
+                                <ListItemText><span className='listItem'>Privacy Policy</span></ListItemText>
                             </ListItem>
 
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>Resale Certificate</span></ListItemText>
-                            </ListItem>
-
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>Website Developement</span></ListItemText>
-                            </ListItem>
                         </List>
                     </Grid>
 

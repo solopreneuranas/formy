@@ -26,15 +26,11 @@ export default function Header() {
                             </li>
 
                             <li>
-                                <a href="#portfolio">About</a>
+                                <a href="/pricing">Services</a>
                             </li>
 
                             <li>
-                                <a href="#process">Conatct us</a>
-                            </li>
-
-                            <li>
-                                <a href="#faq">FAQs</a>
+                                <a href="#process">Conatct</a>
                             </li>
                         </ul>
                     </div>

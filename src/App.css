@@ -429,7 +429,7 @@ body {
   line-height: 1.1em;
 }
 
-.modalHeading{
+.modalHeading {
   font-size: 32px;
   line-height: 1.1em;
 }
@@ -714,6 +714,10 @@ body {
   padding: 4% !important;
 }
 
+.mobileText {
+  display: none;
+}
+
 @media (max-width: 768px) {
   #headerBtn {
     display: none !important;
@@ -952,8 +956,16 @@ body {
     padding: 6% !important;
   }
 
-  .modalHeading{
+  .modalHeading {
     font-size: 25px;
+  }
+
+  .mobileText {
+    display: block;
+  }
+
+  .DesktopText {
+    display: none;
   }
 
 }
