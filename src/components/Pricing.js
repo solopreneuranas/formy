@@ -153,7 +153,7 @@ export default function Pricing() {
                     <Grid container spacing={0} className='premium'>
                         <Grid item xs={12} className='tabLeftCol'>
                             <h3 style={{ fontWeight: 600, fontSize: '20px', marginBottom: '2%' }}>Premium</h3>
-                            <h3 style={{ fontWeight: 600, fontSize: '40px' }}>$299 <span style={{ fontWeight: 400, fontSize: '20px' }}>+ State Fees</span></h3>
+                            <h3 style={{ fontWeight: 600, fontSize: '40px' }}>$399 <span style={{ fontWeight: 400, fontSize: '20px' }}>+ State Fees</span></h3>
                             <p className='pricingContent' style={{ marginTop: '2%' }}>Enhanced, fast, and exclusive service.</p>
                             <Button fullWidth variant='contained' className='globalButton' style={{
                                 background: 'white',

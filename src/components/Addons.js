@@ -18,7 +18,7 @@ export default function Addons() {
         {
             "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
             "title": "Premium Business Address",
-            "price": "$150",
+            "price": "$149",
             "priceTime": "One Time Fee",
             "details": "Enhance business reputation. Amazon Verification Card, 30 monthly mails, boost credibility."
         },

@@ -108,7 +108,7 @@ export default function StateFees() {
                         <Grid item xs={6}>
                             <h3 style={{fontWeight: 600}}>Premium</h3>
                             <Typography className='mobilePrice' variant="body1" style={{ fontSize: '35px', fontWeight: '700', fontFamily: 'Inter' }}>
-                                {selectedState ? <span>{`$${(selectedState.fee + 299)}`}</span> : <></>}
+                                {selectedState ? <span>{`$${(selectedState.fee + 399)}`}</span> : <></>}
                             </Typography>
                         </Grid>
                     </Grid>

@@ -22,7 +22,7 @@ export default function Footer() {
                     <Grid item md={4}>
                         <img src='/images/boosty-logo.svg' style={{ width: '30%', marginBottom: '5%', marginLeft: '-3%' }} />
                         <p style={{ opacity: '70%', fontSize: '17px' }}>
-                            Boosty is a technology company providing cutting-edge digital solutions to businesses.
+                            Boosty: Where Businesses Take Flight! 🚀 Dive into global markets with Stripe, PayPal, and Amazon.
                         </p><br />
                         <div style={{
                             opacity: '70%',
