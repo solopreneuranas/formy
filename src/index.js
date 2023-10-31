@@ -74,9 +74,9 @@ import reportWebVitals from './reportWebVitals';
 // };
 
 
-// var TxtType = function (t, e, i) { this.toRotate = e, this.el = t, this.loopNum = 0, this.period = parseInt(i, 10) || 2e3, this.txt = "", this.tick(), this.isDeleting = !1 }; TxtType.prototype.tick = function () { var t = this.loopNum % this.toRotate.length, e = this.toRotate[t]; this.isDeleting ? this.txt = e.substring(0, this.txt.length - 1) : this.txt = e.substring(0, this.txt.length + 1), this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>"; var i = this, s = 200 - 100 * Math.random(); this.isDeleting && (s /= 2), this.isDeleting || this.txt !== e ? this.isDeleting && "" === this.txt && (this.isDeleting = !1, this.loopNum++, s = 500) : (s = this.period, this.isDeleting = !0), setTimeout(function () { i.tick() }, s) }, window.onload = function () { for (var t = document.getElementsByClassName("typewrite"), e = 0; e < t.length; e++) { var i = t[e].getAttribute("data-type"), s = t[e].getAttribute("data-period"); i && new TxtType(t[e], JSON.parse(i), s) } var n = document.createElement("style"); n.type = "text/css", n.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #1A3066}", document.body.appendChild(n), document.getElementById("pricingBtnID1").classList.add("activeBtn") }
+// var txtType = function (t, e, i) { this.toRotate = e, this.el = t, this.loopNum = 0, this.period = parseInt(i, 10) || 2e3, this.txt = "", this.tick(), this.isDeleting = !1 }; txtType.prototype.tick = function () { var t = this.loopNum % this.toRotate.length, e = this.toRotate[t]; this.isDeleting ? this.txt = e.substring(0, this.txt.length - 1) : this.txt = e.substring(0, this.txt.length + 1), this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>"; var i = this, s = 200 - 100 * Math.random(); this.isDeleting && (s /= 2), this.isDeleting || this.txt !== e ? this.isDeleting && "" === this.txt && (this.isDeleting = !1, this.loopNum++, s = 500) : (s = this.period, this.isDeleting = !0), setTimeout(function () { i.tick() }, s) }, window.onload = function () { for (var t = document.getElementsByClassName("typewrite"), e = 0; e < t.length; e++) { var i = t[e].getAttribute("data-type"), s = t[e].getAttribute("data-period"); i && new txtType(t[e], JSON.parse(i), s) } var n = document.createElement("style"); n.type = "text/css", n.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #1A3066}", document.body.appendChild(n), document.getElementById("pricingBtnID1").classList.add("activeBtn") }
 
-var TxtType = function (t, e, i) {
+var txtType = function (t, e, i) {
   this.toRotate = e;
   this.el = t;
   this.loopNum = 0;
@@ -86,7 +86,7 @@ var TxtType = function (t, e, i) {
   this.isDeleting = false;
 };
 
-TxtType.prototype.tick = function () {
+txtType.prototype.tick = function () {
   var t = this.loopNum % this.toRotate.length;
   var e = this.toRotate[t];
   
@@ -129,7 +129,7 @@ TxtType.prototype.tick = function () {
           var s = t[e].getAttribute("data-period");
           
           if (i) {
-              new TxtType(t[e], JSON.parse(i), s);
+              new txtType(t[e], JSON.parse(i), s);
           }
       }
 
