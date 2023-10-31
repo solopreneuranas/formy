@@ -1,7 +1,5 @@
 import * as React from 'react';
-
 import { Grid, Typography } from "@mui/material";
-import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import MailIcon from '@mui/icons-material/Mail';

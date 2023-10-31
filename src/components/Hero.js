@@ -16,7 +16,7 @@ export default function Hero() {
                             <font style={{ color: '#FF6326' }}>Stripe</font> account now
                         </span>
 
-                        <span className="DesktopText">
+                        <span>
                             <span style={{ color: '#FF6326' }}>
                                 <font class="typewrite" data-period="2000"
                                     data-type='["Stripe", "PayPal", "Amazon", "TikTok Shop", "Ebay", "Wise"]'><span
@@ -42,3 +42,6 @@ export default function Hero() {
         </div>
     )
 }
+
+
+// className="DesktopText"
