@@ -1,47 +1,41 @@
 import * as React from 'react';
 
-import { Button } from "@mui/material";
+import { Grid, Button } from "@mui/material";
+import MenuComponent from './MenuComponent';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
-export default function Header() {
+export default function Header(props) {
+
+    const theme = useTheme();
+    const matches_sm = useMediaQuery(theme.breakpoints.down('sm'));
+    const matches_md = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
-        <div className='root'>
-            <div class="main-wrapper">
-                <nav class="navbar">
-                    <div class="brand-and-icon">
-                        <a href="https://tryboosty.com/" class="navbar-brand"><img src="/images/boosty-logo.svg" /></a>
-                        <button type="button" class="navbar-toggler">
-                            <img src='/images/menu-icon.svg' style={{width: 30}}/>
-                        </button>
-                    </div>
+        <div>
+            <Grid container spacing={1} style={{ padding: '1% 3%', background: props.bg, color: props.color }}>
+                <Grid item md={3} style={{ display: 'flex', justifyContent: 'left', alignItems: 'center' }}>
+                    <img src={`/images/${props.logo}`} style={{ width: '40%' }} />
+                </Grid>
+                {matches_md ? <></> :
+                    <Grid item md={6} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <MenuComponent color={props.color} border={props.border} />
+                    </Grid>}
 
-                    <div class="navbar-collapse">
-                        <ul class="navbar-nav">
-                            <li>
-                                <a href="/">Home</a>
-                            </li>
+                {matches_md ? <></> :
+                    <Grid item md={3} style={{ display: 'flex', justifyContent: 'right', alignItems: 'center' }}>
+                        <Button variant='contained' className='globalButton' style={{
+                            background: '#1105fa',
+                            color: 'white',
+                            padding: '3% 6%',
+                            fontWeight: 500,
+                            borderRadius: 30,
+                            fontFamily: 'Inter'
+                        }}>GET STARTED</Button>
+                    </Grid>}
 
-                            <li>
-                                <a href="/pricing">Pricing</a>
-                            </li>
+            </Grid>
 
-                            <li>
-                                <a href="/pricing">Services</a>
-                            </li>
-
-                            <li>
-                                <a href="#process">Conatct</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <Button id='headerBtn' variant='contained' className='globalButton' style={{
-                        background: '#FF6326',
-                        padding: '0.5% 1.5%',
-                        marginTop: 0,
-                        fontFamily: 'Inter'
-                    }}>GET STARTED</Button>
-                </nav>
-            </div>
         </div>
     )
 }

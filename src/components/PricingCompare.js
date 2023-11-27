@@ -22,7 +22,7 @@ export default function PricingCompare() {
                 <Button onClick={handleOpen} variant='contained' className='globalButton' 
                 style={{
                     padding: '0.8% 1.7%',
-                    background: '#FF6326',
+                    background: '#0069FF',
                     marginTop: '3%'
                 }}>GET STARTED</Button>
                 <Modal

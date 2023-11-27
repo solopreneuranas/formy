@@ -158,19 +158,19 @@ body {
 }
 
 .sub-menu-item:nth-child(4) .btn {
-  border: 1px solid #FF6326;
+  border: 1px solid #0069FF;
   text-transform: uppercase;
   font-size: 0.9rem;
   padding: 0.6rem 1rem;
   cursor: pointer;
-  background: #FF6326;
+  background: #0069FF;
   color: #fff;
   transition: all 0.5s ease;
 }
 
 .sub-menu-item:nth-child(4) .btn:hover {
   background: transparent;
-  color: #FF6326;
+  color: #0069FF;
 }
 
 .sub-menu-item:nth-child(4) {
@@ -285,7 +285,7 @@ body {
   }
 
   .navbar-nav>li:hover {
-    border-bottom-color: #FF6326;
+    border-bottom-color: #0069FF;
   }
 
   .sub-menu-item {
@@ -326,12 +326,23 @@ body {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  padding: 10% 26% 8%;
-  background: white;
-  text-align: center;
+  padding: 3% 10%;
+  color: white;
+  border-radius: 0 0 150px 0;
+  background: #0069FF;
+  text-align: left;
 }
+
+.worldwideSection {
+  width: 100%;
+  height: auto;
+  padding: 3% 0;
+  color: white;
+  background: #0069FF;
+}
+
 
 .center {
   display: flex !important;
@@ -346,12 +357,12 @@ body {
 }
 
 .heroHeading {
-  font-size: 65px;
-  color: black;
+  font-size: 47px;
+  color: white;
   font-weight: 600;
   margin-top: 3%;
   margin-bottom: 2%;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 
 .bigHeading {
@@ -392,8 +403,8 @@ body {
 }
 
 .logo {
-  width: 140px;
-  filter: grayscale(100%);
+  width: 150px;
+  box-shadow: '0 5px 20px gainsboro',
 }
 
 .featuresSection {
@@ -402,7 +413,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5% 12% 0;
+  padding: 2% 12% 0;
   background-color: white;
   border-radius: 250px 0 0 0;
 }
@@ -424,7 +435,6 @@ body {
   font-size: 45px;
   color: black;
   font-weight: 600;
-  margin-top: 3%;
   margin-bottom: 0;
   line-height: 1.1em;
 }
@@ -440,7 +450,6 @@ body {
   font-size: 16px;
   opacity: 80%;
   line-height: 1.5em;
-  margin: 0;
   margin-bottom: 5%;
 }
 
@@ -448,7 +457,7 @@ body {
   color: white !important;
   padding: 20% !important;
   border-radius: 50% !important;
-  background: #FF6326 !important;
+  background: #0069FF !important;
 }
 
 .faqSection {
@@ -459,13 +468,16 @@ body {
 
 .faq {
   width: 100%;
-  padding: 0;
+  background-color: #E3F1FD;
+  padding: 3% 8%;
   font-family: 'Inter';
 }
 
 .faqItem {
   padding: 2%;
+  background-color: white !important;
   border-radius: 10px;
+  margin: 2% 0;
   border: none !important;
 }
 
@@ -515,18 +527,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3% 20% 0;
+  padding: 2% 20% 3%;
 }
 
+.gradientText {
+  background: linear-gradient(to right, #0069FF, #952ffa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent
+}
 
 .globalButton {
-  background: #FF6326;
+  background: #0069FF;
   color: white;
-  font-weight: 400 !important;
+  font-weight: 400;
   font-size: 16px !important;
   margin-top: 2%;
   box-shadow: none !important;
-  border-radius: 7px !important;
+  border-radius: 7px
 }
 
 .mobileHeroImg {
@@ -534,22 +555,49 @@ body {
 }
 
 .footerSec {
-  color: black;
-  padding: 6% 13%;
+  color: white;
+  border-top: 8px solid #0069FF;
+  background-color: #001a63;
+  padding: 17% 13% 6%;
 }
 
 .servicesSection {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  background-color: #e3f1fd;
+  justify-content: center;
+  border-radius: 25px;
+  align-items: center;
+  text-align: center;
+  padding: 5%;
+}
+
+.incorporateSection {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  align-items: center;
+  text-align: center;
+  padding: 5% 5% 0;
+}
+
+.testimonialsSection {
   width: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
+  border-radius: 25px;
   align-items: center;
-  padding: 5% 12% 0;
+  text-align: center;
+  padding: 1% 5%;
 }
 
 .css-v84d5j-MuiSvgIcon-root {
   font-size: 25px !important;
-  color: #FF6326 !important;
+  color: #0069FF !important;
 }
 
 
@@ -560,7 +608,7 @@ body {
   justify-content: left;
   align-items: center;
   padding: 5% 10%;
-  background-color: #FF6326;
+  background-color: #0069FF;
 }
 
 
@@ -582,7 +630,7 @@ body {
   border-radius: 50%;
   font-size: 22px;
   color: white;
-  background-color: #FF6326;
+  background-color: #0069FF;
   padding: 3%;
 }
 
@@ -598,10 +646,12 @@ body {
   width: 100%;
   margin: auto;
   padding: 5% 15%;
-  background-color: #FF6326;
-  color: white !important;
+  background-color: #E3F1FD;
+  color: black !important;
   display: flex !important;
   justify-content: center;
+  border-radius: 20px;
+  margin-bottom: -15%;
   align-items: center;
 }
 
@@ -619,7 +669,7 @@ body {
   margin: 0;
   padding: 6%;
   border-radius: 10px;
-  background: #FF6326;
+  background: #0069FF;
   color: white;
   border-radius: 10px;
 }
@@ -633,7 +683,7 @@ body {
 }
 
 .animateText {
-  color: #FF6326 !important;
+  color: #0069FF !important;
   text-decoration: none !important;
   font-family: 'Space Grotesk' !important
 }
@@ -661,7 +711,7 @@ body {
 }
 
 .addonsDiv:hover {
-  background-color: #FF6326;
+  background-color: #0069FF;
   cursor: pointer;
   color: white !important;
 }
@@ -726,12 +776,9 @@ body {
 
 @media (max-width: 900px) {
 
-  #headerBtn {
-    display: none !important;
-  }
 
   .heroSection {
-    padding: 35% 3% 15%;
+    padding: 3%;
   }
 
   .heroHeading {
@@ -794,7 +841,7 @@ body {
 
   .faq {
     width: 100%;
-    padding: 10% 0;
+    padding: 10% 5%;
   }
 
   .faqSection {
@@ -891,8 +938,13 @@ body {
     font-size: 17px;
   }
 
+  .incorporateSection {
+    width: 100%;
+    padding: 5% 2%;
+  }
+
   .footerSec {
-    padding: 10% 5%;
+    padding: 20% 5% 10%;
   }
 
   .faqHeading {
@@ -919,7 +971,7 @@ body {
   }
 
   .addonsDiv:hover {
-    background-color: #FF6326;
+    background-color: #0069FF;
     cursor: pointer;
     color: white !important;
   }

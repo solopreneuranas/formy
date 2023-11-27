@@ -86,7 +86,7 @@ export default function Addons() {
         <div className='root'>
             <Grid container spacing={1} className='addonsSection'>
                 <Grid item md={12}>
-                    <h2 className='featuresHeading'><span style={{ color: '#FF6326' }}>Addons</span> Services</h2><br />
+                    <h2 className='featuresHeading'><span className='gradientText'>Addons</span> Services</h2><br />
                     <p className='addonsPara' style={{ marginBottom: '5%' }}>
                         Explore tailored solutions for secure transactions, professional addresses, and legal compliance.
                     </p>

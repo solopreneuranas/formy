@@ -115,7 +115,7 @@ export default function StateFees() {
 
 
                     <Button fullWidth variant='contained' className='globalButton' style={{
-                        background: '#FF6326',
+                        background: '#0069FF',
                         padding: '2.5% 4%',
                         marginTop: '5%',
                         fontFamily: 'Inter',
@@ -137,7 +137,7 @@ export default function StateFees() {
                     <Typography className='mobilePrice' variant="body1" style={{ fontSize: '40px', fontWeight: '700', fontFamily: 'Inter' }}>{`$${(selectedState.fee + 149).toFixed(2)}`}</Typography><br />
 
                     <Button variant='contained' className='globalButton' style={{
-                        background: '#FF6326',
+                        background: '#0069FF',
                         padding: '1.7% 4%',
                         marginTop: '2%',
                         fontFamily: 'Inter'

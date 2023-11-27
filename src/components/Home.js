@@ -7,24 +7,25 @@ import HeroImg from './HeroImg';
 import Brands from './Brands';
 import Services from './Services';
 import Features from './Features';
+import Incorporate from './Incorporate';
 import PricingTabs from './PricingTabs';
 import Support from './Support';
 import Faq from './Faq';
 import CTA from './CTA';
 import Footer from './Footer';
+import Testimonials from './Testimonials';
 
 export default function Home() {
 
     return (
-        <div className='root'>
-            <Header />
+        <div>
+            <Header bg='#0069FF' color='white' logo = 'boosty-white-logo.svg' border='none'/>
             <Hero />
-            <HeroImg />
-            <Brands />
             <Services />
             <PricingTabs />
             <Features />
-            <Support />
+            <Incorporate />
+            <Testimonials />
             <Faq />
             <CTA />
             <Footer />

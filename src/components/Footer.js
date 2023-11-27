@@ -14,31 +14,39 @@ export default function Footer() {
     const [dense, setDense] = React.useState(false);
 
     return (
-        <div className='root'>
+        <div>
             <div className='footerSec'>
                 <Grid container spacing={2}>
-                    <Grid item md={4}>
-                        <img src='/images/boosty-logo.svg' style={{ width: '30%', marginBottom: '5%', marginLeft: '-3%' }} />
-                        <p style={{ opacity: '70%', fontSize: '17px' }}>
-                            Boosty: Where Businesses Take Flight! 🚀 Dive into global markets with Stripe, PayPal, and Amazon.
-                        </p><br />
-                        <div style={{
-                            opacity: '70%',
-                            fontSize: '14px',
-                            display: 'flex',
-                            alignItems: 'center'
-                        }}><MailIcon fontSize='small' style={{ marginRight: '4%' }} />info@tryboosty.com</div>
+                    <Grid item md={3}>
+                        <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
+                            Legal Services
+                        </Typography>
+                        <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
+                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
+                                <ListItemText><span className='listItem'>US Company Formation</span></ListItemText>
+                            </ListItem>
 
-                        <div style={{
-                            opacity: '70%',
-                            fontSize: '14px',
-                            display: 'flex',
-                            alignItems: 'center',
-                            marginTop: '3%'
-                        }}><PhoneIcon fontSize='small' style={{ marginRight: '4%' }} />+1 (302) 209-8440</div>
+                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
+                                <ListItemText><span className='listItem'>Stripe & PayPal Account</span></ListItemText>
+                            </ListItem>
+
+                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
+                                <ListItemText><span className='listItem'>ITIN Application</span></ListItemText>
+                            </ListItem>
+
+                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
+                                <ListItemText><span className='listItem'>Resale Certificate</span></ListItemText>
+                            </ListItem>
+
+                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
+                                <ListItemText><span className='listItem'>Website Setup</span></ListItemText>
+                            </ListItem>
+                        </List>
+
+
                     </Grid>
 
-                    <Grid item md={2}>
+                    <Grid item md={3}>
                         <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
                             Addons Services
                         </Typography>
@@ -107,14 +115,14 @@ export default function Footer() {
                             Follow us
                         </Typography>
                         <div style={{ marginTop: '5%' }}>
-                            <FacebookRoundedIcon style={{ opacity: '100%', marginRight: '3%', color: '#FF6326' }} />
-                            <TwitterIcon style={{ opacity: '100%', marginRight: '3%', color: '#FF6326' }} />
-                            <LinkedInIcon style={{ opacity: '100%', marginRight: '3%', color: '#FF6326' }} />
+                            <FacebookRoundedIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} />
+                            <TwitterIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} />
+                            <LinkedInIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} />
                         </div>
                     </Grid>
                 </Grid>
 
-                <hr style={{ opacity: '40%', margin: '3% 0' }} />
+                <hr style={{ opacity: '30%', margin: '3% 0' }} />
 
                 <Grid container spacing={2}>
                     <Grid item md={8}>
@@ -143,6 +151,42 @@ whatsapp-icon.png?v=1615793565" width="25px" style={{ verticalAlign: 'middle' }}
                         </a>
                     </Grid>
                 </Grid>
+
+                <hr style={{ opacity: '30%', margin: '3% 0' }} />
+
+                <Grid container spacing={3}>
+                    <Grid item md={4}>
+                        <img src='/images/boosty-white-logo.svg' style={{ width: '35%', marginBottom: '5%', marginLeft: '-6%' }} />
+                        <p style={{ opacity: '70%', fontSize: '17px' }}>
+                            Boosty: Where Businesses Take Flight! 🚀 Dive into global markets with Stripe, PayPal, and Amazon.
+                        </p><br />
+                        <div style={{
+                            opacity: '70%',
+                            fontSize: '14px',
+                            display: 'flex',
+                            alignItems: 'center'
+                        }}><MailIcon fontSize='small' style={{ marginRight: '4%' }} />info@tryboosty.com</div>
+
+                        <div style={{
+                            opacity: '70%',
+                            fontSize: '14px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            marginTop: '3%'
+                        }}><PhoneIcon fontSize='small' style={{ marginRight: '4%' }} />+1 (302) 209-8440</div>
+                    </Grid>
+
+                    <Grid item md={8}>
+                        <p style={{ opacity: '70%' }}>©2023 Distributed Inc. “doola” and the doola logo are registered trademarks.</p><br />
+
+                        <p style={{ opacity: '70%' }}>doola products may not be available to all customers. Terms of Condition apply and are subject to change.</p><br />
+
+                        <p style={{ opacity: '70%' }}>
+                            doola is a technology company. We are not a law firm, nor can we offer official legal advice. What you see on our website, and any of our communication over email, Whatsapp, Slack, SMS, Zoom call, Intercom, social media is purely for general and educational matters, and should not be taken as official legal advice. By using our website and service, you are explicitly accepting our Terms of Service, Privacy Policy, and Data Processing Addendum.
+                        </p>
+                    </Grid>
+                </Grid>
+
 
 
             </div>
