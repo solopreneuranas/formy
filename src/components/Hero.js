@@ -17,8 +17,8 @@ export default function Hero() {
 
             <Grid container spacing={1} className='heroSection'>
 
-                {matches_md ? <Grid item md={6}>
-                    <center><img src='/images/primary-hero-image-blue.svg' style={{ width: '75%' }} /></center>
+                {matches_md ? <Grid item md={6} style={{ marginBottom: matches_md ? '7%' : 0 }}>
+                    <center><img src='/images/primary-hero-image-blue.svg' style={{ width: matches_md ? '85%' : '75%' }} /></center>
                 </Grid> : <></>
                 }
 
@@ -27,7 +27,7 @@ export default function Hero() {
                     <h2 className='heroHeading'>
                         You can have your own <br /><font style={{ color: '#0069FF', background: '#b3d2ff', borderRadius: 5, padding: '0 1%' }}>Stripe & PayPal</font> account now!
                     </h2>
-                    <p className='globalPara'>
+                    <p className='globalPara' style={{padding: 0}}>
                         Ready to access global online services from anywhere? Boosty makes it possible, even in regions they don't operate!
                     </p>
                     <Button variant='contained' className='globalButton' style={{

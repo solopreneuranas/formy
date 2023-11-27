@@ -93,7 +93,7 @@ export default function Services() {
     return (
         <div style={{ padding: '3% 6%', marginTop: matches_md ? '10%' : '5%' }}>
 
-            <Grid container spacing={2} className='servicesSection'>
+            <Grid container spacing={1} className='servicesSection' style={{margin: 0}}>
                 <Grid item xs={12}>
                     <h2 className='featuresHeading'>Boosty: <span className='gradientText'> Expand Globally, </span> Effortlessly</h2><br />
                     <p className='featuresPara' style={{ width: matches_md ? '100%' : '55%', margin: 'auto' }}>

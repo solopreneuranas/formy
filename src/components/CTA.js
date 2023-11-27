@@ -6,8 +6,8 @@ import { Grid, Button } from "@mui/material";
 
 export default function CTA() {
     return (
-        <div style={{ position: 'relative', padding: '3%' }}>
-            <Grid container spacing={3} className='ctaSection'>
+        <div style={{ position: 'relative', padding: '0 6% 3%', background: '#E3F1FD'}}>
+            <Grid container spacing={1} className='ctaSection' style={{marginLeft: 0}}>
                 <Grid item xs={12} style={{ zIndex: 2 }}>
                     <h2 className='bigHeading' style={{ textAlign: 'center', margin: 0, fontSize: '40px' }}>
                         Ready to <font className='gradientText'>Boost Your Business </font>🚀 Worldwide?

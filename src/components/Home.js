@@ -25,7 +25,7 @@ export default function Home() {
             <PricingTabs />
             <Features />
             <Incorporate />
-            <Testimonials />
+            {/* <Testimonials /> */}
             <Faq />
             <CTA />
             <Footer />

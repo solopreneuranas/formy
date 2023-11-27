@@ -86,7 +86,7 @@ export default function Incorporate() {
     return (
         <div style={{ padding: matches_md ? '3% 0' : '3% 10%' }}>
 
-            <Grid container spacing={1} className='incorporateSection'>
+            <Grid container spacing={1} className='incorporateSection' style={{margin: 0}}>
                 <Grid item xs={12}>
                     <h2 className='featuresHeading'>Why Incorporate in the <span className='gradientText'>USA</span></h2><br />
 

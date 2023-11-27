@@ -8,16 +8,21 @@ import ListItemText from '@mui/material/ListItemText';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
 export default function Footer() {
+
     const [dense, setDense] = React.useState(false);
+    const theme = useTheme();
+    const matches_sm = useMediaQuery(theme.breakpoints.down('sm'));
+    const matches_md = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
         <div>
             <div className='footerSec'>
-                <Grid container spacing={2}>
-                    <Grid item md={3}>
+                <Grid container spacing={1}>
+                    <Grid item md={3} style={{ width: '50%' }}>
                         <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
                             Legal Services
                         </Typography>
@@ -46,7 +51,7 @@ export default function Footer() {
 
                     </Grid>
 
-                    <Grid item md={3}>
+                    <Grid item md={3} style={{ width: '50%' }}>
                         <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
                             Addons Services
                         </Typography>
@@ -73,7 +78,7 @@ export default function Footer() {
                         </List>
                     </Grid>
 
-                    <Grid item md={2}>
+                    <Grid item md={2} style={{ width: '30%', marginTop: matches_md ? '5%' : 0 }}>
                         <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
                             Quick Links
                         </Typography>
@@ -89,7 +94,7 @@ export default function Footer() {
                     </Grid>
 
 
-                    <Grid item md={2}>
+                    <Grid item md={2} style={{ width: '30%', marginTop: matches_md ? '5%' : 0 }}>
                         <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
                             Legal
                         </Typography>
@@ -110,7 +115,7 @@ export default function Footer() {
                         </List>
                     </Grid>
 
-                    <Grid item md={2}>
+                    <Grid item md={2} style={{ width: '30%', marginTop: matches_md ? '5%' : 0 }}>
                         <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
                             Follow us
                         </Typography>
@@ -124,7 +129,7 @@ export default function Footer() {
 
                 <hr style={{ opacity: '30%', margin: '3% 0' }} />
 
-                <Grid container spacing={2}>
+                <Grid container spacing={2} style={{padding: matches_md ? '5% 0' : 0}}>
                     <Grid item md={8}>
                         <Typography style={{ fontWeight: 600, fontSize: '23px', fontFamily: 'Inter' }}>
                             Instant Support via WhatsApp
