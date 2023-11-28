@@ -17,10 +17,10 @@ export default function Hero() {
 
             <Grid container spacing={1} className='heroSection'>
 
-                {matches_md ? <Grid item md={6} style={{ marginBottom: matches_md ? '7%' : 0 }}>
+                {/* {matches_md ? <Grid item md={6} style={{ marginBottom: matches_md ? '7%' : 0 }}>
                     <center><img src='/images/primary-hero-image-blue.svg' style={{ width: matches_md ? '85%' : '75%' }} /></center>
                 </Grid> : <></>
-                }
+                } */}
 
                 <Grid item md={6}>
                     <p style={{ opacity: '80%' }}>GLOBAL FORMATION</p>
@@ -60,10 +60,10 @@ export default function Hero() {
 
                 </Grid>
 
-                {matches_md ? <></> : <Grid item md={6}>
+                {/* {matches_md ? <></> : <Grid item md={6}>
                     <center><img src='/images/primary-hero-image-blue.svg' style={{ width: '75%' }} /></center>
                 </Grid>
-                }
+                } */}
             </Grid>
 
 
