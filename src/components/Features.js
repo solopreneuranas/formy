@@ -36,7 +36,7 @@ export default function Features() {
     return (
         <div className='root'>
 
-            <Grid container spacing={5} className='featuresSection'>
+            <Grid container spacing={1} className='featuresSection'>
                 <Grid item md={6} className='featuresContent'>
                     <h2 className='featuresHeading'>Why Choose <span className='gradientText'>Boosty</span></h2><br />
                     <p className='featuresPara'>

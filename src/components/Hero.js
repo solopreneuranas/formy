@@ -27,7 +27,7 @@ export default function Hero() {
                     <h2 className='heroHeading'>
                         You can have your own <br /><font style={{ color: '#0069FF', background: '#b3d2ff', borderRadius: 5, padding: '0 1%' }}>Stripe & PayPal</font> account now!
                     </h2>
-                    <p className='globalPara' style={{padding: 0}}>
+                    <p className='globalPara' style={{ padding: 0 }}>
                         Ready to access global online services from anywhere? Boosty makes it possible, even in regions they don't operate!
                     </p>
                     <Button variant='contained' className='globalButton' style={{
@@ -49,11 +49,10 @@ export default function Hero() {
                         <img src='https://micahguru.com/images/Trustpilot-logo.svg' style={{ width: 100 }} />
                     </div>
 
-                    {matches_md ? <></> :
-                        <div style={{ marginTop: '5%', width: '80%' }}>
-                            <Brands />
-                        </div>
-                    }
+                    <div style={{ marginTop: '5%', width: '80%' }}>
+                        <Brands />
+                    </div>
+
 
 
 

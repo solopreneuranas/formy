@@ -163,9 +163,9 @@ export default function Services() {
     ]
 
     return (
-        <div className='root'>
+        <div style={{padding: '3% 0'}}>
 
-            <Grid container spacing={5} className='featuresSection'>
+            <Grid container spacing={1} className='featuresSection'>
 
                 <Grid item md={6} className='featuresImg'>
                     <center><img src='/images/primary-hero-image-blue.svg' style={{ width: '80%', marginRight: 'auto' }} /></center>

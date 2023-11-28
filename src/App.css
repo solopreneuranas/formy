@@ -803,10 +803,7 @@ body {
   }
 
   .logo {
-    margin: 0;
-    padding: 0;
-    width: 140px;
-    filter: grayscale(100%);
+    width: '100%';
   }
 
   .servicesSection {

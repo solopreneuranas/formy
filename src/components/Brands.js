@@ -9,7 +9,7 @@ import { Grid } from "@mui/material";
 export default function Brands() {
 
     const theme = useTheme();
-    const matches = useMediaQuery(theme.breakpoints.down('md'));
+    const matches_md = useMediaQuery(theme.breakpoints.down('md'));
     const sliderRef = useRef(null);
 
     const settings = {
@@ -18,8 +18,8 @@ export default function Brands() {
         speed: 70,
         focusOnSelect: false,
         autoplay: true,
-        slidesToShow: matches ? 2 : 4,
-        slidesToScroll: matches ? 2 : 1,
+        slidesToShow: matches_md ? 2.5 : 3,
+        slidesToScroll: matches_md ? 1 : 1,
         arrows: false,
     };
 
@@ -27,20 +27,20 @@ export default function Brands() {
 
 
     const bannerCarousel = () => {
-        return data.map((item, i) => (
-            <div>
-                <center>
+        return data.map((item, i) => {
+            return (
+                <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
                     <img
                         className='logo'
                         src={`/images/${item}`}
                     />
-                </center>
-            </div>
-        ));
-    };
+                </div>
+            )
+        })
+    }
 
     return (
-        <div style={{ position: 'relative' }}>
+        <div style={{ maxWidth: matches_md ? '500px' : '', width: '100%' }}>
             <Slider ref={sliderRef} {...settings}>
                 {bannerCarousel()}
             </Slider>
