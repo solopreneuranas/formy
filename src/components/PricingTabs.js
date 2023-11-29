@@ -5,7 +5,7 @@ import { Grid, Button } from "@mui/material";
 import DoneIcon from '@mui/icons-material/Done';
 import { useNavigate } from 'react-router-dom';
 
-export default function PricingTabs() {
+export default function PricingTabs(props) {
 
     const navigate = useNavigate()
 
@@ -71,15 +71,24 @@ export default function PricingTabs() {
         }
     ]
 
+    const state = props.state
+    const fee = props.fee
 
     return (
         <Grid container spacing={5} className='pricingPackage'>
-            <Grid item xs={12}>
-                <center>
-                    <h2 className='featuresHeading'>Simplified<span className='gradientText'> Pricing </span>for all your needs</h2>
-                    <p className='featuresPara' style={{ marginTop: '1%', marginBottom: '1%' }}>Get upfront, clear pricing for starting and running your business.</p><br />
-                </center>
+
+            <Grid container spacing={1} style={{ margin: 0 }}>
+                <Grid item xs={12}>
+                    <center>
+                        <h2 className='featuresHeading' style={{ fontSize: 30 }}>
+                            {state ?
+                                <><span className='gradientText'>{state}</span> LLC Formation Plan</> : ''
+                            }
+                        </h2>
+                    </center>
+                </Grid>
             </Grid>
+
             <Grid item md={6} style={{ width: '100%' }}>
                 <Grid container spacing={0} className='business'>
                     <Grid item xs={12} className='tabLeftCol'>
@@ -87,7 +96,9 @@ export default function PricingTabs() {
                             <h3 style={{ fontWeight: 600, fontSize: '20px', marginBottom: '2%' }}>Business</h3>
                             <img src='/images/us-flag.svg' style={{ width: 30 }} />
                         </div>
-                        <h3 style={{ fontWeight: 600, fontSize: '40px' }}>$199 <span style={{ fontWeight: 400, fontSize: '20px' }}>+ State Fees</span></h3>
+                        <h3 style={{ fontWeight: 600, fontSize: '40px' }}>{state ? fee + 199 : '$199'} <span style={{ fontWeight: 400, fontSize: '20px', opacity: '80%' }}>
+                            {state ? 'One Time' : '+ State Fees'}
+                        </span></h3>
                         <p className='pricingContent' style={{ marginTop: '2%' }}>If you're operating with a low budget.</p>
                         <Button onClick={() => navigate('/pricing')} fullWidth variant='contained' className='globalButton' style={{
                             background: '#0069FF',
@@ -120,7 +131,9 @@ export default function PricingTabs() {
                             <h3 style={{ fontWeight: 600, fontSize: '20px', marginBottom: '2%' }}>Premium</h3>
                             <img src='/images/us-flag.svg' style={{ width: 30 }} />
                         </div>
-                        <h3 style={{ fontWeight: 600, fontSize: '40px' }}>$399 <span style={{ fontWeight: 400, fontSize: '20px' }}>+ State Fees</span></h3>
+                        <h3 style={{ fontWeight: 600, fontSize: '40px' }}>{state ? fee + 399 : '$399'} <span style={{ fontWeight: 400, fontSize: '20px' }}>
+                            {state ? 'One Time' : '+ State Fees'}
+                        </span></h3>
                         <p className='pricingContent' style={{ marginTop: '2%' }}>Enhanced, fast, and exclusive service.</p>
                         <Button onClick={() => navigate('/pricing')} fullWidth variant='contained' className='globalButton' style={{
                             background: 'white',
