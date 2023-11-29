@@ -96,7 +96,7 @@ export default function PricingTabs(props) {
                             <h3 style={{ fontWeight: 600, fontSize: '20px', marginBottom: '2%' }}>Business</h3>
                             <img src='/images/us-flag.svg' style={{ width: 30 }} />
                         </div>
-                        <h3 style={{ fontWeight: 600, fontSize: '40px' }}>{state ? fee + 199 : '$199'} <span style={{ fontWeight: 400, fontSize: '20px', opacity: '80%' }}>
+                        <h3 style={{ fontWeight: 600, fontSize: '40px' }}>${state ? fee + 199 : '199'} <span style={{ fontWeight: 400, fontSize: '20px', opacity: '80%' }}>
                             {state ? 'One Time' : '+ State Fees'}
                         </span></h3>
                         <p className='pricingContent' style={{ marginTop: '2%' }}>If you're operating with a low budget.</p>
@@ -131,7 +131,7 @@ export default function PricingTabs(props) {
                             <h3 style={{ fontWeight: 600, fontSize: '20px', marginBottom: '2%' }}>Premium</h3>
                             <img src='/images/us-flag.svg' style={{ width: 30 }} />
                         </div>
-                        <h3 style={{ fontWeight: 600, fontSize: '40px' }}>{state ? fee + 399 : '$399'} <span style={{ fontWeight: 400, fontSize: '20px' }}>
+                        <h3 style={{ fontWeight: 600, fontSize: '40px' }}>${state ? fee + 399 : '399'} <span style={{ fontWeight: 400, fontSize: '20px' }}>
                             {state ? 'One Time' : '+ State Fees'}
                         </span></h3>
                         <p className='pricingContent' style={{ marginTop: '2%' }}>Enhanced, fast, and exclusive service.</p>
