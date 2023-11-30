@@ -36,7 +36,7 @@ export default function Features() {
     return (
         <div className='root'>
 
-            <Grid container spacing={1} className='featuresSection' style={{ position: 'relative', margin: 0 }}>
+            <Grid container spacing={1} className='featuresSection' style={{ position: 'relative' }}>
                 
                 <div className='blurDiv'></div>
 

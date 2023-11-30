@@ -100,10 +100,10 @@ export default function Pricing(props) {
 
 
     return (
-        <div>
+        <div style={{ overflowX: 'hidden' }}>
             <Header bg='white' color='black' logo='boosty-logo.svg' border='2px solid black' />
 
-            <div style={{ width: '100%', marginTop: '5%', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+            <div style={{ width: '100%', marginTop: matches_md ? '10%' : '5%', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                 <Grid container spacing={1} style={{ margin: 0 }}>
                     <Grid item xs={12}>
                         <center>

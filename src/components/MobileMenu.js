@@ -256,7 +256,7 @@ export default function MobileMenu() {
                                 <div style={{ padding: '5% 0', display: 'flex', alignItems: 'center', width: '100%' }}>
                                     <img src={item.icon} style={{ width: 30, height: 30, marginRight: '5%' }} />
                                     <h3 style={{ margin: 0, fontWeight: 500 }}>{item.title}</h3>
-                                    <KeyboardArrowDownIcon style={{fontSize: '2rem', marginLeft: '5%'}}/>
+                                    <KeyboardArrowDownIcon style={{ fontSize: '2rem', marginLeft: '5%' }} />
                                 </div>
                             </AccordionSummary>
                             <AccordionDetails>
@@ -277,12 +277,23 @@ export default function MobileMenu() {
         // onClick={toggleDrawer(anchor, false)}
         // onKeyDown={toggleDrawer(anchor, false)}
         >
-            <Divider />
             <List>
                 {showMenuItems()}
                 <Divider style={{ margin: '2% 0' }} />
                 {showStaticMenuItems()}
             </List>
+
+
+            <div style={{ padding: '0 3%', marginTop: '3%', }}>
+                <Button variant='contained' fullWidth className='globalButton' style={{
+                    background: '#1105fa',
+                    color: 'white',
+                    fontWeight: 500,
+                    fontFamily: 'Inter'
+                }}>GET STARTED
+                </Button>
+            </div>
+
         </Box>
     );
 

@@ -83,9 +83,8 @@ export default function Addons() {
     }
 
     return (
-        <div className='root'>
+        <div className='root' >
             <Grid container spacing={1} className='addonsSection'>
-                <div className='blurDiv'></div>
                 <Grid item md={12} style={{ zIndex: 2 }}>
                     <h2 className='featuresHeading'><span className='gradientText'>Addons</span> Services</h2><br />
                     <p className='addonsPara' style={{ marginBottom: '5%' }}>

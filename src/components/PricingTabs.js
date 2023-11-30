@@ -84,27 +84,27 @@ export default function PricingTabs(props) {
 
             {
                 state ? <></> :
-                    <Grid container spacing={1} style={{ margin: 0 }}>
-                        <Grid item xs={12}>
-                            <center>
-                                <h2 className='featuresHeading'>Simplified<span className='gradientText'> Pricing </span>for all your needs</h2>
-                                <p className='featuresPara' style={{ marginTop: '1%', marginBottom: '1%' }}>Get upfront, clear pricing for starting and running your business.</p><br />
-                            </center>
-                        </Grid>
+
+                    <Grid item xs={12}>
+                        <center>
+                            <h2 className='featuresHeading'>Simplified<span className='gradientText'> Pricing </span>for all your needs</h2>
+                            <p className='featuresPara' style={{ marginTop: '1%', marginBottom: '1%' }}>Get upfront, clear pricing for starting and running your business.</p><br />
+                        </center>
                     </Grid>
+
             }
 
-            <Grid container spacing={1} style={{ margin: 0 }}>
-                <Grid item xs={12}>
-                    <center>
-                        <h2 className='featuresHeading' style={{ fontSize: 30 }}>
-                            {state ?
-                                <><span className='gradientText'>{state}</span> LLC Formation Plans</> : ''
-                            }
-                        </h2>
-                    </center>
-                </Grid>
+
+            <Grid item xs={12} >
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <h2 className='featuresHeading' style={{ fontSize: 30, textAlign: 'center' }}>
+                        {state ?
+                            <><span className='gradientText'>{state}</span> LLC Formation Plans</> : ''
+                        }
+                    </h2>
+                </div>
             </Grid>
+
 
             <Grid item md={6} style={{ width: '100%' }}>
                 <Grid container spacing={0} className='business'>
