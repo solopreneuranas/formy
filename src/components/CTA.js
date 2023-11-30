@@ -24,7 +24,6 @@ export default function CTA() {
                         <Button variant='contained' className='globalButton' style={{
                             background: '#0069ff',
                             color: 'white',
-                            borderRadius: 30,
                             padding: '1% 3%',
                             marginTop: '1%',
                             fontFamily: 'Inter'

@@ -36,14 +36,17 @@ export default function Features() {
     return (
         <div className='root'>
 
-            <Grid container spacing={1} className='featuresSection'>
-                <Grid item md={6} className='featuresContent'>
+            <Grid container spacing={1} className='featuresSection' style={{ position: 'relative', margin: 0 }}>
+                
+                <div className='blurDiv'></div>
+
+                <Grid item md={6} className='featuresContent' style={{ zIndex: 2 }}>
                     <h2 className='featuresHeading'>Why Choose <span className='gradientText'>Boosty</span></h2><br />
                     <p className='featuresPara'>
                         Boosty breaks geographic boundaries, empowering business expansion. We facilitate access to vital services by assisting in U.S. company registration, unlocking previously elusive opportunities.
                     </p>
 
-                    <Grid container spacing={3}>
+                    <Grid container spacing={1}>
                         {features.map((item) => {
                             return (
                                 <Grid item md={6}>
@@ -56,8 +59,8 @@ export default function Features() {
                     </Grid>
 
                 </Grid>
-                <Grid item md={6} className='featuresImg'>
-                    <center><img src='/images/section-image-2.svg' style={{ width: '80%', marginRight: 'auto'}} /></center>
+                <Grid item md={6} className='featuresImg' style={{ zIndex: 2 }}>
+                    <center><img src='https://startglobal.co/img/llc.png' style={{ width: '80%', marginRight: 'auto' }} /></center>
                 </Grid>
             </Grid>
 

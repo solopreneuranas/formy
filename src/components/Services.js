@@ -168,13 +168,13 @@ export default function Services() {
             <Grid container spacing={1} className='featuresSection'>
 
                 <Grid item md={6} className='featuresImg'>
-                    <center><img src='/images/primary-hero-image-blue.svg' style={{ width: '80%', marginRight: 'auto' }} /></center>
+                    <center><img src='https://startglobal.co/img/llc-formation.png' style={{ width: '90%', marginRight: 'auto' }} /></center>
                 </Grid>
 
                 <Grid item md={6} className='featuresContent'>
                     <h2 className='featuresHeading'>Boosty: <span className='gradientText'> Expand Globally, </span> Effortlessly</h2><br />
                     <p className='featuresPara'>
-                        Boosty breaks geographic boundaries, empowering business expansion. We facilitate access to vital services by assisting in U.S. company registration, unlocking previously elusive opportunities.
+                        Boosty breaks geographic boundaries, empowering business expansion. We facilitate access to vital services by assisting in U.S.
                     </p>
 
                     <Grid container spacing={3}>
@@ -183,7 +183,7 @@ export default function Services() {
                                 <Grid item md={6}>
                                     <img src={item.icon} style={{ width: 45 }} />
                                     <h3 style={{ marginBottom: '2%', fontWeight: '600' }}>{item.title}</h3>
-                                    <p className='featuresPara'>{item.para}</p>
+                                    {/* <p className='featuresPara'>{item.para}</p> */}
                                 </Grid>
                             )
                         })}

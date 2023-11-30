@@ -11,6 +11,7 @@ import { Grid, Button, TextField } from "@mui/material";
 import PricingTabs from './PricingTabs'
 import { useState } from "react";
 import Autocomplete from '@mui/material/Autocomplete';
+import Testimonials from './Testimonials';
 
 export default function Pricing(props) {
 
@@ -20,8 +21,28 @@ export default function Pricing(props) {
     const matches_md = useMediaQuery(theme.breakpoints.down('md'));
 
     const handleStateSelect = (event, newValue) => {
+        const start = window.scrollY;
+        const end = 300;
+        const duration = 500;
+
+        const startTime = performance.now();
+
+        const animateScroll = (timestamp) => {
+            const elapsed = timestamp - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+
+            window.scrollTo(0, start + progress * (end - start));
+
+            if (progress < 1) {
+                window.requestAnimationFrame(animateScroll);
+            }
+        };
+
+        window.requestAnimationFrame(animateScroll);
+
         setSelectedState(newValue);
     };
+
 
     const states = [
         { label: 'Alabama', fee: 236 },
@@ -82,7 +103,7 @@ export default function Pricing(props) {
         <div>
             <Header bg='white' color='black' logo='boosty-logo.svg' border='2px solid black' />
 
-            <div style={{ width: '100%', height: '70vh', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+            <div style={{ width: '100%', marginTop: '5%', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                 <Grid container spacing={1} style={{ margin: 0 }}>
                     <Grid item xs={12}>
                         <center>
@@ -108,22 +129,25 @@ export default function Pricing(props) {
                 <Grid container spacing={1} style={{ marginTop: '1%', width: '20%' }}>
                     <Grid item xs={12} style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', alignItems: 'center', gap: '4%' }}>
                         <div>
-                            <img src='https://micahguru.com/images/Trustpilot-logo.svg' style={{ width: 100 }} />
+                            <img src='/images/Trustpilot-logo.svg' style={{ width: 100 }} />
                         </div>
                         <div>
                             <p style={{ padding: 0, fontWeight: 500, opacity: '80%' }}>Rated Worldwide</p>
                         </div>
                     </Grid>
                 </Grid>
-            </div>
+            </div >
 
-            {selectedState ? <PricingTabs state={selectedState.label} fee={selectedState.fee} /> : <></>}
+            {
+                selectedState ? <PricingTabs state={selectedState.label} fee={selectedState.fee} /> : <></>
+            }
 
             <Addons />
+            <Testimonials />
             <Faq />
             <CTA />
             <Footer />
 
-        </div>
+        </div >
     );
 }

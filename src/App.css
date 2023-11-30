@@ -5,6 +5,16 @@ body {
   font-family: 'Inter' !important;
 }
 
+.blurDiv {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  background: #D3DEEF;
+  border-radius: 50%;
+  filter: blur(150px);
+  left: 30%
+}
+
 /* Styles for Header Starts */
 
 * {
@@ -22,7 +32,6 @@ body {
   width: 150%;
   display: block;
 }
-
 
 @media (max-width: 900px) {
   .main-wrapper img {
@@ -464,7 +473,7 @@ body {
   width: 100%;
   margin: auto;
   background-color: #E3F1FD;
-  padding: 5% 20%;
+  padding: 2% 20% 4%;
 }
 
 .faq {
@@ -548,7 +557,6 @@ body {
   font-size: 16px !important;
   margin-top: 2%;
   box-shadow: none !important;
-  border-radius: 7px
 }
 
 .mobileHeroImg {
@@ -558,7 +566,7 @@ body {
 .footerSec {
   color: white;
   border-top: 8px solid #0069FF;
-  background-color: #001a63;
+  background-color: blue;
   padding: 17% 13% 6%;
 }
 
@@ -589,11 +597,10 @@ body {
   width: 100%;
   margin: auto;
   display: flex;
-  justify-content: center;
-  border-radius: 25px;
+  justify-content: left;
   align-items: center;
-  text-align: center;
-  padding: 1% 5%;
+  text-align: left;
+  padding: 0;
 }
 
 .css-v84d5j-MuiSvgIcon-root {
@@ -709,6 +716,7 @@ body {
   padding: 3% 1% !important;
   height: 410px;
   margin-right: 0;
+  background-color: white;
 }
 
 .addonsDiv:hover {

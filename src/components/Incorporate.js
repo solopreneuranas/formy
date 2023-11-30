@@ -65,7 +65,7 @@ export default function Incorporate() {
                         height: '350px',
                         borderRadius: 15,
                         margin: '5% 4%',
-                        boxShadow: '0 10px 25px #c4dcff',
+                        boxShadow: '10px 10px 25px #D2DEF1',
                         background: 'white',
                         textAlign: 'left'
                     }}
@@ -84,7 +84,7 @@ export default function Incorporate() {
 
 
     return (
-        <div style={{ padding: matches_md ? '3% 0' : '3% 10%' }}>
+        <div style={{ padding: matches_md ? '3% 0' : '0 10% 3%', overflowX : 'hidden' }}>
 
             <Grid container spacing={1} className='incorporateSection' style={{margin: 0}}>
                 <Grid item xs={12}>

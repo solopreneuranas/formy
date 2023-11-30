@@ -17,15 +17,18 @@ export default function Hero() {
 
             <Grid container spacing={1} className='heroSection'>
 
+                {matches_md ? <></> : <div className='blurDiv' style={{ background: '#1105FA' }}></div> }
+
                 {/* {matches_md ? <Grid item md={6} style={{ marginBottom: matches_md ? '7%' : 0 }}>
                     <center><img src='/images/primary-hero-image-blue.svg' style={{ width: matches_md ? '85%' : '75%' }} /></center>
                 </Grid> : <></>
                 } */}
 
-                <Grid item md={6}>
+                <Grid item md={6} style={{ zIndex: 2 }}>
                     <p style={{ opacity: '80%' }}>GLOBAL FORMATION</p>
                     <h2 className='heroHeading'>
-                        You can have your own <br /><font style={{ color: '#0069FF', background: '#b3d2ff', borderRadius: 5, padding: '0 1%' }}>Stripe & PayPal</font> account now!
+                        You can have your own <br />
+                        <font style={{ color: '#0069FF', background: '#b3d2ff', borderRadius: 5, padding: '0 1%' }}>Stripe & PayPal</font> account now!
                     </h2>
                     <p className='globalPara' style={{ padding: 0 }}>
                         Ready to access global online services from anywhere? Boosty makes it possible, even in regions they don't operate!
@@ -36,7 +39,6 @@ export default function Hero() {
                         padding: '2% 5%',
                         fontWeight: 500,
                         marginTop: '2%',
-                        borderRadius: 30,
                         fontFamily: 'Inter'
                     }}>GET STARTED</Button><br />
 
@@ -46,12 +48,14 @@ export default function Hero() {
 
                         <Avatars />
 
-                        <img src='https://micahguru.com/images/Trustpilot-logo.svg' style={{ width: 100 }} />
+                        <img src='/images/Trustpilot-logo.svg' style={{ width: 100 }} />
                     </div>
 
-                    <div style={{ marginTop: '5%', width: '80%' }}>
-                        <Brands />
-                    </div>
+                    {matches_md ? <></> :
+                        <div style={{ marginTop: '5%', width: '80%' }}>
+                            <Brands />
+                        </div>
+                    }
 
 
 
@@ -59,10 +63,10 @@ export default function Hero() {
 
                 </Grid>
 
-                {/* {matches_md ? <></> : <Grid item md={6}>
-                    <center><img src='/images/primary-hero-image-blue.svg' style={{ width: '75%' }} /></center>
+                {matches_md ? <></> : <Grid item md={6} style={{ zIndex: 2 }}>
+                    <center><img src='https://startglobal.co/img/banner-1.png' style={{ width: '90%' }} /></center>
                 </Grid>
-                } */}
+                }
             </Grid>
 
 

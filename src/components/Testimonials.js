@@ -19,13 +19,10 @@ export default function Testimonials() {
     const matches_sm = useMediaQuery(theme.breakpoints.down('sm'));
     const matches_md = useMediaQuery(theme.breakpoints.down('md'));
 
-    const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
-    const [value, setValue] = useState(5);
-
     const settings = {
         dots: false,
         infinite: true,
-        speed: 400,
+        speed: 300,
         focusOnSelect: false,
         autoplay: true,
         slidesToShow: matches_md ? 1 : 3.5,
@@ -61,14 +58,6 @@ export default function Testimonials() {
         }
     ]
 
-    const rating = () => {
-        return (
-            <Box>
-                <Rating name="read-only" value={value} readOnly style={{ color: '#00B67A' }} />
-            </Box>
-        )
-    }
-
     const servicesSlider = () => {
         return features.map((item, i) => (
             <div>
@@ -77,37 +66,24 @@ export default function Testimonials() {
                     style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        alignItems: 'center',
-                        padding: '8%',
-                        height: '350px',
+                        padding: '7%',
+                        height: '300px',
                         borderRadius: 17,
                         position: 'relative',
-                        margin: '17% 5%',
-                        boxShadow: '0 0 25px #c4dcff',
+                        margin: '10% 3%',
+                        //boxShadow: matches_md ? '0 5px 25px #D2DEF1' : 'none',
                         background: 'white',
-                        textAlign: 'center'
+                        textAlign: 'left'
                     }}
                 >
-                    <center>
-                        <AvatarGroup style={{ display: 'flex', justifyContent: 'center', marginBottom: '4%', marginTop: '-25%' }}>
-                            <Avatar src={`/images/${item.image}`} style={{ width: 100, height: 100, border: '7px solid white' }} />
-                        </AvatarGroup>
+                    <h3 style={{ margin: 0, fontWeight: 500, textAlign: 'left', fontSize: 23 }}>{item.title}</h3>
 
-                        <h3 style={{ margin: '8% 0 0', fontWeight: '600' }}>{item.title}</h3>
+                    <p style={{ opacity: '70%', marginTop: '3%', fontSize: 15 }}>
+                        {item.para}
+                    </p>
+                    <br />
 
-                        {/* <div style={{ position: 'absolute', bottom: '8%' }}>
-                            <h3 style={{ margin: '10% 0 0', fontWeight: '600' }}>{item.title}</h3>
-                        </div> */}
-
-                        <p style={{ opacity: '70%', marginTop: '3%', fontSize: 15 }}>
-                            <FormatQuoteIcon style={{ transform: 'rotateY(180deg)' }} />{item.para}
-                        </p>
-
-                        <div style={{ position: 'absolute', bottom: '8%', width: '100%', left: 0 }}>
-                            {rating()}
-                        </div>
-
-                    </center>
+                    <img src='/images/stars.svg' style={{ width: 140 }} />
 
                 </div>
             </div>
@@ -118,13 +94,16 @@ export default function Testimonials() {
 
 
     return (
-        <div style={{ padding: matches_md ? '8% 0 3%' : '2% 4%', background: '#E3F1FD', borderRadius: matches_md ? '50px 50px 0 0' : '100px 100px 0 0', borderTop: '8px solid #0069FF' }}>
+        <div style={{ padding: matches_md ? '8% 0 3%' : '2% 0 0' }}>
 
             <Grid container spacing={1} className='testimonialsSection'>
-                <Grid item xs={12}>
-                    <h2 className='featuresHeading'>See what people say about <span className='gradientText'>Boosty</span></h2><br />
+                {matches_md ? <></> : <div className='blurDiv'></div>}
+                <Grid item xs={12} style={{ zIndex: 2 }}>
+                    <center><h2 className='featuresHeading'>See what people say about <span className='gradientText'>Boosty</span></h2>
+                        <p style={{ marginTop: '1%', opacity: '80%' }}>Rated by many Businesses worldwide</p>
+                    </center>
 
-                    <div style={{ position: 'relative', borderRadius: 20, padding: matches_md ? '1%' : '2% 4%', marginTop: '2%' }}>
+                    <div style={{ position: 'relative', borderRadius: 20, padding: matches_md ? '1%' : '2% 4%' }}>
                         <div style={{ background: '', width: '70%', position: 'absolute', left: '15%', height: '90%', borderRadius: 10 }}>
                         </div>
                         <Slider ref={sliderRef} {...settings}>

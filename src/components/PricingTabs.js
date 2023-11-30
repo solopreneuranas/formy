@@ -71,18 +71,35 @@ export default function PricingTabs(props) {
         }
     ]
 
+    const handleBtnClick = () => {
+        navigate('/pricing')
+        window.scrollTo(0, 0);
+    }
+
     const state = props.state
     const fee = props.fee
 
     return (
         <Grid container spacing={5} className='pricingPackage'>
 
+            {
+                state ? <></> :
+                    <Grid container spacing={1} style={{ margin: 0 }}>
+                        <Grid item xs={12}>
+                            <center>
+                                <h2 className='featuresHeading'>Simplified<span className='gradientText'> Pricing </span>for all your needs</h2>
+                                <p className='featuresPara' style={{ marginTop: '1%', marginBottom: '1%' }}>Get upfront, clear pricing for starting and running your business.</p><br />
+                            </center>
+                        </Grid>
+                    </Grid>
+            }
+
             <Grid container spacing={1} style={{ margin: 0 }}>
                 <Grid item xs={12}>
                     <center>
                         <h2 className='featuresHeading' style={{ fontSize: 30 }}>
                             {state ?
-                                <><span className='gradientText'>{state}</span> LLC Formation Plan</> : ''
+                                <><span className='gradientText'>{state}</span> LLC Formation Plans</> : ''
                             }
                         </h2>
                     </center>
@@ -100,7 +117,7 @@ export default function PricingTabs(props) {
                             {state ? 'One Time' : '+ State Fees'}
                         </span></h3>
                         <p className='pricingContent' style={{ marginTop: '2%' }}>If you're operating with a low budget.</p>
-                        <Button onClick={() => navigate('/pricing')} fullWidth variant='contained' className='globalButton' style={{
+                        <Button onClick={handleBtnClick} fullWidth variant='contained' className='globalButton' style={{
                             background: '#0069FF',
                             padding: '3% 4%',
                             margin: '7% 0 5%',
@@ -135,7 +152,7 @@ export default function PricingTabs(props) {
                             {state ? 'One Time' : '+ State Fees'}
                         </span></h3>
                         <p className='pricingContent' style={{ marginTop: '2%' }}>Enhanced, fast, and exclusive service.</p>
-                        <Button onClick={() => navigate('/pricing')} fullWidth variant='contained' className='globalButton' style={{
+                        <Button onClick={handleBtnClick} fullWidth variant='contained' className='globalButton' style={{
                             background: 'white',
                             color: 'black',
                             padding: '3% 4%',
