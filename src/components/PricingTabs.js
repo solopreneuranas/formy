@@ -4,8 +4,14 @@ import '../App.css';
 import { Grid, Button } from "@mui/material";
 import DoneIcon from '@mui/icons-material/Done';
 import { useNavigate } from 'react-router-dom';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
 export default function PricingTabs(props) {
+
+    const theme = useTheme()
+    const matches_sm = useMediaQuery(theme.breakpoints.down('sm'))
+    const matches_md = useMediaQuery(theme.breakpoints.down('md'))
 
     const navigate = useNavigate()
 
@@ -80,16 +86,14 @@ export default function PricingTabs(props) {
     const fee = props.fee
 
     return (
-        <Grid container spacing={5} className='pricingPackage'>
+        <Grid container spacing={matches_md ? 1 : 3} className='pricingPackage'>
 
             {
                 state ? <></> :
 
                     <Grid item xs={12}>
-                        <center>
-                            <h2 className='featuresHeading'>Simplified<span className='gradientText'> Pricing </span>for all your needs</h2>
-                            <p className='featuresPara' style={{ marginTop: '1%', marginBottom: '1%' }}>Get upfront, clear pricing for starting and running your business.</p><br />
-                        </center>
+                        <h2 className='featuresHeading' style={{ textAlign: matches_md ? 'left' : 'center', padding: matches_md ? '0 2%' : '' }}>Simplified<span className='gradientText'> Pricing </span>for all your needs</h2>
+                        <p className='featuresPara' style={{ marginTop: '1%', marginBottom: '1%', textAlign: matches_md ? 'left' : 'center', padding: matches_md ? '0 2%' : '' }}>Get upfront, clear pricing for starting and running your business.</p><br />
                     </Grid>
 
             }
@@ -118,7 +122,7 @@ export default function PricingTabs(props) {
                         </span></h3>
                         <p className='pricingContent' style={{ marginTop: '2%' }}>If you're operating with a low budget.</p>
                         <Button onClick={handleBtnClick} fullWidth variant='contained' className='globalButton' style={{
-                            background: '#0069FF',
+                            background: 'blue',
                             padding: '3% 4%',
                             margin: '7% 0 5%',
                             fontFamily: 'Inter'

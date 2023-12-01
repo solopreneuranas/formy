@@ -6,25 +6,17 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 import { useTheme } from '@mui/material/styles';
 import { AppBar, Grid, Toolbar } from "@mui/material";
-import CloseIcon from '@mui/icons-material/Close';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-
+import { useNavigate } from 'react-router-dom';
 
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -47,6 +39,7 @@ export default function MobileMenu() {
 
     const [expanded, setExpanded] = useState('');
 
+    var navigate = useNavigate()
 
     const theme = useTheme()
     const matches_md = useMediaQuery(theme.breakpoints.down('md'));
@@ -71,6 +64,10 @@ export default function MobileMenu() {
         setState({ ...state, [anchor]: open });
     };
 
+    const handleBtnClick = () => {
+        navigate('/pricing')
+        window.scrollTo(0, 0);
+    }
 
     const servicesContent = () => {
         const servicesIcons = [
@@ -238,7 +235,7 @@ export default function MobileMenu() {
                     backgroundColor:
                         theme.palette.mode === 'dark'
                             ? 'rgba(255, 255, 255, .05)'
-                            : 'rgba(0, 0, 0, .03)',
+                            : 'white',
                     flexDirection: 'row-reverse',
                     '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
                         transform: 'rotate(90deg)',
@@ -285,7 +282,7 @@ export default function MobileMenu() {
 
 
             <div style={{ padding: '0 3%', marginTop: '3%', }}>
-                <Button variant='contained' fullWidth className='globalButton' style={{
+                <Button onClick={handleBtnClick} variant='contained' fullWidth className='globalButton' style={{
                     background: '#1105fa',
                     color: 'white',
                     fontWeight: 500,

@@ -21,6 +21,11 @@ export default function Header(props) {
         window.scrollTo(0, 0);
     }
 
+    const handleBtnClick = () => {
+        navigate('/pricing')
+        window.scrollTo(0, 0);
+    }
+
     return (
         <div style={{overflowX: 'hidden'}}>
             {matches_md ? <></> :
@@ -36,8 +41,8 @@ export default function Header(props) {
 
 
                     <Grid item md={3} style={{ display: 'flex', justifyContent: 'right', alignItems: 'center' }}>
-                        <Button variant='contained' className='globalButton' style={{
-                            background: '#1105fa',
+                        <Button onClick={handleBtnClick} variant='contained' className='globalButton' style={{
+                            background: '#0069FF',
                             color: 'white',
                             padding: '3% 6%',
                             fontWeight: 500,
@@ -49,14 +54,17 @@ export default function Header(props) {
             }
 
             {matches_md ?
-                <Grid container spacing={1} style={{ margin: 0, padding: '1% 5%', background: props.bg, color: props.color }}>
+                <Grid container spacing={1} style={{ margin: 0, padding: 0, background: props.bg, color: props.color, padding: '3% 5%'}}>
 
-                    <Grid item md={12} style={{ display: 'flex', justifyContent: 'left', alignItems: 'center', flexDirection: 'row' }}>
-                        <div style={{}}>
-                            <img src={`/images/${props.logo}`} style={{ width: '40%', cursor: 'pointer', marginLeft: '-10%' }} onClick={handleLogoclick} />
+                    <Grid item xs={6} style={{ display: 'flex', justifyContent: 'left', alignItems: 'center', margin: 0, padding: 0 }}>
+                        <div style={{ width: '100%' }}>
+                            <img src={`/images/${props.logo}`} style={{ width: '80%', cursor: 'pointer', marginLeft: '-10%' }} onClick={handleLogoclick} />
                         </div>
-                        <div style={{}}>
-                            <MobileMenu />
+                    </Grid>
+
+                    <Grid item xs={6} style={{ display: 'flex', justifyContent: 'right', alignItems: 'center', margin: 0, padding: 0}}>
+                        <div style={{width: '100%', display: 'flex', justifyContent: 'right' }}>
+                            <MobileMenu  />
                         </div>
                     </Grid>
 

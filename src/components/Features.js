@@ -1,14 +1,15 @@
 import * as React from 'react';
 
 import { Grid } from "@mui/material";
-
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
 export default function Features() {
-    const [open, setOpen] = React.useState(false);
 
-    const handleClick = () => {
-        setOpen(!open)
-    }
+
+    const theme = useTheme();
+    const matches_sm = useMediaQuery(theme.breakpoints.down('sm'));
+    const matches_md = useMediaQuery(theme.breakpoints.down('md'));
 
     const features = [
         {
@@ -34,10 +35,10 @@ export default function Features() {
     ]
 
     return (
-        <div className='root'>
+        <div className='root' style={{ background: 'red' }}>
 
-            <Grid container spacing={1} className='featuresSection' style={{ position: 'relative' }}>
-                
+            <Grid container spacing={1} className='featuresSection' style={{ position: 'relative', padding: matches_md ? '10% 5%' : '2% 12% 0' }}>
+
                 <div className='blurDiv'></div>
 
                 <Grid item md={6} className='featuresContent' style={{ zIndex: 2 }}>

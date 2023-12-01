@@ -99,8 +99,8 @@ export default function Testimonials() {
             <Grid container spacing={1} className='testimonialsSection'>
                 {matches_md ? <></> : <div className='blurDiv'></div>}
                 <Grid item xs={12} style={{ zIndex: 2 }}>
-                    <center><h2 className='featuresHeading'>See what people say about <span className='gradientText'>Boosty</span></h2>
-                        <p style={{ marginTop: '1%', opacity: '80%' }}>Rated by many Businesses worldwide</p>
+                    <center><h2 className='featuresHeading' style={{ textAlign: matches_md ? 'left' : 'cenetr', padding: matches_md ? '0 4%' : '' }}>See what people say about <span className='gradientText'>Boosty</span></h2>
+                        <p style={{ marginTop: '1%', opacity: '80%', textAlign: matches_md ? 'left' : 'cenetr', padding: matches_md ? '0 4%' : '' }}>Rated by many Businesses worldwide</p>
                     </center>
 
                     <div style={{ position: 'relative', borderRadius: 20, padding: matches_md ? '1%' : '2% 4%' }}>

@@ -19,7 +19,7 @@ export default function Home() {
 
     return (
         <div>
-            <Header bg='#0069FF' color='white' logo='boosty-white-logo.svg' border='none' />
+            <Header bg='blue' color='white' logo='boosty-white-logo.svg' border='none' />
             <Hero />
             <Services />
             <PricingTabs />

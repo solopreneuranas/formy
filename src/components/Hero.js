@@ -5,24 +5,28 @@ import Brands from './Brands';
 import Avatars from './Avatars';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
+
+    var navigate = useNavigate()
 
     const theme = useTheme();
     const matches_sm = useMediaQuery(theme.breakpoints.down('sm'));
     const matches_md = useMediaQuery(theme.breakpoints.down('md'));
+
+    const handleBtnClick = () => {
+        navigate('/pricing')
+        window.scrollTo(0, 0);
+    }
 
     return (
         <div>
 
             <Grid container spacing={1} className='heroSection'>
 
-                {matches_md ? <></> : <div className='blurDiv' style={{ background: '#1105FA' }}></div> }
+                {matches_md ? <></> : <div className='blurDiv' style={{ background: '#1105FA' }}></div>}
 
-                {/* {matches_md ? <Grid item md={6} style={{ marginBottom: matches_md ? '7%' : 0 }}>
-                    <center><img src='/images/primary-hero-image-blue.svg' style={{ width: matches_md ? '85%' : '75%' }} /></center>
-                </Grid> : <></>
-                } */}
 
                 <Grid item md={6} style={{ zIndex: 2 }}>
                     <p style={{ opacity: '80%' }}>GLOBAL FORMATION</p>
@@ -33,8 +37,8 @@ export default function Hero() {
                     <p className='globalPara' style={{ padding: 0 }}>
                         Ready to access global online services from anywhere? Boosty makes it possible, even in regions they don't operate!
                     </p>
-                    <Button variant='contained' className='globalButton' style={{
-                        background: '#1105fa',
+                    <Button onClick={handleBtnClick} variant='contained' className='globalButton' style={{
+                        background: '#0069FF',
                         color: 'white',
                         padding: '2% 5%',
                         fontWeight: 500,
@@ -57,16 +61,19 @@ export default function Hero() {
                         </div>
                     }
 
-
-
-
-
                 </Grid>
 
-                {matches_md ? <></> : <Grid item md={6} style={{ zIndex: 2 }}>
+                {/* {matches_md ? <Grid item md={6} style={{ marginBottom: matches_md ? '7%' : 0 }}>
+                    <center><img src='https://startglobal.co/img/banner-1.png' style={{ width: matches_md ? '85%' : '75%' }} /></center>
+                </Grid> : <></>
+                } */}
+
+                {matches_md ? <></> :                 
+                <Grid item md={6} style={{ zIndex: 2 }}>
                     <center><img src='https://startglobal.co/img/banner-1.png' style={{ width: '90%' }} /></center>
                 </Grid>
                 }
+                
             </Grid>
 
 

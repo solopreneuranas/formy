@@ -364,7 +364,7 @@ export default function MenuComponent(props) {
                 <Grid item xs={12}>
                     {matches_md ? <></> :
                         <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }}>
-                            <Toolbar style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '10%' }}>
+                            <Toolbar style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '7%' }}>
                                 {showMenuItems()}
                                 {showStaticMenuItems()}
 

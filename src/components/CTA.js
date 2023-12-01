@@ -4,12 +4,20 @@ import '../App.css';
 import { Grid, Button } from "@mui/material";
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import { useNavigate } from 'react-router-dom';
 
 export default function CTA() {
+
+    var navigate = useNavigate()
 
     const theme = useTheme()
     const matches_md = useMediaQuery(theme.breakpoints.down('md'));
     const matches_sm = useMediaQuery(theme.breakpoints.down('sm'));
+
+    const handleBtnClick = () => {
+        navigate('/pricing')
+        window.scrollTo(0, 0);
+    }
 
     return (
         <div style={{ position: 'relative', padding: '0 6% 3%', background: '#E3F1FD' }}>
@@ -27,7 +35,7 @@ export default function CTA() {
                 </Grid>
                 <Grid item xs={12} style={{ zIndex: 2 }}>
                     <center>
-                        <Button variant='contained' className='globalButton' style={{
+                        <Button onClick={handleBtnClick} variant='contained' className='globalButton' style={{
                             background: '#0069ff',
                             color: 'white',
                             padding: '1% 3%',
