@@ -1,14 +1,12 @@
 import * as React from 'react';
-import '../App.css';
-
-import { Grid, TextField, Button } from "@mui/material";
-
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -47,6 +45,11 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 export default function Faq() {
+
+    const theme = useTheme()
+    const matches_md = useMediaQuery(theme.breakpoints.down('md'));
+    const matches_sm = useMediaQuery(theme.breakpoints.down('sm'));
+
     const [expanded, setExpanded] = React.useState('panel1');
 
     const handleChange = (panel) => (event, newExpanded) => {
@@ -83,9 +86,9 @@ export default function Faq() {
 
 
     return (
-        <div className='faqSection'>
-            <div className='faq'>
-                <center><h2 className='faqHeading'>Frequenly Asked <span className='gradientText'>Questions</span>❔</h2></center>
+        <div className='faqSection' style={{position: 'relative'}}>
+            <div className='faq' style={{zIndex: 2, position: 'relative'}}>
+                <center><h2 className='faqHeading' >Frequenly Asked <span className='gradientText'>Questions</span>❔</h2></center>
 
                 {faqData.map((item, index) => (
                     <Accordion className='faqItem' onChange={handleChange(`panel${index + 1}`)} key={`accordion-${index}`}>

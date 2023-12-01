@@ -61,7 +61,7 @@ export default function Process() {
 
 
     return (
-        <div style={{ padding: matches_md ? '0' : '0 3% 3%', overflowX: 'hidden'  }}>
+        <div style={{ padding: matches_md ? '0' : '2% 3% 0', overflowX: 'hidden'  }}>
 
             <Grid container spacing={1} className='processSection'  >
                 <Grid item xs={12}>

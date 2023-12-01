@@ -20,7 +20,9 @@ export default function CTA() {
     }
 
     return (
-        <div style={{ position: 'relative', padding: '0 6% 3%', background: '#E3F1FD' }}>
+        <div style={{
+            position: 'relative', padding: '0 6% 3%', background: '#E3F1FD' 
+        }}>
             <Grid container spacing={1} className='ctaSection' >
                 <Grid item xs={12} style={{ zIndex: 2 }}>
                     <h2 className='bigHeading' style={{ textAlign: 'center', margin: 0, fontSize: matches_md ? '30px' : '40px' }}>
