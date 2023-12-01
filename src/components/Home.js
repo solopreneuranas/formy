@@ -14,6 +14,7 @@ import Faq from './Faq';
 import CTA from './CTA';
 import Footer from './Footer';
 import Testimonials from './Testimonials';
+import Process from './Process';
 
 export default function Home() {
 
@@ -24,6 +25,7 @@ export default function Home() {
             <Services />
             <PricingTabs />
             <Features />
+            <Process />
             <Incorporate />
             <Testimonials />
             <Faq />

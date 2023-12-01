@@ -607,17 +607,16 @@ body {
   color: blue !important;
 }
 
-
 .processSection {
   width: 100%;
   margin: auto;
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  border-radius: 25px;
   align-items: center;
-  padding: 5% 10%;
-  background-color: blue;
+  text-align: center;
+  padding: 2% 2% 0;
 }
-
 
 .processDiv {
   background-color: white;
@@ -820,7 +819,7 @@ body {
   }
 
   .processSection {
-    padding: 10% 13% !important;
+    padding: 10% 0 1% !important;
   }
 
   .customProcessDiv {

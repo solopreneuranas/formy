@@ -88,7 +88,7 @@ export default function Incorporate() {
 
             <Grid container spacing={1} className='incorporateSection' style={{ margin: 0 }}>
                 <Grid item xs={12}>
-                    <h2 className='featuresHeading' style={{ textAlign: matches_md ? 'left' : 'cenetr' }}>Why Incorporate in the <span className='gradientText'>USA</span></h2>
+                    <h2 className='featuresHeading' style={{ textAlign: matches_md ? 'left' : 'center' }}>Why Incorporate in the <span className='gradientText'>USA</span></h2>
 
                     <div style={{ position: 'relative', background: '', borderRadius: 20, padding: matches_md ? '1% 0' : '2%', marginTop: '2%' }}>
                         <Slider ref={sliderRef} {...settings}>
