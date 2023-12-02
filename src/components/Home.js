@@ -15,11 +15,13 @@ import CTA from './CTA';
 import Footer from './Footer';
 import Testimonials from './Testimonials';
 import Process from './Process';
+import TopBar from './TopBar';
 
 export default function Home() {
 
     return (
         <div>
+            <TopBar color='black' background = 'white'/>
             <Header bg='blue' color='white' logo='boosty-white-logo.svg' border='none' />
             <Hero />
             <Services />
