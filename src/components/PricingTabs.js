@@ -114,8 +114,8 @@ export default function PricingTabs(props) {
                 <Grid container spacing={0} className='business'>
                     <Grid item xs={12} className='tabLeftCol'>
                         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '2%' }}>
-                            <h3 style={{ fontWeight: 600, fontSize: '20px', marginBottom: '2%' }}>Business</h3>
-                            <img src='/images/us-flag.svg' style={{ width: 30 }} />
+                            <h3 style={{ fontWeight: 500, fontSize: '20px', marginBottom: '2%' }}>Business 🎯</h3>
+                            {/* <img src='/images/us-flag.svg' style={{ width: 30 }} /> */}
                         </div>
                         <h3 style={{ fontWeight: 600, fontSize: '40px' }}>${state ? fee + 199 : '199'} <span style={{ fontWeight: 400, fontSize: '20px', opacity: '80%' }}>
                             {state ? 'One Time' : '+ State Fees'}
@@ -149,8 +149,8 @@ export default function PricingTabs(props) {
                 <Grid container spacing={0} className='premium'>
                     <Grid item xs={12} className='tabLeftCol'>
                         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '2%' }}>
-                            <h3 style={{ fontWeight: 600, fontSize: '20px', marginBottom: '2%' }}>Premium</h3>
-                            <img src='/images/us-flag.svg' style={{ width: 30 }} />
+                            <h3 style={{ fontWeight: 500, fontSize: '20px', marginBottom: '2%' }}>Premium 💎</h3>
+                            {/* <img src='/images/us-flag.svg' style={{ width: 30 }} /> */}
                         </div>
                         <h3 style={{ fontWeight: 600, fontSize: '40px' }}>${state ? fee + 399 : '399'} <span style={{ fontWeight: 400, fontSize: '20px' }}>
                             {state ? 'One Time' : '+ State Fees'}

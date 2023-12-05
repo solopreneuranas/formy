@@ -46,6 +46,12 @@ export default function Pricing(props) {
 
 
     const states = [
+        { label: "Wyoming (Top Choice Overall)", fee: 102 },
+        { label: "Florida (Ideal for E-commerce)", fee: 125 },
+        { label: "Texas (Great for Amazon Sellers)", fee: 300 },
+        { label: "Montana (Most Affordable)", fee: 35 },
+        { label: "Delaware (Prime for Startups)", fee: 140 },
+
         { label: 'Alabama', fee: 236 },
         { label: 'Alaska', fee: 250 },
         { label: 'Arizona', fee: 85 },
@@ -53,9 +59,7 @@ export default function Pricing(props) {
         { label: 'California', fee: 70 },
         { label: 'Colorado', fee: 50 },
         { label: 'Connecticut', fee: 120 },
-        { label: 'Delaware', fee: 140 },
         { label: 'District of Columbia', fee: 99 },
-        { label: 'Florida', fee: 125 },
         { label: 'Georgia', fee: 100 },
         { label: 'Hawaii', fee: 51 },
         { label: 'Idaho', fee: 101 },
@@ -72,7 +76,6 @@ export default function Pricing(props) {
         { label: 'Minnesota', fee: 155 },
         { label: 'Mississippi', fee: 53 },
         { label: 'Missouri', fee: 50 },
-        { label: 'Montana', fee: 35 },
         { label: 'Nebraska', fee: 102 },
         { label: 'Nevada', fee: 425 },
         { label: 'New Hampshire', fee: 102 },
@@ -89,20 +92,18 @@ export default function Pricing(props) {
         { label: 'South Carolina', fee: 125 },
         { label: 'South Dakota', fee: 150 },
         { label: 'Tennessee', fee: 307 },
-        { label: 'Texas', fee: 300 },
         { label: 'Utah', fee: 56 },
         { label: 'Vermont', fee: 125 },
         { label: 'Virginia', fee: 100 },
         { label: 'Washington', fee: 200 },
         { label: 'West Virginia', fee: 130 },
-        { label: 'Wisconsin', fee: 130 },
-        { label: 'Wyoming', fee: 102 }
+        { label: 'Wisconsin', fee: 130 }
     ]
 
 
     return (
         <div style={{ overflowX: 'hidden' }}>
-            <TopBar color='white' background = 'linear-gradient(to right, blue, #952ffa)'/>
+            <TopBar color='white' background='linear-gradient(to right, blue, #952ffa)' />
             <Header bg='white' color='black' logo='boosty-logo.svg' border='2px solid black' />
 
             <div style={{ width: '100%', marginTop: matches_md ? '10%' : '5%', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
