@@ -10,13 +10,6 @@ export default function Addons() {
     const services = [
         {
             "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
-            "title": "Business Stripe Account",
-            "price": "$49",
-            "priceTime": "One Time Fee",
-            "details": "Effortless online payments. Reliable transactions, low fees, seamless integration."
-        },
-        {
-            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
             "title": "Premium Business Address",
             "price": "$149",
             "priceTime": "One Time Fee",
@@ -24,7 +17,7 @@ export default function Addons() {
         },
         {
             "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
-            "title": "WordPress Website Setup",
+            "title": "WordPress & Shopify Website Setup",
             "price": "$149",
             "priceTime": "One Time Fee",
             "details": "Professional WordPress site accepted by Stripe. Responsive design, expert guidance, seamless transactions."
@@ -35,13 +28,6 @@ export default function Addons() {
             "price": "$199",
             "priceTime": "One Time Fee",
             "details": "Trustworthy payment gateway. Secure transactions, fraud protection, customer trust assured."
-        },
-        {
-            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
-            "title": "Shopify Store Setup",
-            "price": "$299",
-            "priceTime": "One Time Fee",
-            "details": "Unlock e-commerce potential. Customized storefront, seamless payment, successful online store launch."
         },
         {
             "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
@@ -63,13 +49,6 @@ export default function Addons() {
             "price": "$349",
             "priceTime": "One Time Fee",
             "details": "Hassle-free ITIN application. Smooth documentation, IRS approval, dedicated service team support."
-        },
-        {
-            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
-            "title": "Digital Business Bundle",
-            "price": "$39",
-            "priceTime": "One Time Fee",
-            "details": "Secure online presence. Custom domain, professional email, premium web hosting. Reliable brand elevation."
         }
     ]
 
@@ -90,19 +69,18 @@ export default function Addons() {
                     <p className='addonsPara' style={{ marginBottom: '5%' }}>
                         Explore tailored solutions for secure transactions, professional addresses, and legal compliance.
                     </p>
-
                     <Grid container spacing={3} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 0 }}>
                         {services.map((item, index) => {
                             return (
                                 <Grid item md={3} className='addonsDiv' onMouseEnter={() => handleAddonHover(index)} onMouseLeave={() => handleAddonHoverLeave(index)}>
-                                    <h2 style={{ marginBottom: '2%', fontWeight: '500', width: '70%', margin: 'auto', display: hoveredIndex === index ? 'none' : 'block' }}>{item.title}</h2>
+                                    <h2 style={{ marginBottom: '2%', fontWeight: '500', width: '75%', margin: 'auto', display: hoveredIndex === index ? 'none' : 'block' }}>{item.title}</h2>
                                     <center><img src={item.icon} style={{ width: 180, display: hoveredIndex === index ? 'none' : 'block' }} /></center>
                                     <p className='addonsPara' style={{ fontSize: '18px', display: hoveredIndex === index ? 'none' : 'block' }}>{item.priceTime}</p>
                                     <p className='addonsPara' style={{ fontSize: '25px', opacity: '100%', display: hoveredIndex === index ? 'none' : 'block' }}>{item.price}</p>
 
                                     {hoveredIndex === index && (
                                         <div className='addonsDetails'>
-                                            <h2 style={{ marginBottom: '2%', fontWeight: '500', width: '70%', margin: 'auto' }}>{item.title}</h2>
+                                            <h2 style={{ marginBottom: '2%', fontWeight: '500', width: '75%', margin: 'auto' }}>{item.title}</h2>
                                             <p className='addonsPara' style={{ margin: '10% 0', opacity: '100%' }}>{item.details}</p>
                                             <p className='addonsPara' style={{ fontSize: '18px' }}>{item.priceTime}</p>
                                             <p className='addonsPara' style={{ fontSize: '25px', opacity: '100%' }}>{item.price}</p>
