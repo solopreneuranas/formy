@@ -139,63 +139,63 @@ export default function MenuComponent(props) {
     const servicesContent = () => {
         const servicesIcons = [
             {
-                icon: 'https://startglobal.co/img/users-02.svg',
+                icon: 'company',
                 title: 'Form U.S. company'
             },
             {
-                icon: 'https://startglobal.co/img/icon-invoice.svg',
+                icon: 'approve-file',
                 title: 'Obtain EIN or ITIN'
             },
             {
-                icon: 'https://startglobal.co/img/icon-book.svg',
+                icon: 'paypal',
                 title: 'Open Stripe/PayPal'
             },
             {
-                icon: 'https://startglobal.co/img/file-check-02.svg',
+                icon: 'bank',
                 title: 'Open Business Bank'
             },
             {
-                icon: 'https://startglobal.co/img/calculator.svg',
+                icon: 'amazon',
                 title: 'Create Amazon Account'
             },
             {
-                icon: 'https://startglobal.co/img/file.svg',
+                icon: 'website',
                 title: 'Website Development'
             },
             {
-                icon: 'https://startglobal.co/img/icon-invoice.svg',
+                icon: 'file',
                 title: 'Obtain EIN or ITIN'
             },
             {
-                icon: 'https://startglobal.co/img/icon-book.svg',
+                icon: 'paypal',
                 title: 'Open Stripe/PayPal'
             },
             {
-                icon: 'https://startglobal.co/img/file-check-02.svg',
+                icon: 'bank',
                 title: 'Open Business Bank'
             },
             {
-                icon: 'https://startglobal.co/img/users-02.svg',
+                icon: 'company',
                 title: 'Form U.S. company'
             },
             {
-                icon: 'https://startglobal.co/img/icon-invoice.svg',
+                icon: 'file',
                 title: 'Obtain EIN or ITIN'
             },
             {
-                icon: 'https://startglobal.co/img/icon-book.svg',
+                icon: 'paypal',
                 title: 'Open Stripe/PayPal'
             },
             {
-                icon: 'https://startglobal.co/img/file-check-02.svg',
+                icon: 'bank',
                 title: 'Open Business Bank'
             },
             {
-                icon: 'https://startglobal.co/img/calculator.svg',
+                icon: 'amazon',
                 title: 'Create Amazon Account'
             },
             {
-                icon: 'https://startglobal.co/img/file.svg',
+                icon: 'website',
                 title: 'Website Development'
             },
         ]
@@ -209,7 +209,7 @@ export default function MenuComponent(props) {
                             servicesIcons.slice(0, 5).map((item, i) => {
                                 return (
                                     <div style={{ display: 'flex', alignItems: 'center', margin: '10% 0' }}>
-                                        <img src={item.icon} style={{ marginRight: '3%', height: 40, width: 40 }} />
+                                        <img src={`/images/${item.icon}.svg`} style={{ marginRight: '3%', width: 40 }} />
                                         <p style={{ fontWeight: 500, color: 'black' }}>{item.title}</p>
                                     </div>
                                 )
@@ -223,7 +223,7 @@ export default function MenuComponent(props) {
                             servicesIcons.slice(5, 10).map((item, i) => {
                                 return (
                                     <div style={{ display: 'flex', alignItems: 'center', margin: '10% 0' }}>
-                                        <img src={item.icon} style={{ marginRight: '3%', height: 40, width: 40 }} />
+                                        <img src={`/images/${item.icon}.svg`} style={{ marginRight: '3%', width: 40 }} />
                                         <p style={{ fontWeight: 500, color: 'black' }}>{item.title}</p>
                                     </div>
                                 )
@@ -236,7 +236,7 @@ export default function MenuComponent(props) {
                             servicesIcons.slice(10, 15).map((item, i) => {
                                 return (
                                     <div style={{ display: 'flex', alignItems: 'center', margin: '10% 0' }}>
-                                        <img src={item.icon} style={{ marginRight: '3%', height: 40, width: 40 }} />
+                                        <img src={`/images/${item.icon}.svg`} style={{ marginRight: '3%', width: 40 }} />
                                         <p style={{ fontWeight: 500, color: 'black' }}>{item.title}</p>
                                     </div>
                                 )

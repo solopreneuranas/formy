@@ -72,63 +72,63 @@ export default function MobileMenu() {
     const servicesContent = () => {
         const servicesIcons = [
             {
-                icon: 'https://startglobal.co/img/users-02.svg',
+                icon: 'company',
                 title: 'Form U.S. company'
             },
             {
-                icon: 'https://startglobal.co/img/icon-invoice.svg',
+                icon: 'approve-file',
                 title: 'Obtain EIN or ITIN'
             },
             {
-                icon: 'https://startglobal.co/img/icon-book.svg',
+                icon: 'paypal',
                 title: 'Open Stripe/PayPal'
             },
             {
-                icon: 'https://startglobal.co/img/file-check-02.svg',
+                icon: 'bank',
                 title: 'Open Business Bank'
             },
             {
-                icon: 'https://startglobal.co/img/calculator.svg',
+                icon: 'amazon',
                 title: 'Create Amazon Account'
             },
             {
-                icon: 'https://startglobal.co/img/file.svg',
+                icon: 'website',
                 title: 'Website Development'
             },
             {
-                icon: 'https://startglobal.co/img/icon-invoice.svg',
+                icon: 'file',
                 title: 'Obtain EIN or ITIN'
             },
             {
-                icon: 'https://startglobal.co/img/icon-book.svg',
+                icon: 'paypal',
                 title: 'Open Stripe/PayPal'
             },
             {
-                icon: 'https://startglobal.co/img/file-check-02.svg',
+                icon: 'bank',
                 title: 'Open Business Bank'
             },
             {
-                icon: 'https://startglobal.co/img/users-02.svg',
+                icon: 'company',
                 title: 'Form U.S. company'
             },
             {
-                icon: 'https://startglobal.co/img/icon-invoice.svg',
+                icon: 'file',
                 title: 'Obtain EIN or ITIN'
             },
             {
-                icon: 'https://startglobal.co/img/icon-book.svg',
+                icon: 'paypal',
                 title: 'Open Stripe/PayPal'
             },
             {
-                icon: 'https://startglobal.co/img/file-check-02.svg',
+                icon: 'bank',
                 title: 'Open Business Bank'
             },
             {
-                icon: 'https://startglobal.co/img/calculator.svg',
+                icon: 'amazon',
                 title: 'Create Amazon Account'
             },
             {
-                icon: 'https://startglobal.co/img/file.svg',
+                icon: 'website',
                 title: 'Website Development'
             },
         ]
@@ -142,7 +142,7 @@ export default function MobileMenu() {
                             servicesIcons.slice(0, 5).map((item, i) => {
                                 return (
                                     <div style={{ display: 'flex', alignItems: 'center', margin: '10% 0' }}>
-                                        <img src={item.icon} style={{ marginRight: '7%', height: 30, width: 30 }} />
+                                        <img src={`/images/${item.icon}.svg`} style={{ marginRight: '7%', width: 30 }} />
                                         <p style={{ fontWeight: 500, color: 'black', fontSize: 15 }}>{item.title}</p>
                                     </div>
                                 )
@@ -156,7 +156,7 @@ export default function MobileMenu() {
                             servicesIcons.slice(5, 15).map((item, i) => {
                                 return (
                                     <div style={{ display: 'flex', alignItems: 'center', margin: '10% 0' }}>
-                                        <img src={item.icon} style={{ marginRight: '7%', height: 30, width: 30 }} />
+                                        <img src={`/images/${item.icon}.svg`} style={{ marginRight: '7%', width: 30 }} />
                                         <p style={{ fontWeight: 500, color: 'black', fontSize: 15 }}>{item.title}</p>
                                     </div>
                                 )
@@ -172,7 +172,7 @@ export default function MobileMenu() {
     const menuItems = [
         {
             title: 'Services',
-            icon: 'https://startglobal.co/img/file-check-02.svg',
+            icon: 'check',
             content: servicesContent()
         }
 
@@ -181,23 +181,23 @@ export default function MobileMenu() {
     const staticMenuItems = [
         {
             title: 'Pricing',
-            icon: 'https://startglobal.co/img/icon-invoice.svg'
+            icon: 'pricing'
         },
         {
             title: 'About',
-            icon: 'https://startglobal.co/img/users-02.svg'
+            icon: 'company'
         },
         {
             title: 'FAQ',
-            icon: 'https://startglobal.co/img/icon-help.svg'
+            icon: 'faq'
         },
         {
             title: 'Contact',
-            icon: 'https://startglobal.co/img/users-02.svg'
+            icon: 'contact'
         },
         {
             title: 'Blog',
-            icon: 'https://startglobal.co/img/file.svg'
+            icon: 'file'
         }
     ]
 
@@ -209,7 +209,7 @@ export default function MobileMenu() {
                         <ListItem disablePadding>
                             <ListItemButton>
                                 <h3 style={{ opacity: '100%', margin: 0, fontWeight: 500, display: 'flex', alignItems: 'center' }}>
-                                    <img src={item.icon} style={{ width: 30, height: 30, margin: '10% 20% 10% 10%' }} />
+                                    <img src={`/images/${item.icon}.svg`} style={{ width: 30, margin: '10% 20% 10% 10%' }} />
                                     {item.title}
                                 </h3>
                             </ListItemButton>
@@ -251,7 +251,7 @@ export default function MobileMenu() {
                             onChange={handleChange(`panel${index}`)} style={{ color: 'black', border: 'none' }}>
                             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                                 <div style={{ padding: '5% 0', display: 'flex', alignItems: 'center', width: '100%' }}>
-                                    <img src={item.icon} style={{ width: 30, height: 30, marginRight: '5%' }} />
+                                    <img src={`/images/${item.icon}.svg`} style={{ width: 30, marginRight: '5%' }} />
                                     <h3 style={{ margin: 0, fontWeight: 500 }}>{item.title}</h3>
                                     <KeyboardArrowDownIcon style={{ fontSize: '2rem', marginLeft: '5%' }} />
                                 </div>
