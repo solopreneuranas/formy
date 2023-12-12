@@ -12,22 +12,22 @@ export default function Process() {
 
     const process = [
         {
-            icon: 'https://d33wubrfki0l68.cloudfront.net/1c7609134b5d1e1060fa3b4fd383cb66d0d47486/3ca21/img/llc.svg',
+            icon: 'company',
             name: 'US LLC Formation',
             para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
         },
         {
-            icon: 'https://d33wubrfki0l68.cloudfront.net/d3550384d9e503abbd3155ccab18267c77acbdfe/fd0d2/img/bank.svg',
+            icon: 'approve-file',
             name: 'Obtaining EIN, ITIN',
             para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
         },
         {
-            icon: 'https://d33wubrfki0l68.cloudfront.net/6e021e3210ea81c7a4a5be95d4c0d788801a18b6/d1cf5/img/payment.svg',
+            icon: 'bank',
             name: 'Bank Account Setup',
             para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
         },
         {
-            icon: 'https://d33wubrfki0l68.cloudfront.net/957e0eddcebbe86f49da8e9d227cb5c2d3f16397/1e1fa/img/tax.svg',
+            icon: 'money',
             name: 'U.S. Tax Return & Filings',
             para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
         }
@@ -46,7 +46,7 @@ export default function Process() {
                     }}
                 >
 
-                    <img src={item.icon} style={{ width: 50 }} />
+                    <img src={`/images/${item.icon}.svg`} style={{ width: 50 }} />
                     <h3 style={{ margin: '10% 0 0', fontWeight: '600', }}>{item.name}</h3>
                     <p style={{ opacity: '80%', marginTop: '3%' }}>
                         {item.para}

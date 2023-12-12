@@ -12,32 +12,32 @@ export default function Services() {
 
     const features = [
         {
-            icon: 'https://startglobal.co/img/users-02.svg',
+            icon: 'company',
             title: 'Form U.S. company',
             para: 'Our team of experts is here to guide you through the entire process.'
         },
         {
-            icon: 'https://startglobal.co/img/icon-invoice.svg',
+            icon: 'approve-file',
             title: 'Obtain EIN or ITIN',
             para: 'Our team of experts is here to guide you through the entire process.'
         },
         {
-            icon: 'https://startglobal.co/img/file.svg',
+            icon: 'money',
             title: 'Open Stripe/PayPal',
             para: 'Our team of experts is here to guide you through the entire process.'
         },
         {
-            icon: 'https://startglobal.co/img/file-check-02.svg',
+            icon: 'bank',
             title: 'Open Business Bank',
             para: 'Our team of experts is here to guide you through the entire process.'
         },
         {
-            icon: 'https://startglobal.co/img/calculator.svg',
+            icon: 'amazon',
             title: 'Create Amazon Account',
             para: 'Our team of experts is here to guide you through the entire process.'
         },
         {
-            icon: 'https://startglobal.co/img/users-02.svg',
+            icon: 'website',
             title: 'Website Development',
             para: 'Our team of experts is here to guide you through the entire process.'
         },
@@ -62,7 +62,7 @@ export default function Services() {
                         {features.map((item) => {
                             return (
                                 <Grid item md={6}>
-                                    <img src={item.icon} style={{ width: 45 }} />
+                                    <img src={`/images/${item.icon}.svg`} style={{ width: 50 }} />
                                     <h3 style={{ marginBottom: '2%', fontWeight: '600' }}>{item.title}</h3>
                                     {/* <p className='featuresPara'>{item.para}</p> */}
                                 </Grid>

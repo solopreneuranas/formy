@@ -29,27 +29,27 @@ export default function Incorporate() {
 
     const features = [
         {
-            icon: <VerifiedIcon style={{ color: 'blue', width: 40, height: 40 }} />,
+            icon: 'company',
             title: 'Form U.S. company',
             para: "Forming a company in the US is viewed as more trustworthy by financial service providers, like Stripe, PayPal and banks due to the nation’s established business infrastructure and stringent regulatory environment."
         },
         {
-            icon: <LocalPoliceIcon style={{ color: 'blue', width: 40, height: 40 }} />,
+            icon: 'approve-file',
             title: 'Obtain EIN or ITIN',
             para: "A US-based company provides a legal separation between a business and its owners, known as limited liability protection. This means that in the event of lawsuits or debts, personal assets of the owners are generally protected."
         },
         {
-            icon: <StarsIcon style={{ color: 'blue', width: 40, height: 40 }} />,
+            icon: 'money',
             title: 'Open Stripe/PayPal',
             para: "A US company can lend prestige and credibility to a business. The US is often seen as a leader in innovation and entrepreneurship, and having a US-based company can enhance the reputation of a business both domestically and internationally."
         },
         {
-            icon: <VerifiedIcon style={{ color: 'blue', width: 40, height: 40 }} />,
+            icon: 'bank',
             title: 'Open Business Bank',
             para: "A US-based company provides a legal separation between a business and its owners, known as limited liability protection. This means that in the event of lawsuits or debts, personal assets of the owners are generally protected."
         },
         {
-            icon: <LocalPoliceIcon style={{ color: 'blue', width: 40, height: 40 }} />,
+            icon: 'amazon',
             title: 'Create Amazon Account',
             para: "Forming a company in the US is viewed as more trustworthy by financial service providers, like Stripe, PayPal and banks due to the nation’s established business infrastructure and stringent regulatory environment."
         }
@@ -70,7 +70,7 @@ export default function Incorporate() {
                         textAlign: 'left'
                     }}
                 >
-                    {item.icon}
+                    <img src={`/images/${item.icon}.svg`} style={{ width: 50 }} />
                     <h3 style={{ margin: '10% 0 0', fontWeight: '600', }}>{item.title}</h3>
                     <p style={{ opacity: '80%', marginTop: '3%' }}>
                         {item.para}

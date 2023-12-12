@@ -13,22 +13,22 @@ export default function Features() {
 
     const features = [
         {
-            icon: 'https://startglobal.co/img/file-check-02.svg',
+            icon: 'speed',
             title: 'Simplicity and Speed',
             para: 'Our registration process is efficient and hassle-free, so you can start enjoying the benefits in no time.'
         },
         {
-            icon: 'https://startglobal.co/img/users-02.svg',
-            title: ' Expert Guidance',
+            icon: 'check',
+            title: 'Expert Guidance',
             para: 'Our team of experts is here to guide you through the entire process, making sure you have the support you need.'
         },
         {
-            icon: 'https://startglobal.co/img/icon-book.svg',
+            icon: 'solution',
             title: 'Affordable Solutions',
             para: 'Boosty offers cost-effective packages to suit businesses of all sizes, so you can invest in your success without breaking the bank.'
         },
         {
-            icon: 'https://startglobal.co/img/file.svg',
+            icon: 'secure',
             title: 'Secure and Confidential',
             para: 'Your privacy and security are our top priorities. Boosty ensures your information is handled with the utmost care and confidentiality.'
         }
@@ -51,7 +51,7 @@ export default function Features() {
                         {features.map((item) => {
                             return (
                                 <Grid item md={6}>
-                                    <img src={item.icon} style={{ width: 45 }} />
+                                    <img src={`/images/${item.icon}.svg`} style={{ width: 50 }} />
                                     <h3 style={{ marginBottom: '2%', fontWeight: '600' }}>{item.title}</h3>
                                     <p className='featuresPara'>{item.para}</p>
                                 </Grid>

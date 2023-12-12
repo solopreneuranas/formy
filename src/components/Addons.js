@@ -4,54 +4,52 @@ import { Grid } from "@mui/material";
 import { useState } from 'react';
 
 export default function Addons() {
+
     const [hoveredIndex, setHoveredIndex] = useState(null);
-
-
     const services = [
         {
-            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
+            "icon": "address",
             "title": "Premium Business Address",
-            "price": "$149",
+            "price": "$199",
             "priceTime": "One Time Fee",
-            "details": "Enhance business reputation. Amazon Verification Card, 30 monthly mails, boost credibility."
+            "details": "Get your premium, unique business mailing address that allows for receiving 10+ mails monthly, along with an Amazon Post (Verification) Card."
         },
         {
-            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
+            "icon": "website",
             "title": "WordPress & Shopify Website Setup",
-            "price": "$149",
+            "price": "$349",
             "priceTime": "One Time Fee",
-            "details": "Professional WordPress site accepted by Stripe. Responsive design, expert guidance, seamless transactions."
+            "details": "Experience a smooth start online as we handle the intricate setup of your WordPress or Shopify website."
         },
         {
-            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
+            "icon": "paypal",
             "title": "Business PayPal Account",
             "price": "$199",
             "priceTime": "One Time Fee",
-            "details": "Trustworthy payment gateway. Secure transactions, fraud protection, customer trust assured."
+            "details": "Our team will help you create a Business PayPal Account and give you a free US Premium VPS for six months."
         },
         {
-            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
+            "icon": "company",
             "title": "UK Company Formation",
+            "price": "$249",
+            "priceTime": "One Time Fee",
+            "details": "Comprehensive UK Company Formation. Business, Director, Registered Address, Wise business account included."
+        },
+        {
+            "icon": "file",
+            "title": "Resale Certificate / Seller Permit",
             "price": "$199",
             "priceTime": "One Time Fee",
-            "details": "Comprehensive UK Company Formation. Business, Director, Registered Address, Payoneer account included."
+            "details": "Legal compliance made easy. Obtain a Resale Certificate/Seller Permit with our expert assistance."
         },
         {
-            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
-            "title": "Resale Certificate / Seller Permit",
-            "price": "$149",
-            "priceTime": "One Time Fee",
-            "details": "Legal compliance made easy. Obtain Resale Certificate/Seller Permit with our expert assistance."
-        },
-        {
-            "icon": "https://assets-global.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7e4b6e54094fae136b320_Record%201.svg",
+            "icon": "approve-file",
             "title": "ITIN Application",
             "price": "$349",
             "priceTime": "One Time Fee",
             "details": "Hassle-free ITIN application. Smooth documentation, IRS approval, dedicated service team support."
         }
     ]
-
 
     const handleAddonHover = (index) => {
         setHoveredIndex(index);
@@ -74,7 +72,7 @@ export default function Addons() {
                             return (
                                 <Grid item md={3} className='addonsDiv' onMouseEnter={() => handleAddonHover(index)} onMouseLeave={() => handleAddonHoverLeave(index)}>
                                     <h2 style={{ marginBottom: '2%', fontWeight: '500', width: '75%', margin: 'auto', display: hoveredIndex === index ? 'none' : 'block' }}>{item.title}</h2>
-                                    <center><img src={item.icon} style={{ width: 180, display: hoveredIndex === index ? 'none' : 'block' }} /></center>
+                                    <center><img src={`/images/${item.icon}.svg`} style={{ width: 120, display: hoveredIndex === index ? 'none' : 'block', margin: '10% 0'}} /></center>
                                     <p className='addonsPara' style={{ fontSize: '18px', display: hoveredIndex === index ? 'none' : 'block' }}>{item.priceTime}</p>
                                     <p className='addonsPara' style={{ fontSize: '25px', opacity: '100%', display: hoveredIndex === index ? 'none' : 'block' }}>{item.price}</p>
 
