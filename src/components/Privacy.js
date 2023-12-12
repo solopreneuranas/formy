@@ -3,23 +3,28 @@ import '../App.css';
 
 import Header from './Header';
 import Footer from './Footer';
-import CTA from './CTA';
-import Addons from "./Addons"
+import { useTheme } from '@mui/material/styles';
 import { Grid, Typography } from "@mui/material";
+import TopBar from './TopBar';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function Privacy() {
+    const theme = useTheme();
+    const matches_sm = useMediaQuery(theme.breakpoints.down('sm'));
+    const matches_md = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
         <div>
-            <Header />
+            <TopBar color='white' background='linear-gradient(to right, blue, #952ffa)' />
+            <Header bg='white' color='black' logo='boosty-logo.svg' border='2px solid black' />
 
             <Grid container spacing={1} style={{ marginTop: '4%' }}>
-                <Grid item xs={12} style={{ background: '#FF6326', padding: '6%' }}>
+                <Grid item xs={12} style={{ background: 'linear-gradient(to right, blue, #952ffa)', padding: '6%' }}>
                     <h2 className='featuresHeading' style={{ color: 'white', margin: 0 }}>Privacy and Refund</h2>
                 </Grid>
             </Grid>
 
-            <Grid container spacing={1} style={{ marginTop: '3%', padding: '0 10%', textAlign: 'justify'}}>
+            <Grid container spacing={1} style={{ marginTop: '3%', padding: matches_md ? '0' : '0 10%', textAlign: 'justify' }}>
                 <Grid item xs={12} style={{ display: 'flex', padding: '2% 10%' }}>
                     <p className='featuresPara' style={{ marginTop: '1%', marginBottom: '1%', fontSize: 20, fontWeight: 600 }}>
                         PLEASE READ THIS LEGAL DISCLAIMER AND TERMS OF SERVICE CAREFULLY BEFORE ACCESSING OUR WEBSITE OR USING OUR SERVICES <br /><br />
