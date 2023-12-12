@@ -18,6 +18,10 @@ export default function PricingTabs(props) {
     const businessItems = [
         {
             icon: <DoneIcon />,
+            title: '💵 Includes State Filing Fee'
+        },
+        {
+            icon: <DoneIcon />,
             title: '🔍 Name Availability Search'
         },
         {
@@ -49,31 +53,31 @@ export default function PricingTabs(props) {
     const premiumItems = [
         {
             icon: <DoneIcon />,
-            title: '✅ Business Package Included'
+            title: '✅ All Business Package Features'
         },
         {
             icon: <DoneIcon />,
-            title: '💳 Business Stripe Account'
+            title: '🚀 Priority Processing'
         },
         {
             icon: <DoneIcon />,
-            title: '💸 Business Wise Account'
+            title: '🛒 Stripe Setup Assistance / Resale Certificate'
         },
         {
             icon: <DoneIcon />,
-            title: '🌟 WordPress Website Setup'
+            title: '📞 US Premium Phone Number'
         },
         {
             icon: <DoneIcon />,
-            title: '🌐 Domain + Business Email'
+            title: '🌐 FREE .Com Domain'
         },
         {
             icon: <DoneIcon />,
-            title: '🛡 Premium Web Hosting'
+            title: '📧 Business Professional Email'
         },
         {
             icon: <DoneIcon />,
-            title: '🎨 Logo Design with Brand Guidelines'
+            title: '🤝 Lifetime Expert Support'
         }
     ]
 
@@ -101,7 +105,7 @@ export default function PricingTabs(props) {
 
             <Grid item xs={12} >
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <h2 className='featuresHeading' style={{ fontSize: 30, textAlign: 'center' }}>
+                    <h2 className='featuresHeading' style={{ fontSize: matches_md ? 25 : 30, textAlign: 'center', marginBottom: matches_md ? '5%' : 0 }}>
                         {state ?
                             <><span className='gradientText'>{state}</span> LLC Formation Plans</> : ''
                         }
@@ -152,7 +156,7 @@ export default function PricingTabs(props) {
                             <h3 style={{ fontWeight: 500, fontSize: '20px', marginBottom: '2%' }}>Premium 💎</h3>
                             {/* <img src='/images/us-flag.svg' style={{ width: 30 }} /> */}
                         </div>
-                        <h3 style={{ fontWeight: 600, fontSize: '40px' }}>${state ? fee + 399 : '399'} <span style={{ fontWeight: 400, fontSize: '20px' }}>
+                        <h3 style={{ fontWeight: 600, fontSize: '40px' }}>${state ? fee + 299 : '299'} <span style={{ fontWeight: 400, fontSize: '20px' }}>
                             {state ? 'One Time' : '+ State Fees'}
                         </span></h3>
                         <p className='pricingContent' style={{ marginTop: '2%' }}>Enhanced, fast, and exclusive service.</p>
