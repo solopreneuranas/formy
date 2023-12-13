@@ -126,7 +126,7 @@ export default function PricingTabs(props) {
                         </span></h3>
                         <p className='pricingContent' style={{ marginTop: '2%' }}>If you're operating with a low budget.</p>
                         <Button onClick={handleBtnClick} fullWidth variant='contained' className='globalButton' style={{
-                            background: 'blue',
+                            background: '#8000ff',
                             padding: '3% 4%',
                             margin: '7% 0 5%',
                             fontFamily: 'Inter'

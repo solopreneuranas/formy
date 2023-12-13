@@ -9,7 +9,7 @@ body {
   height: 500px;
   width: 500px;
   position: absolute;
-  background: #D3DEEF;
+  background: #efdfff;
   border-radius: 50%;
   filter: blur(150px);
   left: 30%
@@ -167,19 +167,19 @@ body {
 }
 
 .sub-menu-item:nth-child(4) .btn {
-  border: 1px solid blue;
+  border: 1px solid #8000ff;
   text-transform: uppercase;
   font-size: 0.9rem;
   padding: 0.6rem 1rem;
   cursor: pointer;
-  background: blue;
+  background: #8000ff;
   color: #fff;
   transition: all 0.5s ease;
 }
 
 .sub-menu-item:nth-child(4) .btn:hover {
   background: transparent;
-  color: blue;
+  color: #8000ff;
 }
 
 .sub-menu-item:nth-child(4) {
@@ -294,7 +294,7 @@ body {
   }
 
   .navbar-nav>li:hover {
-    border-bottom-color: blue;
+    border-bottom-color: #8000ff;
   }
 
   .sub-menu-item {
@@ -340,7 +340,7 @@ body {
   padding: 3% 10%;
   color: white;
   border-radius: 0 0 150px 0;
-  background: blue;
+  background: #8000ff;
   text-align: left;
 }
 
@@ -349,7 +349,7 @@ body {
   height: auto;
   padding: 3% 0;
   color: white;
-  background: blue;
+  background: #8000ff;
 }
 
 
@@ -465,19 +465,19 @@ body {
   color: white !important;
   padding: 20% !important;
   border-radius: 50% !important;
-  background: blue !important;
+  background: #8000ff !important;
 }
 
 .faqSection {
   width: 100%;
   margin: auto;
-  background-color: #E3F1FD;
+  background-color: #f6edff;
   padding: 2% 20% 4%;
 }
 
 .faq {
   width: 100%;
-  background-color: #E3F1FD;
+  background-color: #f6edff;
   padding: 3% 8%;
   font-family: 'Inter';
 }
@@ -550,7 +550,7 @@ body {
 }
 
 .globalButton {
-  background: blue;
+  background: #8000ff;
   color: white;
   font-weight: 400;
   font-size: 16px !important;
@@ -564,8 +564,8 @@ body {
 
 .footerSec {
   color: white;
-  border-top: 8px solid blue;
-  background-color: blue;
+  border-top: 8px solid #8000ff;
+  background-color: #8000ff;
   padding: 17% 13% 6%;
 }
 
@@ -604,7 +604,7 @@ body {
 
 .css-v84d5j-MuiSvgIcon-root {
   font-size: 25px !important;
-  color: blue !important;
+  color: #8000ff !important;
 }
 
 .processSection {
@@ -636,7 +636,7 @@ body {
   border-radius: 50%;
   font-size: 22px;
   color: white;
-  background-color: blue;
+  background-color: #8000ff;
   padding: 3%;
 }
 
@@ -675,7 +675,7 @@ body {
   margin: 0;
   padding: 6%;
   border-radius: 10px;
-  background: blue;
+  background: #8000ff;
   color: white;
   border-radius: 10px;
 }
@@ -689,7 +689,7 @@ body {
 }
 
 .animateText {
-  color: blue !important;
+  color: #8000ff !important;
   text-decoration: none !important;
   font-family: 'Space Grotesk' !important
 }
@@ -718,7 +718,7 @@ body {
 }
 
 .addonsDiv:hover {
-  background-color: blue;
+  background-color: #8000ff;
   cursor: pointer;
   color: white !important;
 }
@@ -981,7 +981,7 @@ body {
   }
 
   .addonsDiv:hover {
-    background-color: blue;
+    background-color: #8000ff;
     cursor: pointer;
     color: white !important;
   }

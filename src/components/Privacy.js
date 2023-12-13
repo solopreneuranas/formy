@@ -15,11 +15,11 @@ export default function Privacy() {
 
     return (
         <div>
-            <TopBar color='white' background='linear-gradient(to right, blue, #952ffa)' />
-            <Header bg='white' color='black' logo='boosty-logo.svg' border='2px solid black' />
+            <TopBar color='white' background='#8000ff' />
+            <Header bg='white' color='black' logo='boosty-purple-logo.svg' border='2px solid black' />
 
             <Grid container spacing={1} style={{ marginTop: '4%' }}>
-                <Grid item xs={12} style={{ background: 'linear-gradient(to right, blue, #952ffa)', padding: '6%' }}>
+                <Grid item xs={12} style={{ background: '#8000ff', padding: '6%' }}>
                     <h2 className='featuresHeading' style={{ color: 'white', margin: 0 }}>Privacy and Refund</h2>
                 </Grid>
             </Grid>

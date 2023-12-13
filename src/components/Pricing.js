@@ -103,8 +103,8 @@ export default function Pricing(props) {
 
     return (
         <div style={{ overflowX: 'hidden' }}>
-            <TopBar color='white' background='linear-gradient(to right, blue, #952ffa)' />
-            <Header bg='white' color='black' logo='boosty-logo.svg' border='2px solid black' />
+            <TopBar color='white' background='#8000ff' />
+            <Header bg='white' color='black' logo='boosty-purple-logo.svg' border='2px solid black' />
 
             <div style={{ width: '100%', marginTop: matches_md ? '10%' : '5%', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                 <Grid container spacing={1} style={{ margin: 0 }}>

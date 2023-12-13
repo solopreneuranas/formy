@@ -21,7 +21,7 @@ export default function CTA() {
 
     return (
         <div style={{
-            position: 'relative', padding: '0 6% 3%', background: '#E3F1FD' 
+            position: 'relative', padding: '0 6% 3%', background: '#f6edff' 
         }}>
             <Grid container spacing={1} className='ctaSection' >
                 <Grid item xs={12} style={{ zIndex: 2 }}>
@@ -38,7 +38,7 @@ export default function CTA() {
                 <Grid item xs={12} style={{ zIndex: 2 }}>
                     <center>
                         <Button onClick={handleBtnClick} variant='contained' className='globalButton' style={{
-                            background: '#0069ff',
+                            background: '#8000ff',
                             color: 'white',
                             padding: '1% 3%',
                             marginTop: '1%',

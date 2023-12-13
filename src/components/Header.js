@@ -42,8 +42,8 @@ export default function Header(props) {
 
                     <Grid item md={3} style={{ display: 'flex', justifyContent: 'right', alignItems: 'center' }}>
                         <Button onClick={handleBtnClick} variant='contained' className='globalButton' style={{
-                            background: '#0069FF',
-                            color: 'white',
+                            background: 'white',
+                            color: 'black',
                             padding: '3% 6%',
                             fontWeight: 500,
                             fontFamily: 'Inter'
