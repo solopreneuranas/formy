@@ -24,11 +24,6 @@ export default function MenuComponent(props) {
         setAnchorEl(null);
     };
 
-    const handleMenuItemClick = () => {
-        navigate('/pricing')
-        window.scrollTo(0, 0);
-    }
-
     const pricingContent = () => {
         const servicesIcons = [
             {
@@ -278,18 +273,20 @@ export default function MenuComponent(props) {
         )
     }
 
+    const handleMenuItemClick = (item) => {
+        navigate(item.link)
+        window.scrollTo(item.screenX, item.scrollY);
+    }
 
     const menuItems = [
         {
-            title: 'Pricing'
+            title: 'Pricing',
+            link: '/pricing'
         },
         {
             title: 'Services',
-            content: servicesContent()
-        },
-        {
-            title: 'About',
-        },
+            content: servicesContent(),
+        }
     ]
 
     const showMenuItems = () => {
@@ -312,7 +309,7 @@ export default function MenuComponent(props) {
                             onClick={(event) => handleClick(event, item)}
                         >
                             <div style={{ display: 'flex', alignItems: 'center' }}>
-                                <p style={{ fontSize: 18, margin: 0 }}>{item.title}</p>
+                                <p style={{ fontSize: 18, margin: 0, cursor: 'pointer' }} onClick={() => navigate(item.link)}>{item.title}</p>
                                 {
                                     item.content ? <KeyboardArrowDownIcon /> : <></>
                                 }
@@ -333,12 +330,16 @@ export default function MenuComponent(props) {
     const staticMenuItems = [
         {
             title: 'FAQ',
+            link: '/',
+            scrollX: 0,
+            scrollY: 4850
         },
         {
-            title: 'Contact',
+            title: 'Contact'
         },
         {
             title: 'Blog',
+            link: '/'
         }
     ]
 
@@ -357,7 +358,7 @@ export default function MenuComponent(props) {
                                 padding: '1% 0',
                             }}>
                             <div style={{ display: 'flex', alignItems: 'center' }}>
-                                <p style={{ fontSize: 18, margin: 0 }}>{item.title}</p>
+                                <p style={{ fontSize: 18, margin: 0 }} onClick={() => handleMenuItemClick(item)}>{item.title}</p>
                             </div>
                         </Button>
                     </div>
