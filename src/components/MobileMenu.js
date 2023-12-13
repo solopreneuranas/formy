@@ -69,67 +69,92 @@ export default function MobileMenu() {
         window.scrollTo(0, 0);
     }
 
+    const handleMenuItemClick = (item) => {
+        navigate(item.link)
+        window.scrollTo(item.screenX, item.scrollY);
+    }
+
     const servicesContent = () => {
         const servicesIcons = [
             {
                 icon: 'company',
-                title: 'Form U.S. company'
+                title: 'Form U.S. company',
+                link: '/pricing'
             },
             {
                 icon: 'approve-file',
-                title: 'Obtain EIN or ITIN'
+                title: 'Obtain EIN or ITIN',
+                link: '/pricing'
             },
             {
                 icon: 'paypal',
-                title: 'Open Stripe/PayPal'
+                title: 'Registered Agent Service',
+                link: '/pricing'
             },
             {
                 icon: 'bank',
-                title: 'Open Business Bank'
+                title: 'Open Business Bank',
+                link: '/pricing'
             },
             {
-                icon: 'amazon',
-                title: 'Create Amazon Account'
+                icon: 'paypal',
+                title: 'Open Stripe/PayPal',
+                link: '/pricing'
             },
             {
                 icon: 'website',
-                title: 'Website Development'
+                title: 'Website Development',
+                link: '/pricing'
             },
             {
-                icon: 'file',
-                title: 'Obtain EIN or ITIN'
+                icon: 'address',
+                title: 'Business Mailing Address',
+                link: '/pricing'
             },
             {
-                icon: 'paypal',
-                title: 'Open Stripe/PayPal'
+                icon: 'amazon',
+                title: 'Create Amazon Account',
+                link: '/pricing'
             },
             {
-                icon: 'bank',
-                title: 'Open Business Bank'
+                icon: 'approve-file',
+                title: 'Resale Certificate / Seller Permit',
+                link: '/pricing'
             },
             {
                 icon: 'company',
-                title: 'Form U.S. company'
+                title: 'UK Company Formation',
+                link: '/pricing'
+            },
+            {
+                icon: 'company',
+                title: 'Form U.S. company',
+                link: '/pricing'
             },
             {
                 icon: 'file',
-                title: 'Obtain EIN or ITIN'
+                title: 'Obtain EIN or ITIN',
+                link: '/pricing'
             },
             {
                 icon: 'paypal',
-                title: 'Open Stripe/PayPal'
+                title: 'Open Stripe/PayPal',
+                link: '/pricing'
             },
             {
                 icon: 'bank',
-                title: 'Open Business Bank'
+                title: 'Open Business Bank',
+                link: '/pricing'
             },
             {
                 icon: 'amazon',
-                title: 'Create Amazon Account'
+                title: 'Create Amazon Account',
+                link: '/pricing'
             },
             {
                 icon: 'website',
-                title: 'Website Development'
+                title: 'Website Development',
+                link: '/pricing'
             },
         ]
         return (
@@ -143,7 +168,7 @@ export default function MobileMenu() {
                                 return (
                                     <div style={{ display: 'flex', alignItems: 'center', margin: '10% 0' }}>
                                         <img src={`/images/${item.icon}.svg`} style={{ marginRight: '7%', width: 30 }} />
-                                        <p style={{ fontWeight: 500, color: 'black', fontSize: 15 }}>{item.title}</p>
+                                        <p onClick={() => handleMenuItemClick(item)} style={{ fontWeight: 500, color: 'black', fontSize: 15, cursor: 'pointer' }}>{item.title}</p>
                                     </div>
                                 )
                             })
@@ -157,7 +182,7 @@ export default function MobileMenu() {
                                 return (
                                     <div style={{ display: 'flex', alignItems: 'center', margin: '10% 0' }}>
                                         <img src={`/images/${item.icon}.svg`} style={{ marginRight: '7%', width: 30 }} />
-                                        <p style={{ fontWeight: 500, color: 'black', fontSize: 15 }}>{item.title}</p>
+                                        <p onClick={() => handleMenuItemClick(item)} style={{ fontWeight: 500, color: 'black', fontSize: 15, cursor: 'pointer' }}>{item.title}</p>
                                     </div>
                                 )
                             })
@@ -181,15 +206,15 @@ export default function MobileMenu() {
     const staticMenuItems = [
         {
             title: 'Pricing',
-            icon: 'pricing'
-        },
-        {
-            title: 'About',
-            icon: 'company'
+            icon: 'pricing',
+            link: '/pricing',
         },
         {
             title: 'FAQ',
-            icon: 'faq'
+            icon: 'faq',
+            link: '/',
+            scrollX: 0,
+            scrollY: 4850
         },
         {
             title: 'Contact',
@@ -208,7 +233,7 @@ export default function MobileMenu() {
                     <div>
                         <ListItem disablePadding>
                             <ListItemButton>
-                                <h3 style={{ opacity: '100%', margin: 0, fontWeight: 500, display: 'flex', alignItems: 'center' }}>
+                                <h3 onClick={() => handleMenuItemClick(item)} style={{ opacity: '100%', margin: 0, fontWeight: 500, display: 'flex', alignItems: 'center' }}>
                                     <img src={`/images/${item.icon}.svg`} style={{ width: 30, margin: '10% 20% 10% 10%' }} />
                                     {item.title}
                                 </h3>
@@ -283,7 +308,7 @@ export default function MobileMenu() {
 
             <div style={{ padding: '0 3%', marginTop: '3%', }}>
                 <Button onClick={handleBtnClick} variant='contained' fullWidth className='globalButton' style={{
-                    background: '#1105fa',
+                    background: 'linear-gradient(to right, blue, #8000ff)',
                     color: 'white',
                     fontWeight: 500,
                     fontFamily: 'Inter'

@@ -140,101 +140,117 @@ export default function MenuComponent(props) {
         const servicesIcons = [
             {
                 icon: 'company',
-                title: 'Form U.S. company'
+                title: 'Form U.S. company',
+                link: '/pricing'
             },
             {
                 icon: 'approve-file',
-                title: 'Obtain EIN or ITIN'
+                title: 'Obtain EIN or ITIN',
+                link: '/pricing'
             },
             {
                 icon: 'paypal',
-                title: 'Registered Agent Service'
+                title: 'Registered Agent Service',
+                link: '/pricing'
             },
             {
                 icon: 'bank',
-                title: 'Open Business Bank'
+                title: 'Open Business Bank',
+                link: '/pricing'
             },
             {
                 icon: 'paypal',
-                title: 'Open Stripe/PayPal'
+                title: 'Open Stripe/PayPal',
+                link: '/pricing'
             },
             {
                 icon: 'website',
-                title: 'Website Development'
+                title: 'Website Development',
+                link: '/pricing'
             },
             {
                 icon: 'address',
-                title: 'Business Mailing Address'
+                title: 'Business Mailing Address',
+                link: '/pricing'
             },
             {
                 icon: 'amazon',
-                title: 'Create Amazon Account'
+                title: 'Create Amazon Account',
+                link: '/pricing'
             },
             {
                 icon: 'approve-file',
-                title: 'Resale Certificate / Seller Permit'
+                title: 'Resale Certificate / Seller Permit',
+                link: '/pricing'
             },
             {
                 icon: 'company',
-                title: 'UK Company Formation'
+                title: 'UK Company Formation',
+                link: '/pricing'
             },
             {
                 icon: 'company',
-                title: 'Form U.S. company'
+                title: 'Form U.S. company',
+                link: '/pricing'
             },
             {
                 icon: 'file',
-                title: 'Obtain EIN or ITIN'
+                title: 'Obtain EIN or ITIN',
+                link: '/pricing'
             },
             {
                 icon: 'paypal',
-                title: 'Open Stripe/PayPal'
+                title: 'Open Stripe/PayPal',
+                link: '/pricing'
             },
             {
                 icon: 'bank',
-                title: 'Open Business Bank'
+                title: 'Open Business Bank',
+                link: '/pricing'
             },
             {
                 icon: 'amazon',
-                title: 'Create Amazon Account'
+                title: 'Create Amazon Account',
+                link: '/pricing'
             },
             {
                 icon: 'website',
-                title: 'Website Development'
+                title: 'Website Development',
+                link: '/pricing'
             },
         ]
         return (
             <div>
                 <Grid container spacing={1} style={{ padding: '3% 10%' }}>
                     <CloseIcon onClick={handleClose} fontSize='large' style={{ position: 'absolute', top: '6%', right: '4%', cursor: 'pointer', color: 'gray', zIndex: 2 }} />
-                    <Grid item md={3} style={{ padding: '1%' }}>
+                    <Grid item md={4} style={{ padding: '1%' }}>
                         <h3 style={{ fontWeight: 600, fontSize: 18, margin: 0, marginBottom: '1%' }}>START YOUR BUSINESS</h3>
                         {
                             servicesIcons.slice(0, 5).map((item, i) => {
                                 return (
                                     <div style={{ display: 'flex', alignItems: 'center', margin: '10% 0' }}>
                                         <img src={`/images/${item.icon}.svg`} style={{ marginRight: '3%', width: 40 }} />
-                                        <p onClick={handleMenuItemClick} style={{ fontWeight: 500, color: 'black', cursor: 'pointer' }}>{item.title}</p>
+                                        <p onClick={() => handleMenuItemClick(item)} style={{ fontWeight: 500, color: 'black', cursor: 'pointer' }}>{item.title}</p>
                                     </div>
                                 )
                             })
                         }
 
                     </Grid>
-                    <Grid item md={3} style={{ padding: '1%' }}>
+                    <Grid item md={4} style={{ padding: '1%' }}>
                         <h3 style={{ fontWeight: 600, fontSize: 18, margin: 0, marginBottom: '1%' }}>ADDONS SERVICES</h3>
                         {
                             servicesIcons.slice(5, 10).map((item, i) => {
                                 return (
                                     <div style={{ display: 'flex', alignItems: 'center', margin: '10% 0' }}>
                                         <img src={`/images/${item.icon}.svg`} style={{ marginRight: '3%', width: 40 }} />
-                                        <p onClick={handleMenuItemClick} style={{ fontWeight: 500, color: 'black', cursor: 'pointer' }}>{item.title}</p>
+                                        <p onClick={() => handleMenuItemClick(item)} style={{ fontWeight: 500, color: 'black', cursor: 'pointer' }}>{item.title}</p>
                                     </div>
                                 )
                             })
                         }
                     </Grid>
-                    <Grid item md={3} style={{ borderRight: '1px solid gainsboro', padding: '1%' }}>
+                    {/* <Grid item md={3} style={{ borderRight: '1px solid gainsboro', padding: '1%' }}>
                         <br />
                         {
                             servicesIcons.slice(10, 15).map((item, i) => {
@@ -246,8 +262,8 @@ export default function MenuComponent(props) {
                                 )
                             })
                         }
-                    </Grid>
-                    <Grid item md={3} style={{ display: 'flex', alignItems: 'center', justifyItems: 'left', padding: '4%' }}>
+                    </Grid> */}
+                    <Grid item md={4} style={{ display: 'flex', alignItems: 'center', justifyItems: 'left', padding: '4%' }}>
                         <Grid container spacing={1}>
                             <Grid item md={12}>
                                 <h4 style={{ fontWeight: 500, fontSize: 20 }}>Already have a company formed?
@@ -321,7 +337,6 @@ export default function MenuComponent(props) {
         );
     }
 
-
     const handleClick = (event, item) => {
         setAnchorEl(event.currentTarget);
         setSelectedItem(item);
@@ -381,13 +396,13 @@ export default function MenuComponent(props) {
                                 <Menu
                                     PaperProps={{
                                         style: {
-                                            width: 'auto',
+                                            width: '70%',
                                             boxShadow: 'none',
                                             borderRadius: 15,
                                             border: props.border,
                                             background: selectedItem && selectedItem.content ? 'white' : 'transparent',
                                             position: 'relative',
-                                            transform: 'translateX(-0.5%) translateY(2%)',
+                                            transform: 'translateX(-20%) translateY(2%)',
                                         },
                                     }}
                                     anchorEl={anchorEl}
