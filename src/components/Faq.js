@@ -63,8 +63,8 @@ export default function Faq() {
             ans: "Boosty specializes in helping individuals and businesses register their U.S. companies, unlocking access to a range of online services."
         },
         {
-            ques: "How can I benefit from Boosty's services?",
-            ans: "You can access platforms like Stripe, PayPal, Amazon, and more, even in regions where they don't typically operate."
+            ques: "How does the payment process work at Boosty?",
+            ans: "Welcome to Boosty! We make paying easy for you. First, pay half for your Business or Premium package. This covers important things for your business. Once we get the money, we start making your company official. Get a certificate from us! Then, pay the other half to move to the next step, getting your EIN number. Boosty is here to help you every step of the way."
         },
         {
             ques: "What are the advantages of having a U.S. company?",
@@ -86,8 +86,8 @@ export default function Faq() {
 
 
     return (
-        <div className='faqSection' style={{position: 'relative'}}>
-            <div className='faq' style={{zIndex: 2, position: 'relative'}}>
+        <div className='faqSection' style={{ position: 'relative' }}>
+            <div className='faq' style={{ zIndex: 2, position: 'relative' }}>
                 <center><h2 className='faqHeading' >Frequenly Asked <span className='gradientText'>Questions</span>❔</h2></center>
 
                 {faqData.map((item, index) => (

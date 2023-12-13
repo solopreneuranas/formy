@@ -103,7 +103,7 @@ export default function Pricing(props) {
 
     return (
         <div style={{ overflowX: 'hidden' }}>
-            <TopBar color='white' background='#8000ff' />
+            <TopBar color='white' background='linear-gradient(to right, blue 30%, #8000ff 70%)' />
             <Header bg='white' color='black' logo='boosty-purple-logo.svg' border='2px solid black' />
 
             <div style={{ width: '100%', marginTop: matches_md ? '10%' : '5%', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>

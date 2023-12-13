@@ -129,7 +129,7 @@ export default function Footer() {
 
                 <hr style={{ opacity: '30%', margin: '3% 0' }} />
 
-                <Grid container spacing={2} style={{padding: matches_md ? '5% 0' : 0}}>
+                <Grid container spacing={2} style={{ padding: matches_md ? '5% 0' : 0 }}>
                     <Grid item md={8}>
                         <Typography style={{ fontWeight: 600, fontSize: '23px', fontFamily: 'Inter' }}>
                             Instant Support via WhatsApp
@@ -182,12 +182,12 @@ whatsapp-icon.png?v=1615793565" width="25px" style={{ verticalAlign: 'middle' }}
                     </Grid>
 
                     <Grid item md={8}>
-                        <p style={{ opacity: '70%' }}>©2023 Distributed Inc. “doola” and the doola logo are registered trademarks.</p><br />
+                        <p style={{ opacity: '70%' }}>©2023 Phoundr LLC. “Boosty” and the Boosty logo are registered trademarks.</p><br />
 
-                        <p style={{ opacity: '70%' }}>doola products may not be available to all customers. Terms of Condition apply and are subject to change.</p><br />
+                        <p style={{ opacity: '70%' }}>Boosty products may not be available to all customers. Terms of Condition apply and are subject to change.</p><br />
 
                         <p style={{ opacity: '70%' }}>
-                            doola is a technology company. We are not a law firm, nor can we offer official legal advice. What you see on our website, and any of our communication over email, Whatsapp, Slack, SMS, Zoom call, Intercom, social media is purely for general and educational matters, and should not be taken as official legal advice. By using our website and service, you are explicitly accepting our Terms of Service, Privacy Policy, and Data Processing Addendum.
+                            Boosty is a technology company. We are not a law firm, nor can we offer official legal advice. What you see on our website, and any of our communication over email, Whatsapp, Slack, SMS, Zoom call, Intercom, social media is purely for general and educational matters, and should not be taken as official legal advice. By using our website and service, you are explicitly accepting our Terms of Service, Privacy Policy, and Data Processing Addendum.
                         </p>
                     </Grid>
                 </Grid>

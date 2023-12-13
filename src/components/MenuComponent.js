@@ -7,10 +7,11 @@ import { useTheme } from '@mui/material/styles';
 import { AppBar, Box, Grid, Toolbar } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-
+import { useNavigate } from 'react-router-dom';
 
 export default function MenuComponent(props) {
 
+    var navigate = useNavigate()
     const theme = useTheme()
     const matches_sm = useMediaQuery(theme.breakpoints.down('sm'))
     const matches_md = useMediaQuery(theme.breakpoints.down('md'))
@@ -23,6 +24,10 @@ export default function MenuComponent(props) {
         setAnchorEl(null);
     };
 
+    const handleMenuItemClick = () => {
+        navigate('/pricing')
+        window.scrollTo(0, 0);
+    }
 
     const pricingContent = () => {
         const servicesIcons = [
@@ -148,31 +153,35 @@ export default function MenuComponent(props) {
             },
             {
                 icon: 'paypal',
-                title: 'Open Stripe/PayPal'
+                title: 'Registered Agent Service'
             },
             {
                 icon: 'bank',
                 title: 'Open Business Bank'
-            },
-            {
-                icon: 'amazon',
-                title: 'Create Amazon Account'
-            },
-            {
-                icon: 'website',
-                title: 'Website Development'
-            },
-            {
-                icon: 'file',
-                title: 'Obtain EIN or ITIN'
             },
             {
                 icon: 'paypal',
                 title: 'Open Stripe/PayPal'
             },
             {
-                icon: 'bank',
-                title: 'Open Business Bank'
+                icon: 'website',
+                title: 'Website Development'
+            },
+            {
+                icon: 'address',
+                title: 'Business Mailing Address'
+            },
+            {
+                icon: 'amazon',
+                title: 'Create Amazon Account'
+            },
+            {
+                icon: 'approve-file',
+                title: 'Resale Certificate / Seller Permit'
+            },
+            {
+                icon: 'company',
+                title: 'UK Company Formation'
             },
             {
                 icon: 'company',
@@ -210,7 +219,7 @@ export default function MenuComponent(props) {
                                 return (
                                     <div style={{ display: 'flex', alignItems: 'center', margin: '10% 0' }}>
                                         <img src={`/images/${item.icon}.svg`} style={{ marginRight: '3%', width: 40 }} />
-                                        <p style={{ fontWeight: 500, color: 'black' }}>{item.title}</p>
+                                        <p onClick={handleMenuItemClick} style={{ fontWeight: 500, color: 'black', cursor: 'pointer' }}>{item.title}</p>
                                     </div>
                                 )
                             })
@@ -218,13 +227,13 @@ export default function MenuComponent(props) {
 
                     </Grid>
                     <Grid item md={3} style={{ padding: '1%' }}>
-                        <h3 style={{ fontWeight: 600, fontSize: 18, margin: 0, marginBottom: '1%' }}>MANAGE YOUR BUSINESS </h3>
+                        <h3 style={{ fontWeight: 600, fontSize: 18, margin: 0, marginBottom: '1%' }}>ADDONS SERVICES</h3>
                         {
                             servicesIcons.slice(5, 10).map((item, i) => {
                                 return (
                                     <div style={{ display: 'flex', alignItems: 'center', margin: '10% 0' }}>
                                         <img src={`/images/${item.icon}.svg`} style={{ marginRight: '3%', width: 40 }} />
-                                        <p style={{ fontWeight: 500, color: 'black' }}>{item.title}</p>
+                                        <p onClick={handleMenuItemClick} style={{ fontWeight: 500, color: 'black', cursor: 'pointer' }}>{item.title}</p>
                                     </div>
                                 )
                             })
@@ -237,7 +246,7 @@ export default function MenuComponent(props) {
                                 return (
                                     <div style={{ display: 'flex', alignItems: 'center', margin: '10% 0' }}>
                                         <img src={`/images/${item.icon}.svg`} style={{ marginRight: '3%', width: 40 }} />
-                                        <p style={{ fontWeight: 500, color: 'black' }}>{item.title}</p>
+                                        <p onClick={handleMenuItemClick} style={{ fontWeight: 500, color: 'black', cursor: 'pointer' }}>{item.title}</p>
                                     </div>
                                 )
                             })
@@ -252,12 +261,12 @@ export default function MenuComponent(props) {
                             </Grid>
                             <Grid item md={12}>
                                 <Button variant='contained' className='globalButton' style={{
-                                    background: '#0069FF',
+                                    background: 'linear-gradient(to right, blue, #8000ff)',
                                     color: 'white',
                                     padding: '4% 8%',
                                     fontWeight: 500,
                                     marginTop: '2%',
-                                    borderRadius: 30,
+                                    border: 'none',
                                     fontFamily: 'Inter'
                                 }}>GET STARTED</Button>
                             </Grid>

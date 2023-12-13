@@ -340,7 +340,7 @@ body {
   padding: 3% 10%;
   color: white;
   border-radius: 0 0 150px 0;
-  background: #8000ff;
+  background: linear-gradient(to right, blue 30%, #8000ff 70%);
   text-align: left;
 }
 
@@ -565,7 +565,7 @@ body {
 .footerSec {
   color: white;
   border-top: 8px solid #8000ff;
-  background-color: #8000ff;
+  background: linear-gradient(to right, blue 30%, #8000ff 70%);
   padding: 17% 13% 6%;
 }
 
@@ -663,7 +663,7 @@ body {
 
 
 .business {
-  height: 700px;
+  height: 650px;
   margin: 0;
   padding: 6%;
   border: 1px solid gainsboro;
@@ -671,11 +671,11 @@ body {
 }
 
 .premium {
-  height: 700px;
+  height: 650px;
   margin: 0;
   padding: 6%;
   border-radius: 10px;
-  background: #8000ff;
+  background: linear-gradient(to right, blue 20%, #8000ff 80%);
   color: white;
   border-radius: 10px;
 }
@@ -718,7 +718,7 @@ body {
 }
 
 .addonsDiv:hover {
-  background-color: #8000ff;
+  background: linear-gradient(to right, blue 20%, #8000ff 80%);
   cursor: pointer;
   color: white !important;
 }

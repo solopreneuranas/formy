@@ -22,7 +22,7 @@ export default function Home() {
     return (
         <div>
             <TopBar color='black' background = 'white'/>
-            <Header bg='#8000ff' color='white' logo='boosty-white-logo.svg' border='none' />
+            <Header bg='linear-gradient(to right, blue 30%, #8000ff 70%)' color='white' logo='boosty-white-logo.svg' border='none' />
             <Hero />
             <Services />
             <PricingTabs />

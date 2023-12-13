@@ -38,7 +38,7 @@ export default function CTA() {
                 <Grid item xs={12} style={{ zIndex: 2 }}>
                     <center>
                         <Button onClick={handleBtnClick} variant='contained' className='globalButton' style={{
-                            background: '#8000ff',
+                            background: 'linear-gradient(to right, blue, #8000ff)',
                             color: 'white',
                             padding: '1% 3%',
                             marginTop: '1%',
