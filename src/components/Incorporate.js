@@ -60,7 +60,7 @@ export default function Incorporate() {
                         height: '350px',
                         borderRadius: 15,
                         margin: '5% 4%',
-                        boxShadow: '10px 10px 25px #D2DEF1',
+                        boxShadow: '10px 10px 25px #f2e4ff',
                         background: 'white',
                         textAlign: 'left'
                     }}

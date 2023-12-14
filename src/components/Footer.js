@@ -138,7 +138,7 @@ export default function Footer(props) {
                         <p style={{ opacity: '70%', fontSize: '15px', margin: 0 }}>Reach out to us directly on WhatsApp for quick support. We're here to help!</p>
                     </Grid>
                     <Grid item md={4}>
-                        <a style={{ textDecoration: 'none' }} href="https://api.whatsapp.com/send?phone=+1(302)209-8440&amp;text=Hello%20Boosty,%20I%20need%20a%20website%20-%20can%20you%20help?" target="_blank">
+                        <a style={{ textDecoration: 'none' }} href="https://wa.me/13022098440?text=Hi%20Boosty%20team!%20Interested%20in%20launching%20my%20U.S.%20business.%20Can%20you%20help%3F%20%F0%9F%9A%80" target="_blank">
                             <div class="order_whatsapp" style={{
                                 width: '100%',
                                 padding: '3px',

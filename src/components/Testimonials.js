@@ -32,29 +32,34 @@ export default function Testimonials() {
 
     const features = [
         {
-            title: 'Yusuf Jamal',
+            name: 'Mustufa',
+            title: 'Boosty made my business soar',
             image: 'model-1.jpg',
-            para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery."
+            para: "Boosty made my business soar! With their expert guidance, I easily launched in the US, tapping into Amazon's marketplace. Their support transformed my dreams into reality. Boosty is the go-to for a smooth start and growth on platforms like Amazon. Grateful for their invaluable support!"
         },
         {
-            title: 'Muhammad Boota',
+            name: 'Shoaib Fattani',
+            title: 'Boosty exceeded my expectations',
             image: 'model-2.jpg',
-            para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery."
+            para: "Boosty exceeded my expectations. The quick setup and affordable pricing were impressive. Having a US business presence opened doors to big projects. Their dedication to helping Pakistani entrepreneurs is evident. Boosty truly empowered my software development business!"
         },
         {
-            title: 'Abdullah Taurab',
+            name: 'Muhammad Boota',
+            title: 'Boosty made the web development process',
             image: 'model-1.jpg',
-            para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery."
+            para: "Boosty made the web development process an absolute breeze for us. The website they created has not only elevated our online presence but also simplified our operations, making it easier for our customers to engage with us. We highly recommend BlueNexus to any business seeking a reliable web development partner."
         },
         {
-            title: 'Kamal Hassan',
+            name: 'Hamid',
+            title: "Boosty's website development expertise",
             image: 'model-2.jpg',
-            para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery."
+            para: "Boosty's website development expertise is unmatched. They skillfully brought our ideas to life, crafting a user-friendly and visually stunning website. Their branding services aligned our brand with our core values, making a significant impact on our customers. Thank you, Boosty, for a remarkable experience!"
         },
         {
-            title: 'Hasham Usman',
+            name: 'Arshad Ahmad',
+            title: 'Choosing Boosty for website development',
             image: 'model-1.jpg',
-            para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery."
+            para: "Choosing Boosty for website development and branding was the best decision we made. Their talented team delivered a website that is both visually appealing and highly functional. The branding services helped us stand out in a competitive market. Working with Boosty was a breeze, and the results speak for themselves!"
         }
     ]
 
@@ -67,23 +72,26 @@ export default function Testimonials() {
                         display: 'flex',
                         flexDirection: 'column',
                         padding: '7%',
-                        height: '300px',
+                        height: '320px',
                         borderRadius: 17,
                         position: 'relative',
                         margin: '10% 3%',
-                        //boxShadow: matches_md ? '0 5px 25px #D2DEF1' : 'none',
+                        boxShadow: matches_md ? '0 5px 25px #f2e4ff' : 'none',
                         background: 'white',
                         textAlign: 'left'
                     }}
                 >
-                    <h3 style={{ margin: 0, fontWeight: 500, textAlign: 'left', fontSize: 23 }}>{item.title}</h3>
+                    <h3 style={{ margin: 0, fontWeight: 500, textAlign: 'left', fontSize: 22 }}>{item.title}</h3>
 
                     <p style={{ opacity: '70%', marginTop: '3%', fontSize: 15 }}>
                         {item.para}
                     </p>
                     <br />
 
-                    <img src='/images/stars.svg' style={{ width: 140 }} />
+                    <div style={{ display: 'flex', gap: '3%' }}>
+                        <p style={{}}>-{item.name}</p>
+                        <img src='/images/stars.svg' style={{ width: 140 }} />
+                    </div>
 
                 </div>
             </div>
