@@ -18,7 +18,7 @@ export default function TopBar(props) {
 
                 <Grid item xs={12} style={{ zIndex: 2, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <h3 style={{ fontWeight: 500, color: props.color, fontSize: matches_md ? 14 : 18 }}>
-                        Questions? Chat with Boosty on <a style={{ color: props.linkColor, textDecoration: 'none' }} href='https://wa.me/13022098440?text=Hi%20Boosty%20team!%20Interested%20in%20launching%20my%20U.S.%20business.%20Can%20you%20help%3F%20%F0%9F%9A%80'>
+                        Questions? Chat with Boosty on <a target='_blank' style={{ color: props.linkColor, textDecoration: 'none' }} href='https://wa.me/13022098440?text=Hi%20Boosty%20team!%20Interested%20in%20launching%20my%20U.S.%20business.%20Can%20you%20help%3F%20%F0%9F%9A%80'>
                             WhatsApp
                         </a> now!
                     </h3>

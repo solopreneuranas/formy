@@ -190,7 +190,7 @@ export default function MenuComponent(props) {
             },
 
 
-            
+
 
 
             {
@@ -353,13 +353,6 @@ export default function MenuComponent(props) {
             link: '/',
             scrollX: 0,
             scrollY: 4850
-        },
-        {
-            title: 'Contact'
-        },
-        {
-            title: 'Blog',
-            link: 'https://medium.com/@tryboosty'
         }
     ]
 
@@ -397,6 +390,36 @@ export default function MenuComponent(props) {
                             <Toolbar style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '7%' }}>
                                 {showMenuItems()}
                                 {showStaticMenuItems()}
+                                <Button
+                                    style={{
+                                        color: props.color,
+                                        fontWeight: 500,
+                                        fontFamily: 'Inter',
+                                        fontSize: 17,
+                                        textTransform: 'capitalize',
+                                        padding: '1% 0',
+                                    }}>
+                                    <a href='https://wa.me/13022098440?text=Hi%20Boosty%20team!%20Interested%20in%20launching%20my%20U.S.%20business.%20Can%20you%20help%3F%20%F0%9F%9A%80' target='_blank' style={{ textDecoration: 'none', color: props.color }}>
+                                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                                            <p style={{ fontSize: 18, margin: 0 }}>Contact</p>
+                                        </div>
+                                    </a>
+                                </Button>
+                                <Button
+                                    style={{
+                                        color: props.color,
+                                        fontWeight: 500,
+                                        fontFamily: 'Inter',
+                                        fontSize: 17,
+                                        textTransform: 'capitalize',
+                                        padding: '1% 0',
+                                    }}>
+                                    <a href='https://medium.com/@tryboosty' target='_blank' style={{ textDecoration: 'none', color: props.color }}>
+                                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                                            <p style={{ fontSize: 18, margin: 0 }}>Blog</p>
+                                        </div>
+                                    </a>
+                                </Button>
 
                                 <Menu
                                     PaperProps={{

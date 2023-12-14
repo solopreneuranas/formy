@@ -89,7 +89,7 @@ export default function Footer(props) {
                             </ListItem>
 
                             <ListItem style={{ paddingLeft: 0, padding: '0', cursor: 'pointer' }}>
-                                <ListItemText><a style={{ textDecoration: 'none', color: 'white' }} href='https://wa.me/13022098440?text=Hi%20Boosty%20team!%20Interested%20in%20launching%20my%20U.S.%20business.%20Can%20you%20help%3F%20%F0%9F%9A%80'><span className='listItem'>Contact us</span></a></ListItemText>
+                                <ListItemText><a target="_blank" style={{ textDecoration: 'none', color: 'white' }} href='https://wa.me/13022098440?text=Hi%20Boosty%20team!%20Interested%20in%20launching%20my%20U.S.%20business.%20Can%20you%20help%3F%20%F0%9F%9A%80'><span className='listItem'>Contact us</span></a></ListItemText>
                             </ListItem>
                         </List>
                     </Grid>
