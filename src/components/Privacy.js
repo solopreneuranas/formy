@@ -1,6 +1,6 @@
 import * as React from 'react';
 import '../App.css';
-
+import CTA from './CTA';
 import Header from './Header';
 import Footer from './Footer';
 import { useTheme } from '@mui/material/styles';
@@ -8,23 +8,23 @@ import { Grid, Typography } from "@mui/material";
 import TopBar from './TopBar';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-export default function Privacy() {
+export default function Privacy(props) {
     const theme = useTheme();
     const matches_sm = useMediaQuery(theme.breakpoints.down('sm'));
     const matches_md = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
         <div>
-            <TopBar color='white' background='#8000ff' />
-            <Header bg='white' color='black' logo='boosty-purple-logo.svg' border='2px solid black' />
+            <TopBar color='white' background='linear-gradient(to right, blue 30%, #8000ff 70%)' linkColor='gainsboro' />
+            <Header bg='white' color='black' logo='boosty-gradient-logo.svg' border='2px solid black' buttonBg='linear-gradient(to right, blue, #8000ff)' buttonColor='white' />
 
             <Grid container spacing={1} style={{ marginTop: '4%' }}>
-                <Grid item xs={12} style={{ background: '#8000ff', padding: '6%' }}>
+                <Grid item xs={12} style={{ background: 'linear-gradient(to right, blue 30%, #8000ff 70%)', padding: '6%' }}>
                     <h2 className='featuresHeading' style={{ color: 'white', margin: 0 }}>Privacy and Refund</h2>
                 </Grid>
             </Grid>
 
-            <Grid container spacing={1} style={{ marginTop: '3%', padding: matches_md ? '0' : '0 10%', textAlign: 'justify' }}>
+            <Grid container spacing={1} style={{ margin: '3% 0', padding: matches_md ? '0' : '0 10%', textAlign: 'justify' }}>
                 <Grid item xs={12} style={{ display: 'flex', padding: '2% 10%' }}>
                     <p className='featuresPara' style={{ marginTop: '1%', marginBottom: '1%', fontSize: 20, fontWeight: 600 }}>
                         PLEASE READ THIS LEGAL DISCLAIMER AND TERMS OF SERVICE CAREFULLY BEFORE ACCESSING OUR WEBSITE OR USING OUR SERVICES <br /><br />
@@ -238,11 +238,7 @@ export default function Privacy() {
 
             </Grid>
 
-
-            <br />
-            <hr />
-
-            <Footer />
+            <Footer paddingMobile='10% 5%' paddingDesktop='5% 13%' />
 
         </div>
     );

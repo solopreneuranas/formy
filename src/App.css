@@ -566,7 +566,6 @@ body {
   color: white;
   border-top: 8px solid #8000ff;
   background: linear-gradient(to right, blue 30%, #8000ff 70%);
-  padding: 17% 13% 6%;
 }
 
 .servicesSection {
@@ -951,10 +950,6 @@ body {
   .incorporateSection {
     width: 100%;
     padding: 5% 2%;
-  }
-
-  .footerSec {
-    padding: 45% 5% 10%;
   }
 
   .faqHeading {

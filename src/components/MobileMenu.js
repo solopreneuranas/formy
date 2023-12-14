@@ -176,9 +176,9 @@ export default function MobileMenu() {
 
                     </Grid>
                     <Grid item md={3} style={{ padding: '1%', marginTop: '5%' }}>
-                        <h3 style={{ fontWeight: 600, fontSize: 15, margin: 0, marginBottom: '1%' }}>MANAGE YOUR BUSINESS </h3>
+                        <h3 style={{ fontWeight: 600, fontSize: 15, margin: 0, marginBottom: '1%' }}>ADDONS SERVICES</h3>
                         {
-                            servicesIcons.slice(5, 15).map((item, i) => {
+                            servicesIcons.slice(5, 10).map((item, i) => {
                                 return (
                                     <div style={{ display: 'flex', alignItems: 'center', margin: '10% 0' }}>
                                         <img src={`/images/${item.icon}.svg`} style={{ marginRight: '7%', width: 30 }} />

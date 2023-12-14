@@ -10,85 +10,86 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import { useNavigate } from 'react-router-dom';
 
-export default function Footer() {
+export default function Footer(props) {
 
+    var navigate = useNavigate()
     const [dense, setDense] = React.useState(false);
     const theme = useTheme();
     const matches_sm = useMediaQuery(theme.breakpoints.down('sm'));
     const matches_md = useMediaQuery(theme.breakpoints.down('md'));
 
+    const businessItems = [
+        'Form U.S. company',
+        'Obtain EIN or ITIN',
+        'Registered Agent Service',
+        'Open Business Bank',
+        'Open Stripe/PayPal'
+    ]
+
+    const addonsItems = [
+        'Website Development',
+        'Business Mailing Address',
+        'Create Amazon Account',
+        'Resale Certificate / Seller Permit',
+        'UK Company Formation',
+    ]
+
+    const handleItemClick = () => {
+        navigate('/pricing')
+        window.scrollTo(0, 0)
+    }
+
     return (
         <div>
-            <div className='footerSec'>
+            <div className='footerSec' style={{ padding: matches_md ? props.paddingMobile : props.paddingDesktop }}>
                 <Grid container spacing={1}>
                     <Grid item md={3} style={{ width: '50%' }}>
-                        <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
-                            Legal Services
+                        <Typography style={{ fontWeight: 600, fontFamily: 'Inter' }}>
+                            Start Your Business
                         </Typography>
                         <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>US Company Formation</span></ListItemText>
-                            </ListItem>
-
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>Stripe & PayPal Account</span></ListItemText>
-                            </ListItem>
-
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>ITIN Application</span></ListItemText>
-                            </ListItem>
-
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>Resale Certificate</span></ListItemText>
-                            </ListItem>
-
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>Website Setup</span></ListItemText>
-                            </ListItem>
+                            {
+                                businessItems.map((item) => {
+                                    return (
+                                        <ListItem style={{ paddingLeft: 0, padding: '0', cursor: 'pointer' }}>
+                                            <ListItemText onClick={handleItemClick}><span className='listItem'>{item}</span></ListItemText>
+                                        </ListItem>
+                                    )
+                                })
+                            }
                         </List>
-
-
                     </Grid>
 
                     <Grid item md={3} style={{ width: '50%' }}>
-                        <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
+                        <Typography style={{ fontWeight: 600, fontFamily: 'Inter' }}>
                             Addons Services
                         </Typography>
                         <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>UK Company Formation</span></ListItemText>
-                            </ListItem>
-
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>Stripe & PayPal Account</span></ListItemText>
-                            </ListItem>
-
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>ITIN Application</span></ListItemText>
-                            </ListItem>
-
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>Resale Certificate</span></ListItemText>
-                            </ListItem>
-
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>Website Setup</span></ListItemText>
-                            </ListItem>
+                            {
+                                addonsItems.map((item) => {
+                                    return (
+                                        <ListItem style={{ paddingLeft: 0, padding: '0', cursor: 'pointer' }}>
+                                            <ListItemText onClick={handleItemClick}><span className='listItem'>{item}</span></ListItemText>
+                                        </ListItem>
+                                    )
+                                })
+                            }
                         </List>
                     </Grid>
 
                     <Grid item md={2} style={{ width: '30%', marginTop: matches_md ? '5%' : 0 }}>
-                        <Typography style={{ fontWeight: 700, fontFamily: 'Inter' }}>
+                        <Typography style={{ fontWeight: 600, fontFamily: 'Inter' }}>
                             Quick Links
                         </Typography>
                         <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>Pricing</span></ListItemText>
+                            <ListItem style={{ paddingLeft: 0, padding: '0', cursor: 'pointer' }}>
+                                <ListItemText onClick={handleItemClick}><span className='listItem'>Pricing</span></ListItemText>
                             </ListItem>
 
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>Contact us</span></ListItemText>
+                            <ListItem style={{ paddingLeft: 0, padding: '0', cursor: 'pointer' }}>
+                                <ListItemText><a style={{ textDecoration: 'none', color: 'white' }} href='https://wa.me/13022098440?text=Hi%20Boosty%20team!%20Interested%20in%20launching%20my%20U.S.%20business.%20Can%20you%20help%3F%20%F0%9F%9A%80'><span className='listItem'>Contact us</span></a></ListItemText>
                             </ListItem>
                         </List>
                     </Grid>
@@ -108,8 +109,8 @@ export default function Footer() {
                                 <ListItemText><span className='listItem'>Terms</span></ListItemText>
                             </ListItem>
 
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>Privacy Policy</span></ListItemText>
+                            <ListItem style={{ paddingLeft: 0, padding: '0', cursor: 'pointer' }}>
+                                <ListItemText onClick={() => { navigate('/privacy'); window.scrollTo(0, 0); }}><span className='listItem'>Privacy Policy</span></ListItemText>
                             </ListItem>
 
                         </List>

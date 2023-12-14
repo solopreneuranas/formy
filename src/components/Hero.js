@@ -27,7 +27,7 @@ export default function Hero() {
                     <p style={{ opacity: '80%' }}>GLOBAL FORMATION</p>
                     <h2 className='heroHeading'>
                         You can have your own <br />
-                        <font style={{ color: 'white', background: '#8000ff', borderRadius: 5, padding: '0 1%' }}>Stripe & PayPal</font> account now!
+                        <font style={{ color: 'blue', background: '#d8e9ff', borderRadius: 5, padding: '0 1%' }}>Stripe & PayPal</font> account now!
                     </h2>
                     <p className='globalPara' style={{ padding: 0 }}>
                         Ready to access global online services from anywhere? Boosty makes it possible, even in regions they don't operate!

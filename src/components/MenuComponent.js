@@ -188,6 +188,11 @@ export default function MenuComponent(props) {
                 title: 'UK Company Formation',
                 link: '/pricing'
             },
+
+
+            
+
+
             {
                 icon: 'company',
                 title: 'Form U.S. company',
@@ -354,7 +359,7 @@ export default function MenuComponent(props) {
         },
         {
             title: 'Blog',
-            link: '/'
+            link: 'https://medium.com/@tryboosty'
         }
     ]
 

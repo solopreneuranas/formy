@@ -30,28 +30,23 @@ export default function Incorporate() {
     const features = [
         {
             icon: 'company',
-            title: 'Form U.S. company',
-            para: "Forming a company in the US is viewed as more trustworthy by financial service providers, like Stripe, PayPal and banks due to the nation’s established business infrastructure and stringent regulatory environment."
+            title: 'Global Business Opportunities:',
+            para: "Incorporating in the USA enhances international credibility, attracting global clients and partners, expanding business opportunities globally."
         },
         {
             icon: 'approve-file',
-            title: 'Obtain EIN or ITIN',
-            para: "A US-based company provides a legal separation between a business and its owners, known as limited liability protection. This means that in the event of lawsuits or debts, personal assets of the owners are generally protected."
+            title: 'Asset Protection:',
+            para: "Enjoy limited liability; your liability is generally confined to your business investment, safeguarding personal assets from business debts."
+        },
+        {
+            icon: 'check',
+            title: 'Trustworthiness with Financial Providers:',
+            para: "Forming a US company is seen as more trustworthy by financial service providers, such as Stripe, PayPal, and banks."
         },
         {
             icon: 'money',
-            title: 'Open Stripe/PayPal',
-            para: "A US company can lend prestige and credibility to a business. The US is often seen as a leader in innovation and entrepreneurship, and having a US-based company can enhance the reputation of a business both domestically and internationally."
-        },
-        {
-            icon: 'bank',
-            title: 'Open Business Bank',
-            para: "A US-based company provides a legal separation between a business and its owners, known as limited liability protection. This means that in the event of lawsuits or debts, personal assets of the owners are generally protected."
-        },
-        {
-            icon: 'amazon',
-            title: 'Create Amazon Account',
-            para: "Forming a company in the US is viewed as more trustworthy by financial service providers, like Stripe, PayPal and banks due to the nation’s established business infrastructure and stringent regulatory environment."
+            title: 'Tax Optimization:',
+            para: "Benefit from favorable tax structures, deductions, and incentives, optimizing your financial strategy and potentially reducing overall tax burdens."
         }
     ]
 

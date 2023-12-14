@@ -21,8 +21,8 @@ export default function Home() {
 
     return (
         <div>
-            <TopBar color='black' background = 'white'/>
-            <Header bg='linear-gradient(to right, blue 30%, #8000ff 70%)' color='white' logo='boosty-white-logo.svg' border='none' />
+            <TopBar color='black' background='white' linkColor='blue' />
+            <Header bg='linear-gradient(to right, blue 30%, #8000ff 70%)' color='white' logo='boosty-white-logo.svg' border='none' buttonBg='white' buttonColor='black'/>
             <Hero />
             <Services />
             <PricingTabs />
@@ -32,7 +32,7 @@ export default function Home() {
             <Testimonials />
             <Faq />
             <CTA />
-            <Footer />
+            <Footer paddingMobile='45% 5% 10%' paddingDesktop='17% 13% 6%' />
         </div>
     )
 }

@@ -103,8 +103,8 @@ export default function Pricing(props) {
 
     return (
         <div style={{ overflowX: 'hidden' }}>
-            <TopBar color='white' background='linear-gradient(to right, blue 30%, #8000ff 70%)' />
-            <Header bg='white' color='black' logo='boosty-purple-logo.svg' border='2px solid black' />
+            <TopBar color='white' background='linear-gradient(to right, blue 30%, #8000ff 70%)' linkColor='gainsboro'/>
+            <Header bg='white' color='black' logo='boosty-gradient-logo.svg' border='2px solid black' buttonBg='linear-gradient(to right, blue, #8000ff)' buttonColor='white' />
 
             <div style={{ width: '100%', marginTop: matches_md ? '10%' : '5%', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                 <Grid container spacing={1} style={{ margin: 0 }}>
@@ -149,7 +149,7 @@ export default function Pricing(props) {
             <Testimonials />
             <Faq />
             <CTA />
-            <Footer />
+            <Footer paddingMobile='45% 5% 10%' paddingDesktop='17% 13% 6%' />
 
         </div >
     );

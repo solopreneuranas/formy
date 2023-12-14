@@ -14,22 +14,22 @@ export default function Process() {
         {
             icon: 'company',
             name: 'US LLC Formation',
-            para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
+            para: "Start by initiating your LLC formation process effortlessly with Boosty's expert guidance"
         },
         {
             icon: 'approve-file',
             name: 'Obtaining EIN, ITIN',
-            para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
+            para: "Swiftly secure your Employer Identification Number (EIN) through Boosty's support."
         },
         {
             icon: 'bank',
             name: 'Bank Account Setup',
-            para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
+            para: "Simplify financial transactions by setting up a U.S. bank account with Boosty's assistance."
         },
         {
             icon: 'money',
             name: 'U.S. Tax Return & Filings',
-            para: 'We offer the most competitive prices in today market, ensuring that you get the unbeatable value.'
+            para: "Boosty eases U.S. tax complexities, guiding through filings for peace of mind in managing business."
         }
     ]
 
@@ -42,7 +42,7 @@ export default function Process() {
                         padding: matches_md ? '5% 2%' : '8% 6%',
                         height: matches_md ? 200 : 280,
                         margin: matches_md ? '0 4%' : '1% 4%',
-                        textAlign:  matches_md ? 'left' : 'center'
+                        textAlign: matches_md ? 'left' : 'center'
                     }}
                 >
 
@@ -61,7 +61,7 @@ export default function Process() {
 
 
     return (
-        <div style={{ padding: matches_md ? '0' : '2% 3% 0', overflowX: 'hidden'  }}>
+        <div style={{ padding: matches_md ? '0' : '2% 3% 0', overflowX: 'hidden' }}>
 
             <Grid container spacing={1} className='processSection'  >
                 <Grid item xs={12}>
