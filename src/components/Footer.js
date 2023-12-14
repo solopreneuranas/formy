@@ -117,7 +117,7 @@ export default function Footer(props) {
                         <div style={{ marginTop: '5%' }}>
                             <a href='https://www.facebook.com/TryBoosty' target='_blank'><FacebookRoundedIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} /></a>
                             <a href='https://www.twitter.com/TryBoosty' target='_blank'><TwitterIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} /></a>
-                            <a href='https://www.linkedin.com/TryBoosty' target='_blank'><LinkedInIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} /></a>
+                            <a href='https://www.linkedin.com/company/tryboosty' target='_blank'><LinkedInIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} /></a>
                         </div>
                     </Grid>
                 </Grid>
