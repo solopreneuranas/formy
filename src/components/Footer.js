@@ -100,15 +100,9 @@ export default function Footer(props) {
                             Legal
                         </Typography>
                         <List dense={dense} style={{ marginTop: '2%', opacity: '70%' }}>
-
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
-                                <ListItemText><span className='listItem'>FAQs</span></ListItemText>
-                            </ListItem>
-
-                            <ListItem style={{ paddingLeft: 0, padding: '0' }}>
+                            {/* <ListItem style={{ paddingLeft: 0, padding: '0' }}>
                                 <ListItemText><span className='listItem'>Terms</span></ListItemText>
-                            </ListItem>
-
+                            </ListItem> */}
                             <ListItem style={{ paddingLeft: 0, padding: '0', cursor: 'pointer' }}>
                                 <ListItemText onClick={() => { navigate('/privacy'); window.scrollTo(0, 0); }}><span className='listItem'>Privacy Policy</span></ListItemText>
                             </ListItem>
@@ -121,9 +115,9 @@ export default function Footer(props) {
                             Follow us
                         </Typography>
                         <div style={{ marginTop: '5%' }}>
-                            <FacebookRoundedIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} />
-                            <TwitterIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} />
-                            <LinkedInIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} />
+                            <a href='https://www.facebook.com/TryBoosty' target='_blank'><FacebookRoundedIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} /></a>
+                            <a href='https://www.twitter.com/TryBoosty' target='_blank'><TwitterIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} /></a>
+                            <a href='https://www.linkedin.com/TryBoosty' target='_blank'><LinkedInIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} /></a>
                         </div>
                     </Grid>
                 </Grid>
@@ -141,7 +135,7 @@ export default function Footer(props) {
                         <a style={{ textDecoration: 'none' }} href="https://wa.me/13022098440?text=Hi%20Boosty%20team!%20Interested%20in%20launching%20my%20U.S.%20business.%20Can%20you%20help%3F%20%F0%9F%9A%80" target="_blank">
                             <div class="order_whatsapp" style={{
                                 width: '100%',
-                                padding: '3px',
+                                padding: matches_md ? '20px' : '6px',
                                 textAlign: 'center',
                                 backgroundColor: '#1EA651',
                                 height: '50px',

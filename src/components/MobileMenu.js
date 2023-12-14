@@ -71,7 +71,7 @@ export default function MobileMenu() {
 
     const handleMenuItemClick = (item) => {
         navigate(item.link)
-        window.scrollTo(item.screenX, item.scrollY);
+        window.scrollTo(0, 0);
     }
 
     const servicesContent = () => {
@@ -203,46 +203,41 @@ export default function MobileMenu() {
 
     ]
 
-    const staticMenuItems = [
-        {
-            title: 'Pricing',
-            icon: 'pricing',
-            link: '/pricing',
-        },
-        {
-            title: 'FAQ',
-            icon: 'faq',
-            link: '/',
-            scrollX: 0,
-            scrollY: 4850
-        },
-        {
-            title: 'Contact',
-            icon: 'contact'
-        },
-        {
-            title: 'Blog',
-            icon: 'file'
-        }
-    ]
-
     const showStaticMenuItems = () => {
         return (
-            staticMenuItems.map((item, index) => {
-                return (
-                    <div>
-                        <ListItem disablePadding>
-                            <ListItemButton>
-                                <h3 onClick={() => handleMenuItemClick(item)} style={{ opacity: '100%', margin: 0, fontWeight: 500, display: 'flex', alignItems: 'center' }}>
-                                    <img src={`/images/${item.icon}.svg`} style={{ width: 30, margin: '10% 20% 10% 10%' }} />
-                                    {item.title}
-                                </h3>
-                            </ListItemButton>
-                        </ListItem>
+            <div>
+                <ListItem disablePadding>
+                    <ListItemButton>
+                        <h3 onClick={() => { navigate('/pricing'); window.scrollTo(0, 0) }}
+                            style={{ opacity: '100%', margin: 0, fontWeight: 500, display: 'flex', alignItems: 'center' }} >
+                            <img src='/images/pricing.svg' style={{ width: 30, margin: '10% 20% 10% 10%' }} />
+                            Pricing
+                        </h3>
+                    </ListItemButton>
+                </ListItem>
 
-                    </div>
-                )
-            })
+                <ListItem disablePadding>
+                    <ListItemButton>
+                        <a style={{ textDecoration: 'none', color: 'black' }} target='_blank' href='https://wa.me/13022098440?text=Hi%20Boosty%20team!%20Interested%20in%20launching%20my%20U.S.%20business.%20Can%20you%20help%3F%20%F0%9F%9A%80'>
+                            <h3 style={{ opacity: '100%', margin: 0, fontWeight: 500, display: 'flex', alignItems: 'center' }}>
+                                <img src='/images/contact.svg' style={{ width: 30, margin: '10% 20% 10% 10%' }} />
+                                Contact
+                            </h3>
+                        </a>
+                    </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton>
+                        <a style={{ textDecoration: 'none', color: 'black' }} target='_blank' href='https://medium.com/@tryboosty'>
+                            <h3 style={{ opacity: '100%', margin: 0, fontWeight: 500, display: 'flex', alignItems: 'center' }}>
+                                <img src='/images/file.svg' style={{ width: 30, margin: '10% 20% 10% 10%' }} />
+                                Blog
+                            </h3>
+                        </a>
+                    </ListItemButton>
+                </ListItem>
+
+            </div>
         )
     }
 
@@ -296,8 +291,6 @@ export default function MobileMenu() {
         <Box
             sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 300 }}
             role="presentation"
-        // onClick={toggleDrawer(anchor, false)}
-        // onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
                 {showMenuItems()}

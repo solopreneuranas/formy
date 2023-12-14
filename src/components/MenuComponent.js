@@ -347,38 +347,38 @@ export default function MenuComponent(props) {
         setSelectedItem(item);
     };
 
-    const staticMenuItems = [
-        {
-            title: 'FAQ',
-            link: '/',
-            scrollX: 0,
-            scrollY: 4850
-        }
-    ]
+    // const staticMenuItems = [
+    //     {
+    //         title: 'FAQ',
+    //         link: '/',
+    //         scrollX: 0,
+    //         scrollY: 4850
+    //     }
+    // ]
 
-    const showStaticMenuItems = () => {
-        return (
-            staticMenuItems.map((item, i) => {
-                return (
-                    <div>
-                        <Button
-                            style={{
-                                color: props.color,
-                                fontWeight: 500,
-                                fontFamily: 'Inter',
-                                fontSize: 17,
-                                textTransform: 'capitalize',
-                                padding: '1% 0',
-                            }}>
-                            <div style={{ display: 'flex', alignItems: 'center' }}>
-                                <p style={{ fontSize: 18, margin: 0 }} onClick={() => handleMenuItemClick(item)}>{item.title}</p>
-                            </div>
-                        </Button>
-                    </div>
-                )
-            })
-        )
-    }
+    // const showStaticMenuItems = () => {
+    //     return (
+    //         staticMenuItems.map((item, i) => {
+    //             return (
+    //                 <div>
+    //                     <Button
+    //                         style={{
+    //                             color: props.color,
+    //                             fontWeight: 500,
+    //                             fontFamily: 'Inter',
+    //                             fontSize: 17,
+    //                             textTransform: 'capitalize',
+    //                             padding: '1% 0',
+    //                         }}>
+    //                         <div style={{ display: 'flex', alignItems: 'center' }}>
+    //                             <p style={{ fontSize: 18, margin: 0 }} onClick={() => handleMenuItemClick(item)}>{item.title}</p>
+    //                         </div>
+    //                     </Button>
+    //                 </div>
+    //             )
+    //         })
+    //     )
+    // }
 
 
     return (
@@ -389,7 +389,6 @@ export default function MenuComponent(props) {
                         <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }}>
                             <Toolbar style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', gap: '7%' }}>
                                 {showMenuItems()}
-                                {showStaticMenuItems()}
                                 <Button
                                     style={{
                                         color: props.color,

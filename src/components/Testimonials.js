@@ -44,16 +44,16 @@ export default function Testimonials() {
             para: "Boosty exceeded my expectations. The quick setup and affordable pricing were impressive. Having a US business presence opened doors to big projects. Their dedication to helping Pakistani entrepreneurs is evident. Boosty truly empowered my software development business!"
         },
         {
-            name: 'Muhammad Boota',
-            title: 'Boosty made the web development process',
+            name: 'Muhammed Faraz',
+            title: 'Boosty is a game-changer for entrepreneurs',
             image: 'model-1.jpg',
-            para: "Boosty made the web development process an absolute breeze for us. The website they created has not only elevated our online presence but also simplified our operations, making it easier for our customers to engage with us. We highly recommend BlueNexus to any business seeking a reliable web development partner."
+            para: "Boosty is a game-changer for global entrepreneurs! Their assistance in navigating the complexities of U.S. business was invaluable. Setting up my LLC, obtaining an EIN, and integrating with Stripe was a breeze with their step-by-step guidance.recommende. Trustworthy and highly recommended!"
         },
         {
-            name: 'Hamid',
-            title: "Boosty's website development expertise",
+            name: 'Idris Ali',
+            title: "Setting up business in U.S. was seamless",
             image: 'model-2.jpg',
-            para: "Boosty's website development expertise is unmatched. They skillfully brought our ideas to life, crafting a user-friendly and visually stunning website. Their branding services aligned our brand with our core values, making a significant impact on our customers. Thank you, Boosty, for a remarkable experience!"
+            para: "Boosty exceeded my expectations! Setting up my business in the U.S. was seamless with their expert guidance. From LLC formation to tax filings, they simplified every step. Highly recommend Boosty for entrepreneurs seeking a smooth entry into the U.S. market!"
         },
         {
             name: 'Arshad Ahmad',
