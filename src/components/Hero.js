@@ -41,7 +41,7 @@ export default function Hero() {
                         fontFamily: 'Inter'
                     }}>GET STARTED</Button><br /><br />
                     <div style={{ display: 'flex', flexDirection: 'row', gap: '3%' }}>
-                        <Avatars />
+                        {/* <Avatars /> */}
                         <img src='/images/Trustpilot-logo.svg' style={{ width: 100 }} />
                     </div>
                     {matches_md ? <></> :
