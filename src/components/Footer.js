@@ -7,10 +7,10 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import ListItemText from '@mui/material/ListItemText';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function Footer(props) {
 
@@ -117,7 +117,7 @@ export default function Footer(props) {
                         <div style={{ marginTop: '5%' }}>
                             <a href='https://www.facebook.com/TryBoosty' target='_blank'><FacebookRoundedIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} /></a>
                             <a href='https://www.twitter.com/TryBoosty' target='_blank'><TwitterIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} /></a>
-                            <a href='https://www.linkedin.com/company/tryboosty' target='_blank'><LinkedInIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} /></a>
+                            <a href='https://instagram.com/boostyhq' target='_blank'><InstagramIcon style={{ opacity: '100%', marginRight: '3%', color: 'white' }} /></a>
                         </div>
                     </Grid>
                 </Grid>

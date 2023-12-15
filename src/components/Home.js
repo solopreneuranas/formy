@@ -25,7 +25,7 @@ export default function Home() {
             <Header bg='linear-gradient(to right, blue 30%, #8000ff 70%)' color='white' logo='boosty-white-logo.svg' border='none' buttonBg='white' buttonColor='black'/>
             <Hero />
             <Services />
-            <PricingTabs />
+            <PricingTabs busiLink='/pricing' preLink='/pricing' />
             <Features />
             <Process />
             <Incorporate />

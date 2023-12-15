@@ -142,7 +142,10 @@ export default function Pricing(props) {
             </div >
 
             {
-                selectedState ? <PricingTabs state={selectedState.label} fee={selectedState.fee} /> : <></>
+                selectedState ? <PricingTabs state={selectedState.label} fee={selectedState.fee} 
+                busiLink= "https://wa.me/13022098440?text=Hello%20Team%20Boosty%2C%20%0A%0AI'm%20interested%20in%20placing%20an%20order%20for%20your%20Business%20Package.%20%F0%9F%98%8A%20What%20specific%20details%20do%20you%20require%20from%20me%20to%20initiate%20the%20process%3F%0A" 
+                preLink= "https://wa.me/13022098440?text=Hello%20Team%20Boosty%2C%20%0A%0AI'm%20interested%20in%20placing%20an%20order%20for%20your%20Premium%20Package.%20%F0%9F%98%8A%20What%20specific%20details%20do%20you%20require%20from%20me%20to%20initiate%20the%20process%3F"
+                /> : <></>
             }
 
             <Addons />

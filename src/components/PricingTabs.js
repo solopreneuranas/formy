@@ -121,12 +121,14 @@ export default function PricingTabs(props) {
                             {state ? 'One Time' : '+ State Fees'}
                         </span></h3>
                         <p className='pricingContent' style={{ marginTop: '2%' }}>If you're operating with a low budget.</p>
-                        <Button onClick={handleBtnClick} fullWidth variant='contained' className='globalButton' style={{
-                            background: 'linear-gradient(to right, blue 30%, #8000ff 70%)',
-                            padding: '3% 4%',
-                            margin: '7% 0 5%',
-                            fontFamily: 'Inter'
-                        }}>Go Business</Button>
+                        <a href={props.busiLink} target='_blank'>
+                            <Button fullWidth variant='contained' className='globalButton' style={{
+                                background: 'linear-gradient(to right, blue 30%, #8000ff 70%)',
+                                padding: '3% 4%',
+                                margin: '7% 0 5%',
+                                fontFamily: 'Inter'
+                            }}>Go Business</Button>
+                        </a>
 
                         {
                             businessItems.map((item, i) => {
@@ -156,13 +158,15 @@ export default function PricingTabs(props) {
                             {state ? 'One Time' : '+ State Fees'}
                         </span></h3>
                         <p className='pricingContent' style={{ marginTop: '2%' }}>Enhanced, fast, and exclusive service.</p>
-                        <Button onClick={handleBtnClick} fullWidth variant='contained' className='globalButton' style={{
-                            background: 'white',
-                            color: 'black',
-                            padding: '3% 4%',
-                            margin: '7% 0 5%',
-                            fontFamily: 'Inter'
-                        }}>Go Premium</Button>
+                        <a href={props.preLink} target='_blank'>
+                            <Button fullWidth variant='contained' className='globalButton' style={{
+                                background: 'white',
+                                color: 'black',
+                                padding: '3% 4%',
+                                margin: '7% 0 5%',
+                                fontFamily: 'Inter'
+                            }}>Go Premium</Button>
+                        </a>
 
                         {
                             premiumItems.map((item, i) => {
