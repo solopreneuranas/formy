@@ -49,7 +49,7 @@ export default function Services() {
             <Grid container spacing={1} className='featuresSection'>
 
                 <Grid item md={6} className='featuresImg'>
-                    <center><img src='https://startglobal.co/img/llc-formation.png' style={{ width: '90%', marginRight: 'auto' }} /></center>
+                    <center><img src='/images/boosty-web-creative-3.svg' style={{ width: '80%', marginRight: 'auto' }} /></center>
                 </Grid>
 
                 <Grid item md={6} className='featuresContent'>

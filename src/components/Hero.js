@@ -23,6 +23,11 @@ export default function Hero() {
             <Grid container spacing={1} className='heroSection'>
                 {/* {matches_md ? <></> : <div className='blurDiv' style={{ background: '#1105FA' }}></div>} */}
 
+                {matches_md ? <Grid item md={6} style={{ marginBottom: '4%' }}>
+                    <center><img src='/images/boosty-dashboard.svg' style={{ width: '100%' }} /></center>
+                </Grid> : <></>
+                }
+
                 <Grid item md={6} style={{ zIndex: 2 }}>
                     <p style={{ opacity: '80%' }}>GLOBAL FORMATION</p>
                     <h2 className='heroHeading'>
@@ -50,13 +55,9 @@ export default function Hero() {
                         </div>
                     }
                 </Grid>
-                {/* {matches_md ? <Grid item md={6} style={{ marginBottom: matches_md ? '7%' : 0 }}>
-                    <center><img src='https://startglobal.co/img/banner-1.png' style={{ width: matches_md ? '85%' : '75%' }} /></center>
-                </Grid> : <></>
-                } */}
                 {matches_md ? <></> :
                     <Grid item md={6} style={{ zIndex: 2 }}>
-                        <center><img src='https://startglobal.co/img/banner-1.png' style={{ width: '90%' }} /></center>
+                        <center><img src='/images/boosty-dashboard.svg' style={{ width: '100%' }} /></center>
                     </Grid>
                 }
             </Grid>

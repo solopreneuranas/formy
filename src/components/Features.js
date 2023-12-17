@@ -61,7 +61,7 @@ export default function Features() {
 
                 </Grid>
                 <Grid item md={6} className='featuresImg' style={{ zIndex: 2 }}>
-                    <center><img src='https://startglobal.co/img/llc.png' style={{ width: '80%', marginRight: 'auto' }} /></center>
+                    <center><img src='/images/boosty-web-creative.svg' style={{ width: '80%', marginRight: 'auto' }} /></center>
                 </Grid>
             </Grid>
 
