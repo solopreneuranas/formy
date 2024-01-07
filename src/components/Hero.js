@@ -23,7 +23,7 @@
 //             <Grid container spacing={1} className='heroSection'>
 
 //                 {matches_md ? <Grid item md={6} style={{ marginBottom: '4%' }}>
-//                     <center><img src='/images/hero-new.webp' style={{ width: '100%' }} /></center>
+//                     <center><img src='/images/hero-new.png' style={{ width: '100%' }} /></center>
 //                 </Grid> : <></>
 //                 }
 
@@ -56,7 +56,7 @@
 //                 </Grid>
 //                 {matches_md ? <></> :
 //                     <Grid item md={6} style={{ zIndex: 2 }}>
-//                         <center><img src='/images/hero-new.webp' style={{ width: '90%' }} /></center>
+//                         <center><img src='/images/hero-new.png' style={{ width: '90%' }} /></center>
 //                     </Grid>
 //                 }
 //             </Grid>
@@ -89,7 +89,7 @@ export default function Hero() {
             <Grid container spacing={1} className='heroSection'>
 
                 {matches_md ? <Grid item md={6} style={{ marginBottom: '4%' }}>
-                    <center><img src='/images/hero-new.webp' style={{ width: '100%' }} /></center>
+                    <center><img src='/images/hero-new.png' style={{ width: '100%' }} /></center>
                 </Grid> : <></>
                 }
 
@@ -121,7 +121,7 @@ export default function Hero() {
                 </Grid>
                 {matches_md ? <></> :
                     <Grid item md={6} style={{ zIndex: 2 }}>
-                        <center><img src='/images/hero-new.webp' style={{ width: '90%' }} /></center>
+                        <center><img src='/images/hero-new.png' style={{ width: '90%' }} /></center>
                     </Grid>
                 }
             </Grid>
