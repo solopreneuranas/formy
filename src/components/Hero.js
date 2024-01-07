@@ -103,7 +103,7 @@ export default function Hero() {
                         <font style={{ color: 'white', background: 'linear-gradient(to right, blue 30%, #8000ff 70%)', borderRadius: 5, padding: '0 1%' }}>US business</font> and keep it 100% compliant
                     </h2>
                     <p className='globalPara' style={{ padding: 0 }}>
-                        Ready to access global online services from anywhere? Boosty makes it possible, even in regions they don't operate!
+                        Formation, EIN, Registered Agent, Annual State Filings, Federal Tax Filings and a Dedicated Account Manager. Grow your business and let Boosty handle your business compliance needs.
                     </p>
                     <Button onClick={handleBtnClick} variant='contained' className='globalButton' style={{
                         background: 'linear-gradient(to right, blue 30%, #8000ff 70%)',
