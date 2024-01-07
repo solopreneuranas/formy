@@ -88,11 +88,6 @@ export default function Hero() {
         <div>
             <Grid container spacing={1} className='heroSection'>
 
-                {matches_md ? <Grid item md={6} style={{ marginBottom: '4%' }}>
-                    <center><img src='/images/hero-new.png' style={{ width: '100%' }} /></center>
-                </Grid> : <></>
-                }
-
                 <Grid item md={6} style={{ zIndex: 2 }}>
                     {/* <p style={{ opacity: '80%' }}>GLOBAL FORMATION</p><br /> */}
                     <div style={{ display: 'flex', flexDirection: 'row', gap: '3%' }}>
