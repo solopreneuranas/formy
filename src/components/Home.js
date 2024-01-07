@@ -21,8 +21,8 @@ export default function Home() {
 
     return (
         <div>
-            <TopBar color='black' background='white' linkColor='blue' />
-            <Header bg='linear-gradient(to right, blue 30%, #8000ff 70%)' color='white' logo='boosty-white-logo.svg' border='none' buttonBg='white' buttonColor='black'/>
+            <TopBar color='white' background='linear-gradient(to right, blue 30%, #8000ff 70%)' linkColor='gainsboro'/>
+            <Header bg='white' color='black' logo='boosty-gradient-logo.svg' border='2px solid black' buttonBg='linear-gradient(to right, blue, #8000ff)' buttonColor='white' />
             <Hero />
             <Services />
             <PricingTabs busiLink='/pricing' preLink='/pricing' />

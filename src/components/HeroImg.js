@@ -10,8 +10,8 @@ export default function HeroImg() {
 
             <Grid container spacing={2}>
                 <Grid item xs={12}>
-                    <img src='images/hero-image-2.svg' style={{width: '100%'}} alt='Boosty Banner' className='desktopHeroImg'/> 
-                    <img src='images/hero-image-mobile.svg' style={{width: '100%'}} alt='Boosty Banner' className='mobileHeroImg'/>                    
+                    <img src='images/hero-new.webp' style={{width: '100%'}} alt='Boosty Banner' className='desktopHeroImg'/> 
+                    <img src='images/hero-new.webp' style={{width: '100%'}} alt='Boosty Banner' className='mobileHeroImg'/>                    
                 </Grid>
             </Grid>
 

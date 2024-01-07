@@ -23,7 +23,7 @@ export default function Brands() {
         arrows: false,
     };
 
-    const data = ['stripe-w.png', 'paypal-w.png', 'mercury-w.png', 'wise-w.png', 'payoneer-w.png', 'relay-w.png'];
+    const data = ['stripe-logo.svg', 'paypal-logo.svg', 'mercury-logo.svg', 'wise-logo.svg', 'payoneer-logo.svg', 'relay-logo.svg'];
 
 
     const bannerCarousel = () => {
