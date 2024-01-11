@@ -38,6 +38,10 @@ export default function PricingTabs(props) {
         },
         {
             icon: <DoneIcon />,
+            title: '📑 BOI Report Filing'
+        },
+        {
+            icon: <DoneIcon />,
             title: '📜 Operating Agreement'
         },
         {

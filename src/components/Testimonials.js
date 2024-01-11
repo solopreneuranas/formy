@@ -5,12 +5,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import { Grid } from "@mui/material";
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
-import Avatar from '@mui/material/Avatar';
-import AvatarGroup from '@mui/material/AvatarGroup';
-import { useState } from 'react';
-import Box from '@mui/material/Box';
-import Rating from '@mui/material/Rating';
-import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 export default function Testimonials() {
 
@@ -72,7 +66,7 @@ export default function Testimonials() {
                         display: 'flex',
                         flexDirection: 'column',
                         padding: '7%',
-                        height: '320px',
+                        height: matches_md ? 360 : 340,
                         borderRadius: 17,
                         position: 'relative',
                         margin: '10% 3%',
