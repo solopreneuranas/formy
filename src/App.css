@@ -337,7 +337,7 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding: 3% 10%;
+  padding: 1% 10% 3%;
   color: black;
   border-radius: 0 0 150px 0;
   background-color: white;
@@ -793,7 +793,7 @@ body {
   }
 
   .heroHeading {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .bigHeading {

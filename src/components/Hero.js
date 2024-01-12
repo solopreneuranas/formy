@@ -116,7 +116,7 @@ export default function Hero() {
                 </Grid>
                 {matches_md ? <></> :
                     <Grid item md={6} style={{ zIndex: 2 }}>
-                        <center><img src='/images/hero-new.png' style={{ width: '90%' }} /></center>
+                        <center><img src='/images/Boosty-Hero-Image-v-2.svg' style={{ width: '90%' }} /></center>
                     </Grid>
                 }
             </Grid>
