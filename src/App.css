@@ -538,7 +538,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2% 20% 3%;
+  padding: 2% 16% 3%;
 }
 
 .gradientText {
@@ -675,7 +675,7 @@ body {
 
 
 .business {
-  height: 650px;
+  height: 680px;
   margin: 0;
   padding: 6%;
   border: 1px solid gainsboro;
@@ -683,7 +683,7 @@ body {
 }
 
 .premium {
-  height: 650px;
+  height: 680px;
   margin: 0;
   padding: 6%;
   border-radius: 10px;
