@@ -582,6 +582,17 @@ body {
   padding: 5%;
 }
 
+.getStartedSection {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  align-items: center;
+  text-align: center;
+  padding: 3% 3% 0;
+}
+
 .incorporateSection {
   width: 80%;
   margin: auto;

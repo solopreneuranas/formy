@@ -13,18 +13,20 @@ import Footer from './Footer';
 import Testimonials from './Testimonials';
 import Process from './Process';
 import TopBar from './TopBar';
+import GetStarted from './GetStarted';
 
 export default function Home() {
 
     return (
         <div>
-            <TopBar color='white' background='linear-gradient(to right, blue 30%, #8000ff 70%)' linkColor='gainsboro'/>
+            <TopBar color='white' background='linear-gradient(to right, blue 30%, #8000ff 70%)' linkColor='gainsboro' />
             <Header bg='white' color='black' logo='boosty-gradient-logo.svg' border='2px solid black' buttonBg='linear-gradient(to right, blue, #8000ff)' buttonColor='white' />
             <Hero />
             <Services />
             <PricingTabs busiLink='/pricing' preLink='/pricing' />
             <Features />
             <Process />
+            <GetStarted />
             <Incorporate />
             <Testimonials />
             <Faq />
